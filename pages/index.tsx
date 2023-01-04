@@ -37,10 +37,11 @@ export default function Home() {
             <a href="https://twitter.com/Fulinin_"><AiFillTwitterCircle></AiFillTwitterCircle></a>
             <a href="https://www.linkedin.com/in/fulya-ertay-40a593156/"><AiFillLinkedin></AiFillLinkedin></a>
             <a href="https://github.com/fulyaertay"><AiFillGithub></AiFillGithub></a>
+          
+          
           </div>
-          <div className="relative">
+          <div className="relative rounded-full w-80 h-80 mt-20 mx-auto" >
             <Image src={fe}></Image>
-
           </div>
         </section>
       </main>
