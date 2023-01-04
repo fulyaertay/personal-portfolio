@@ -1,7 +1,7 @@
 ![Logo](./public/layout.png)
 
 
-This is my personal portfolio page. It's a multi-page website that shows my personal projects and coding knowledge.I've built this page using ReactJS and Material UI. It's a simple multi-page application that uses server-side rendering, so it loads fast and works on mobile devices as well as desktop computers. You can see the source code of this page here on GitHub.
+This is my personal portfolio page. It's a multi-page website that shows my personal projects and coding knowledge.I've built this page using NextJS and TailwindCSS. It's a simple multi-page application that uses server-side rendering, so it loads fast and works on mobile devices as well as desktop computers. You can see the source code of this page here on GitHub.
 
 ## 🛠 Use To Built
 
