@@ -9,7 +9,12 @@ import fe from '../public/dev-fe-wave.png';
 import desing from '../public/design.png'
 import code from '../public/code.png'
 import consulting from '../public/consulting.png'
-
+import web1 from '../public/web1.png'
+import web2 from '../public/web2.png'
+import web3 from '../public/web3.png'
+import web4 from '../public/web4.png'
+import web5 from '../public/web5.png'
+import web6 from '../public/web6.png'
 export default function Home() {
   return (
     <>
@@ -19,7 +24,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-white px-10">
+      <main className="bg-white px-10 md:px-20 lg:px-40">
         <section className=" min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl font-burtons">developedbyfe</h1>
@@ -33,9 +38,9 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center p-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium">Fulya Ertay</h2>
-            <h3 className="text-2xl py-2">Junior Software Developer</h3>
-            <p className="text-md py-5 leading-8 text-gray-800">Providing services for user-friendly web applications. Join me down below and collaborate on awesome projects! </p>
+            <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">Fulya Ertay</h2>
+            <h3 className="text-2xl py-2 md:text-3xl">Junior Software Developer</h3>
+            <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto">Providing services for user-friendly web applications. Join me down below and collaborate on awesome projects! </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3">
             <a href="https://twitter.com/Fulinin_"><AiFillTwitterCircle></AiFillTwitterCircle></a>
@@ -44,7 +49,7 @@ export default function Home() {
           
           
           </div>
-          <div className="relative rounded-full w-80 h-80 mt-20 mx-auto" >
+          <div className="relative rounded-full w-80 h-80 mt-20 mx-auto md:h-96 md:w-96" >
             <Image layout="fill" objectFit="contain" src={fe}></Image>
           </div>
         </section>
@@ -63,6 +68,7 @@ export default function Home() {
               programming.
             </p>
             </div>
+            <div  className="lg:flex gap-11 text-center">
             <div className="text-center shadow-lg p-10 rounded-xl my-10">
               <div>
                 <Image src={desing} width={100} height={100}></Image>
@@ -91,8 +97,33 @@ export default function Home() {
                
               </div>
             </div>
+            </div>
         </section>
-        <section></section>
+        <section>
+          <div>
+            <h3 className="text-3xl py-1"> Portfolio
+
+            </h3>
+          </div>
+          <div>
+            <Image src={web1}></Image>
+          </div>
+          <div>
+            <Image src={web2}></Image>
+          </div>
+          <div>
+            <Image src={web3}></Image>
+          </div>
+          <div>
+            <Image src={web4}></Image>
+          </div>
+          <div>
+            <Image src={web5}></Image>
+          </div>
+          <div>
+            <Image src={web6}></Image>
+          </div>
+        </section>
       </main>
     </>
   );
