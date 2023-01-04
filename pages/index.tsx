@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
 import { BsFillMoonStarsFill } from "react-icons/bs";
+import {AiFillTwitterCircle, AiFillLinkedin,AiFillGithub} from 'react-icons/ai'
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -17,7 +18,7 @@ export default function Home() {
       <main className="bg-white px-10">
         <section className=" min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl">developedbyfe</h1>
+            <h1 className="text-xl font-burtons">developedbyfe</h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill className="cursor-pointer text-2xl"></BsFillMoonStarsFill>
@@ -27,6 +28,19 @@ export default function Home() {
               </li>
             </ul>
           </nav>
+          <div className="text-center p-10">
+            <h2 className="text-5xl py-2 text-teal-600 font-medium">Fulya Ertay</h2>
+            <h3 className="text-2xl py-2">Junior Software Developer</h3>
+            <p className="text-md py-5 leading-8 text-gray-800">Providing services for user-friendly web applications. Join me down below and collaborate on awesome projects! </p>
+          </div>
+          <div className="text-5xl flex justify-center gap-16 py-3">
+            <a href="https://twitter.com/Fulinin_"><AiFillTwitterCircle></AiFillTwitterCircle></a>
+            <a href="https://www.linkedin.com/in/fulya-ertay-40a593156/"><AiFillLinkedin></AiFillLinkedin></a>
+            <a href="https://github.com/fulyaertay"><AiFillGithub></AiFillGithub></a>
+          </div>
+          <div>
+
+          </div>
         </section>
       </main>
     </>
