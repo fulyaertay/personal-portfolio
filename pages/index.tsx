@@ -1,11 +1,11 @@
 import Head from "next/head";
-import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import {AiFillTwitterCircle, AiFillLinkedin,AiFillGithub} from 'react-icons/ai'
+import Image from "next/legacy/image"
 const inter = Inter({ subsets: ["latin"] });
-
+import fe from '../public/dev-fe-wave.png';
 export default function Home() {
   return (
     <>
@@ -38,7 +38,8 @@ export default function Home() {
             <a href="https://www.linkedin.com/in/fulya-ertay-40a593156/"><AiFillLinkedin></AiFillLinkedin></a>
             <a href="https://github.com/fulyaertay"><AiFillGithub></AiFillGithub></a>
           </div>
-          <div>
+          <div className="relative">
+            <Image src={fe}></Image>
 
           </div>
         </section>
