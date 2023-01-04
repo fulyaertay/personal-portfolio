@@ -105,23 +105,19 @@ export default function Home() {
 
             </h3>
           </div>
-          <div>
-            <Image src={web1}></Image>
+          <div className="flex flex-col gap-5 py-5 lg:flex-row lg:flex-wrap">
+          <div className="basis-1/3 flex-1">
+            <Image src={web1} className="rounded-lg object-contain" width={'100%'} height={'100%'} layout="responsive"></Image>
           </div>
-          <div>
-            <Image src={web2}></Image>
+          <div className="basis-1/3 flex-1">
+            <Image src={web2} className="rounded-lg object-contain" width={'100%'} height={'100%'} layout="responsive"></Image>
           </div>
-          <div>
-            <Image src={web3}></Image>
+          <div className="basis-1/3 flex-1">
+            <Image src={web3} className="rounded-lg object-contain" width={'100%'} height={'100%'} layout="responsive"></Image>
           </div>
-          <div>
-            <Image src={web4}></Image>
+          <div className="basis-1/3 flex-1">
+            <Image src={web4} className="rounded-lg object-contain" width={'100%'} height={'100%'} layout="responsive"></Image>
           </div>
-          <div>
-            <Image src={web5}></Image>
-          </div>
-          <div>
-            <Image src={web6}></Image>
           </div>
         </section>
       </main>
