@@ -107,16 +107,16 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-5 py-5 lg:flex-row lg:flex-wrap">
           <div className="basis-1/3 flex-1">
-            <Image src={web1} className="rounded-lg object-contain" width={'100%'} height={'100%'} layout="responsive"></Image>
+            <a href="https://github.com/fulyaertay/react-book-list"><Image src={web1} className="rounded-lg object-contain" width={'100%'} height={'100%'} layout="responsive"></Image></a>
           </div>
           <div className="basis-1/3 flex-1">
-            <Image src={web2} className="rounded-lg object-contain" width={'100%'} height={'100%'} layout="responsive"></Image>
+            <a href="https://github.com/fulyaertay/mini-blog-app"><Image src={web2} className="rounded-lg object-contain" width={'100%'} height={'100%'} layout="responsive"></Image></a>
           </div>
           <div className="basis-1/3 flex-1">
-            <Image src={web3} className="rounded-lg object-contain" width={'100%'} height={'100%'} layout="responsive"></Image>
+            <a href="https://github.com/fulyaertay/react-search-filter"><Image src={web3} className="rounded-lg object-contain" width={'100%'} height={'100%'} layout="responsive"></Image></a>
           </div>
           <div className="basis-1/3 flex-1">
-            <Image src={web4} className="rounded-lg object-contain" width={'100%'} height={'100%'} layout="responsive"></Image>
+            <a href="https://github.com/fulyaertay/react-image-gallery"><Image src={web4} className="rounded-lg object-contain" width={'100%'} height={'100%'} layout="responsive"></Image></a>
           </div>
           </div>
         </section>
