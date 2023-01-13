@@ -38,7 +38,7 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 roundedn-md ml-8"
+                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
                   href="https://www.showwcase.com/fulyaertay"
                 >
                   Resume
@@ -69,7 +69,7 @@ export default function Home() {
               <AiFillGithub></AiFillGithub>
             </a>
           </div>
-          <div className="w-80 h-80 mt-20 mx-auto md:h-90 md:w-90">
+          <div className="w-60 h-60 mt-20 mx-auto">
             <Image class="max-w-full h-auto rounded-full" src={fe}></Image>
           </div>
         </section>
