@@ -126,23 +126,23 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py-1"> My Portfolio</h3>
           </div>
-          <div className="flex flex-col gap-5 py-5 lg:flex-row lg:flex-wrap ">
-            <div className="flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300">
+          <div className="flex flex-col gap-5 py-5 lg:flex-row lg:flex-wrap  ">
+            <div className="flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
               <a href="https://github.com/fulyaertay/react-book-list">
                 <Image src={web1} className="max-w-full h-auto "></Image>
               </a>
             </div>
-            <div className=" flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300">
+            <div className=" flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
               <a href="https://github.com/fulyaertay/mini-blog-app">
                 <Image src={web2} className="max-w-full h-auto"></Image>
               </a>
             </div>
-            <div className=" flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300">
+            <div className=" flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
               <a href="https://github.com/fulyaertay/react-search-filter">
                 <Image src={web3} className="max-w-full h-auto"></Image>
               </a>
             </div>
-            <div className=" flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300">
+            <div className=" flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
               <a href="https://github.com/fulyaertay/react-image-gallery">
                 <Image src={web4} className="max-w-full h-auto"></Image>
               </a>
@@ -150,7 +150,7 @@ export default function Home() {
           </div>
         </section>
 
-        <footer className="p-5 m-5 bg-gray-200  shadow md:flex md:justify-center md:p-6 dark:bg-gray-800">
+        <footer className="p-5 m-5 bg-gray-200 md:flex md:justify-center md:p-6 dark:bg-gray-800 shadow-lg">
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © 2023{" "}
             <a href="https://www.showwcase.com/fulyaertay" className="hover:underline">
