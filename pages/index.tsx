@@ -150,11 +150,11 @@ export default function Home() {
           </div>
         </section>
 
-        <footer className="p-5 m-5 bg-gray-200 md:flex md:justify-center md:p-6 dark:bg-gray-800 shadow-lg">
+        <footer className="p-5 m-5 bg-gray-200  md:flex md:justify-center md:p-6 dark:bg-gray-800 shadow-lg">
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © 2023{" "}
             <a href="https://www.showwcase.com/fulyaertay" className="hover:underline">
-              FE
+              By FE
             </a>
             . All Rights Reserved.
           </span>
