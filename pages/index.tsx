@@ -153,6 +153,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+        </main>
       
 
         <footer className="p-5 m-5 bg-gray-200  md:flex md:justify-center md:max-w-full md:p-6 dark:bg-gray-800 shadow-lg">
@@ -167,7 +168,7 @@ export default function Home() {
             . All Rights Reserved.
           </span>
         </footer>
-      </main>
+
     </div>
   );
 }
