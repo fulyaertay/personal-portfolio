@@ -28,7 +28,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-white px-10 md:px-20 lg:px-40 h-screen">
+      <main className="bg-white px-10 md:px-20 lg:px-40 ">
         <section className=" min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl font-burtons">developedbyfe</h1>
@@ -128,7 +128,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-5 py-5 lg:flex-row lg:flex-wrap border-t mt-5 border-gray-600  ">
             <div className="flex flex-col items-center flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
-              <a href="https://github.com/fulyaertay/scrimba-tailwind-projects " >
+              <a href="https://github.com/fulyaertay/scrimba-tailwind-projects ">
                 <Image src={web1} className="w-50 h-50 "></Image>
               </a>
               <p className="font-md p-5 mt-7">Spotify Clone</p>
@@ -157,12 +157,14 @@ export default function Home() {
         <footer className="p-5 m-5 bg-gray-200  md:flex md:justify-center md:p-6 dark:bg-gray-800 shadow-lg">
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © 2023{" "}
-            <a href="https://www.showwcase.com/fulyaertay" className="hover:underline">
+            <a
+              href="https://www.showwcase.com/fulyaertay"
+              className="hover:underline"
+            >
               By FE
             </a>
             . All Rights Reserved.
           </span>
-        
         </footer>
       </main>
     </div>
