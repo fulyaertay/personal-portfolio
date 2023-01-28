@@ -70,7 +70,7 @@ export default function Home() {
             </a>
           </div>
           <div className="w-60 h-60 mt-20 mx-auto">
-            <Image class="max-w-full h-auto rounded-full" src={fe}></Image>
+            <Image className="max-w-full h-auto rounded-full" src={fe}></Image>
           </div>
         </section>
         <section>
