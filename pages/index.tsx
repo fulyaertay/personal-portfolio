@@ -161,7 +161,7 @@ export default function Home() {
             © 2023{" "}
             <a
               href="https://www.showwcase.com/fulyaertay"
-              className="hover:underline"
+              className="hover:underline font-bold"
             >
               By FE
             </a>
