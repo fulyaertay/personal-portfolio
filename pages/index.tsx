@@ -128,7 +128,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-5 py-5 lg:flex-row lg:flex-wrap  ">
             <div className="flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
-              <a href="https://github.com/fulyaertay/react-book-list">
+              <a href="https://github.com/fulyaertay/scrimba-tailwind-projects">
                 <Image src={web1} className="max-w-full h-auto "></Image>
               </a>
             </div>
