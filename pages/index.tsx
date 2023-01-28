@@ -28,7 +28,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-white px-10 md:px-20 lg:px-40">
+      <main className="bg-white px-10 md:px-20 lg:px-40 h-screen">
         <section className=" min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl font-burtons">developedbyfe</h1>
@@ -94,8 +94,8 @@ export default function Home() {
                 <h4 className="py-4 text-teal-800 text-lg font-medium pt-8 pb-2">
                   Front-End
                 </h4>
-                <p className="text-gray-800 py-1">HTML</p>
-                <p className="text-gray-800 py-1">CSS</p>
+                <p className="text-gray-800 py-1">HTML/CSS</p>
+                <p className="text-gray-800 py-1">Tailwind CSS</p>
                 <p className="text-gray-800 py-1">JavaScript</p>
                 <p className="text-gray-800 py-1">React</p>
               </div>
@@ -122,30 +122,34 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section>
+        <section className="mt-10 ">
           <div>
-            <h3 className="text-3xl py-1"> My Portfolio</h3>
+            <h3 className="text-3xl py-1 "> My Portfolio</h3>
           </div>
-          <div className="flex flex-col gap-5 py-5 lg:flex-row lg:flex-wrap  ">
-            <div className="flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
-              <a href="https://github.com/fulyaertay/scrimba-tailwind-projects">
-                <Image src={web1} className="max-w-full h-auto "></Image>
+          <div className="flex flex-col gap-5 py-5 lg:flex-row lg:flex-wrap border-t mt-5 border-gray-600  ">
+            <div className="flex flex-col items-center flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
+              <a href="https://github.com/fulyaertay/scrimba-tailwind-projects " >
+                <Image src={web1} className="w-50 h-50 "></Image>
               </a>
+              <p className="font-md p-5 mt-7">Spotify Clone</p>
             </div>
-            <div className=" flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
+            <div className=" flex flex-col items-center flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
               <a href="https://github.com/fulyaertay/mini-blog-app">
-                <Image src={web2} className="max-w-full h-auto"></Image>
+                <Image src={web2} className="w-50 h-50"></Image>
               </a>
+              <p className="font-md p-5">Mini Blog App</p>
             </div>
-            <div className=" flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
+            <div className=" flex flex-col items-center  flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
               <a href="https://github.com/fulyaertay/react-search-filter">
                 <Image src={web3} className="max-w-full h-auto"></Image>
               </a>
+              <p className="font-md p-5">Search Filter</p>
             </div>
-            <div className=" flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
+            <div className=" flex flex-col items-center  flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
               <a href="https://github.com/fulyaertay/react-image-gallery">
                 <Image src={web4} className="max-w-full h-auto"></Image>
               </a>
+              <p className="font-md p-5">Image Gallery</p>
             </div>
           </div>
         </section>
