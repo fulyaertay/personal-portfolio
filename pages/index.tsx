@@ -88,7 +88,7 @@ export default function Home() {
             </p>
           </div>
           <div className="lg:flex text-center justify-center">
-            <div className="text-center  shadow-lg p-20 rounded-xl my-10">
+            <div className="text-center  shadow-lg p-20 rounded-xl my-10 flex-1">
               <div>
                 <Image src={desing} width={100} height={100}></Image>
                 <h4 className="py-4 text-teal-800 text-lg font-medium pt-8 pb-2">
@@ -100,7 +100,7 @@ export default function Home() {
                 <p className="text-gray-800 py-1">React</p>
               </div>
             </div>
-            <div className="text-center shadow-lg p-20  rounded-xl my-10">
+            <div className="text-center shadow-lg p-20  rounded-xl my-10 flex-1">
               <div>
                 <Image src={code} width={100} height={100}></Image>
                 <h4 className="py-4 text-teal-800 text-lg font-medium pt-8 pb-2">
@@ -110,7 +110,7 @@ export default function Home() {
                 <p className="text-gray-800 py-1">Django</p>
               </div>
             </div>
-            <div className="text-center shadow-lg p-20 rounded-xl my-10">
+            <div className="text-center shadow-lg p-20 rounded-xl my-10 flex-1">
               <div>
                 <Image src={consulting} width={100} height={100}></Image>
                 <h4 className="py-4 text-teal-800 text-lg font-medium pt-8 pb-2">
