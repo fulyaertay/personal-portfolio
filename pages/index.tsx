@@ -75,30 +75,9 @@ export default function Home() {
           <div>
             <h3 className="text-3xl text-teal-600 font-medium py-1 md:text-left mt-5 md:text-center">About Me</h3>
             <p className="text-md py-2 leading-8 text-gray-80">
-              My journey into the world of programming began in 2015 where I was
-              not too fond of it at first but after finding myself the right
-              resources I fell in love with it, and since then, I have developed
-              an impressive set of skills that span the fields of web
-              development.
-            </p>
-            <p className="text-md py-2 leading-8 text-gray-80">
               Armed with a associate degree in computer programming and a
               bachelor degree in computer engineering, I developed many
-              projects in Java and C#. After I graduated computer engineering
-              department, I enrolled Scrimba - Frontend Developer Career Path.
-              It contains over 70 hours of top-notch tutorials, hundreds of
-              coding challenges and dozens of real-world projects. Thanks to
-              Scrimba, I have got a solid foundation in HTML, CSS, Tailwind CSS,
-              JavaScript and React.
-            </p>
-            <p className="text-md py-2 leading-8 text-gray-80">
-              I am constantly learning new technologies to stay ahead of the
-              curve. I am passionated about creating user-friendly websites and
-              designing mobile apps that are easy to use. I am also well-versed
-              in Git and GitHub and currently learning Node.js.
-            </p>
-            <p className="text-md py-2 leading-8 text-gray-80">
-              Before dwelling on the world of programming, I loved writing
+              projects in Java and C#. Before dwelling on the world of programming, I loved writing
               poetry. And now, combining my love for writing with my knowledge
               of programming I became a technical writer. Whether I am writing
               documentation or designing user experiences, my goal is always to
@@ -106,6 +85,7 @@ export default function Home() {
               HTML, CSS, Tailwind CSS, UI Design, JavaScript, React, Git,
               GitHub.
             </p>
+        
             <p className="text-md py-2 leading-8 text-gray-80">
               I am excited to connect with like-minded individuals and companies
               who share my passion for code and creativity and I am always
