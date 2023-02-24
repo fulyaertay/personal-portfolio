@@ -75,17 +75,45 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1">Services I offer</h3>
+            <h3 className="text-3xl py-1">About Me</h3>
             <p className="text-md py-2 leading-8 text-gray-80">
-            My journey into the world of programming began in 2015 where I was not too fond of it at first but after finding myself the right resources I fell in love with it, and since then, I've developed an impressive set of skills that span the fields of web development. 
-
-Armed with a associate's degree in computer programming and a bachelor's degree in computer engineering, I developed many projects in Java and C#. After I graduated computer engineering department, I enrolled Scrimba - Frontend Developer Career Path. It contains over 70 hours of top-notch tutorials, hundreds of coding challenges and dozens of real-world projects. Thanks to Scrimba, I've got a solid foundation in HTML, CSS, Tailwind CSS, JavaScript and React.
-
-I'm constantly learning new technologies to stay ahead of the curve. I am passionated about creating user-friendly websites and designing mobile apps that are easy to use. I'm also well-versed in Git and GitHub and currently learning Node.js.
-
-Before dwelling on the world of programming, I loved writing poetry. And now, combining my love for writing with my knowledge of programming I became a technical writer.  Whether I'm writing documentation or designing user experiences, my goal is always to create content that's engaging and informative. My skills include: HTML, CSS, Tailwind CSS, UI Design, JavaScript, React, Git, GitHub.
-
-I'm excited to connect with like-minded individuals and companies who share my passion for code and creativity and I am always looking to collaborate on exciting projects.  So, If you are looking for a technical writer or a front-end developer, please reach out to me.
+              My journey into the world of programming began in 2015 where I was
+              not too fond of it at first but after finding myself the right
+              resources I fell in love with it, and since then, I've developed
+              an impressive set of skills that span the fields of web
+              development.
+            </p>
+            <p className="text-md py-2 leading-8 text-gray-80">
+              Armed with a associate's degree in computer programming and a
+              bachelor's degree in computer engineering, I developed many
+              projects in Java and C#. After I graduated computer engineering
+              department, I enrolled Scrimba - Frontend Developer Career Path.
+              It contains over 70 hours of top-notch tutorials, hundreds of
+              coding challenges and dozens of real-world projects. Thanks to
+              Scrimba, I've got a solid foundation in HTML, CSS, Tailwind CSS,
+              JavaScript and React.
+            </p>
+            <p className="text-md py-2 leading-8 text-gray-80">
+              I'm constantly learning new technologies to stay ahead of the
+              curve. I am passionated about creating user-friendly websites and
+              designing mobile apps that are easy to use. I'm also well-versed
+              in Git and GitHub and currently learning Node.js.
+            </p>
+            <p className="text-md py-2 leading-8 text-gray-80">
+              Before dwelling on the world of programming, I loved writing
+              poetry. And now, combining my love for writing with my knowledge
+              of programming I became a technical writer. Whether I'm writing
+              documentation or designing user experiences, my goal is always to
+              create content that's engaging and informative. My skills include:
+              HTML, CSS, Tailwind CSS, UI Design, JavaScript, React, Git,
+              GitHub.
+            </p>
+            <p className="text-md py-2 leading-8 text-gray-80">
+              I'm excited to connect with like-minded individuals and companies
+              who share my passion for code and creativity and I am always
+              looking to collaborate on exciting projects. So, If you are
+              looking for a technical writer or a front-end developer, please
+              reach out to me.
             </p>
           </div>
           <div className="lg:flex text-center justify-center">
@@ -154,22 +182,20 @@ I'm excited to connect with like-minded individuals and companies who share my p
             </div>
           </div>
         </section>
-        </main>
-      
+      </main>
 
-        <footer className="p-5 m-5 bg-gray-200  md:flex md:justify-center md:max-w-full md:p-6 dark:bg-gray-800 shadow-lg">
-          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-            © 2023{" "}
-            <a
-              href="https://www.showwcase.com/fulyaertay"
-              className="hover:underline font-bold"
-            >
-              By FE
-            </a>
-            . All Rights Reserved.
-          </span>
-        </footer>
-
+      <footer className="p-5 m-5 bg-gray-200  md:flex md:justify-center md:max-w-full md:p-6 dark:bg-gray-800 shadow-lg">
+        <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+          © 2023{" "}
+          <a
+            href="https://www.showwcase.com/fulyaertay"
+            className="hover:underline font-bold"
+          >
+            By FE
+          </a>
+          . All Rights Reserved.
+        </span>
+      </footer>
     </div>
   );
 }
