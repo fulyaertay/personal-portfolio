@@ -75,7 +75,7 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1">About Me</h3>
+            <h3 className="text-3xl py-1 md:text-left mt-5 text-center">About Me</h3>
             <p className="text-md py-2 leading-8 text-gray-80">
               My journey into the world of programming began in 2015 where I was
               not too fond of it at first but after finding myself the right
