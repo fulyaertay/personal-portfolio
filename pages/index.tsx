@@ -9,7 +9,7 @@ import {
 } from "react-icons/ai";
 import Image from "next/legacy/image";
 const inter = Inter({ subsets: ["latin"] });
-import fe from "../public/dev-fe-wave.png";
+import fe from "../public/avatar.png";
 import desing from "../public/design.png";
 import code from "../public/code.png";
 import consulting from "../public/consulting.png";
@@ -33,9 +33,7 @@ export default function Home() {
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl font-burtons">developedbyfe</h1>
             <ul className="flex items-center">
-              <li>
-                <BsFillMoonStarsFill className="cursor-pointer text-2xl"></BsFillMoonStarsFill>
-              </li>
+              
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
@@ -75,7 +73,7 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1 md:text-left mt-5 text-center">About Me</h3>
+            <h3 className="text-3xl text-teal-600 font-medium py-1 md:text-left mt-5 md:text-center">About Me</h3>
             <p className="text-md py-2 leading-8 text-gray-80">
               My journey into the world of programming began in 2015 where I was
               not too fond of it at first but after finding myself the right
@@ -116,6 +114,7 @@ export default function Home() {
               reach out to me.
             </p>
           </div>
+          <h3 className="text-3xl text-teal-600 font-medium py-1 md:text-left mt-5 md:text-center">My Skills</h3>
           <div className="lg:flex text-center justify-center">
             <div className="text-center  shadow-lg p-20 rounded-xl my-10 flex-1">
               <div>
@@ -153,9 +152,9 @@ export default function Home() {
         </section>
         <section className="mt-10 ">
           <div>
-            <h3 className="text-3xl py-1 "> My Portfolio</h3>
+          <h3 className="text-3xl text-teal-600 font-medium py-1 md:text-left mt-5 md:text-center">My Portfolio</h3>
           </div>
-          <div className="flex flex-col gap-5 py-5 lg:flex-row lg:flex-wrap border-t mt-5 border-gray-600  ">
+          <div className="flex flex-col gap-5 py-5 lg:flex-row lg:flex-wrap py-8  ">
             <div className="flex flex-col items-center flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
               <a href="https://github.com/fulyaertay/scrimba-tailwind-projects ">
                 <Image src={web1} className="w-50 h-50 "></Image>
