@@ -77,37 +77,37 @@ export default function Home() {
             <p className="text-md py-2 leading-8 text-gray-80">
               My journey into the world of programming began in 2015 where I was
               not too fond of it at first but after finding myself the right
-              resources I fell in love with it, and since then, I've developed
+              resources I fell in love with it, and since then, I have developed
               an impressive set of skills that span the fields of web
               development.
             </p>
             <p className="text-md py-2 leading-8 text-gray-80">
-              Armed with a associate's degree in computer programming and a
-              bachelor's degree in computer engineering, I developed many
+              Armed with a associate degree in computer programming and a
+              bachelor degree in computer engineering, I developed many
               projects in Java and C#. After I graduated computer engineering
               department, I enrolled Scrimba - Frontend Developer Career Path.
               It contains over 70 hours of top-notch tutorials, hundreds of
               coding challenges and dozens of real-world projects. Thanks to
-              Scrimba, I've got a solid foundation in HTML, CSS, Tailwind CSS,
+              Scrimba, I have got a solid foundation in HTML, CSS, Tailwind CSS,
               JavaScript and React.
             </p>
             <p className="text-md py-2 leading-8 text-gray-80">
-              I'm constantly learning new technologies to stay ahead of the
+              I am constantly learning new technologies to stay ahead of the
               curve. I am passionated about creating user-friendly websites and
-              designing mobile apps that are easy to use. I'm also well-versed
+              designing mobile apps that are easy to use. I am also well-versed
               in Git and GitHub and currently learning Node.js.
             </p>
             <p className="text-md py-2 leading-8 text-gray-80">
               Before dwelling on the world of programming, I loved writing
               poetry. And now, combining my love for writing with my knowledge
-              of programming I became a technical writer. Whether I'm writing
+              of programming I became a technical writer. Whether I am writing
               documentation or designing user experiences, my goal is always to
-              create content that's engaging and informative. My skills include:
+              create content that is engaging and informative. My skills include:
               HTML, CSS, Tailwind CSS, UI Design, JavaScript, React, Git,
               GitHub.
             </p>
             <p className="text-md py-2 leading-8 text-gray-80">
-              I'm excited to connect with like-minded individuals and companies
+              I am excited to connect with like-minded individuals and companies
               who share my passion for code and creativity and I am always
               looking to collaborate on exciting projects. So, If you are
               looking for a technical writer or a front-end developer, please
