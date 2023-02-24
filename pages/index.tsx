@@ -62,7 +62,7 @@ export default function Home() {
             <a href="https://twitter.com/Fulinin_">
               <AiFillTwitterCircle></AiFillTwitterCircle>
             </a>
-            <a href="https://www.linkedin.com/in/fulya-ertay-40a593156/">
+            <a href="https://www.linkedin.com/in/fulyaertay/">
               <AiFillLinkedin></AiFillLinkedin>
             </a>
             <a href="https://github.com/fulyaertay">
