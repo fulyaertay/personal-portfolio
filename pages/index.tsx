@@ -77,14 +77,15 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py-1">Services I offer</h3>
             <p className="text-md py-2 leading-8 text-gray-80">
-              Since the beginning of my journey as a front-end developer, I am
-              proficient in HTML, CSS, JavaScript and have knowledge of React
-              and Tailwind CSS. My vision is creating user-friendly websites and
-              designing mobile apps that are easy to use.
-            </p>
-            <p className="text-md py-2 leading-8">
-              I offer from a wide range of services, including designing and
-              programming.
+             My journey into the world of programming began in 2015 where I was not too fond of it at first but after finding myself the right resources I fell in love with it, and since then, I've developed an impressive set of skills that span the fields of web development. 
+
+Armed with a associate degree in computer programming in computer sciences and a bachelor's degree in computer engineering, I bring a unique perspective to the table that's both analytical and creative.
+
+I've got a solid foundation in HTML, CSS, Tailwind CSS, JavaScript and React and I'm constantly learning new technologies to stay ahead of the curve. I am passionated about creating user-friendly websites and designing mobile apps that are easy to use. I'm also well-versed in Git and GitHub and currently learning Node.js.
+
+Before dwelling on the world of programming, I loved writing poetry and fiction stories. And now, combining my love for writing with my knowledge of programming I became a technical writer. Whether I'm writing documentation or designing user experiences, my goal is always to create content that's engaging and informative. My skills include: HTML, CSS, Tailwind CSS, UI Design, JavaScript, React, Git, GitHub.
+
+I'm excited to connect with like-minded individuals and companies who share my passion for code and creativity, and I am always looking to collaborate on exciting projects. So, if you are looking for a technical writer or a front-end developer, please reach out to me.
             </p>
           </div>
           <div className="lg:flex text-center justify-center">
