@@ -17,6 +17,10 @@ import web1 from "../public/web1.png";
 import web2 from "../public/web2.png";
 import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
+import web5 from "../public/web7.png";
+import web6 from "../public/web8.png";
+import web7 from "../public/web9.png";
+import web8 from "../public/web10.png";
 import { useState } from "react";
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -160,6 +164,33 @@ export default function Home() {
               <p className="font-md p-5">Image Gallery</p>
             </div>
           </div>
+          <div className="flex flex-col gap-5 py-5 lg:flex-row lg:flex-wrap py-8  ">
+            <div className="flex flex-col items-center flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
+              <a href="https://scrimba-quiz-app.netlify.app/ ">
+                <Image src={web5} className="w-50 h-50 "></Image>
+              </a>
+              <p className="font-md p-5 mt-7">React Quiz App</p>
+            </div>
+            <div className="flex flex-col items-center flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
+              <a href="https://travel-journal-static-site.netlify.app/ ">
+                <Image src={web6} className="w-50 h-50 "></Image>
+              </a>
+              <p className="font-md p-5 mt-7">Travel Journal App</p>
+            </div>
+            <div className="flex flex-col items-center flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
+              <a href="https://react-site-meme-generator.netlify.app/ ">
+                <Image src={web7} className="w-50 h-50 "></Image>
+              </a>
+              <p className="font-md p-5 mt-7">Meme Generator</p>
+            </div>
+            <div className="flex flex-col items-center flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
+              <a href="https://fe-tenzies-app.netlify.app/ ">
+                <Image src={web8} className="w-50 h-50 "></Image>
+              </a>
+              <p className="font-md p-5 mt-7">Tenzies Game</p>
+            </div>
+          </div>
+
         </section>
       </main>
 
