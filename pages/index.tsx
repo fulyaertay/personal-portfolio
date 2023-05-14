@@ -172,10 +172,10 @@ export default function Home() {
               <p className="font-md p-5 mt-7">React Quiz App</p>
             </div>
             <div className="flex flex-col items-center flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
-              <a href="https://travel-journal-static-site.netlify.app/ ">
+              <a href="https://fe-photo-store.netlify.app/ ">
                 <Image src={web6} className="w-50 h-50 "></Image>
               </a>
-              <p className="font-md p-5 mt-7">Travel Journal App</p>
+              <p className="font-md p-5 mt-7">Photo Store App</p>
             </div>
             <div className="flex flex-col items-center flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
               <a href="https://react-site-meme-generator.netlify.app/ ">
