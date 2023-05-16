@@ -78,7 +78,7 @@ export default function Home() {
             <div className="sm:flex lg:justify-between  gap-10 ">
               <div className="md:hidden lg:flex">
                 <Image
-                  className=" h-auto  "
+                  className=" w-full h-auto  "
                   alt="fulya"
                   width={2000}
                   height={1800}
