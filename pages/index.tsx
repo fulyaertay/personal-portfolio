@@ -37,9 +37,15 @@ export default function Home() {
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl font-burtons text-white  "></h1>
             <ul className="flex items-center gap-10">
-              <li className="text-xl  text-white "><a href="#projects">Projects </a></li>
-              <li className="text-xl  text-white "><a href="#about">About </a> </li>
-              <li className="text-xl text-white "><a href="#contact">Contact </a> </li>
+              <li className="text-xl  text-white ">
+                <a href="#projects">Projects </a>
+              </li>
+              <li className="text-xl  text-white ">
+                <a href="#about">About </a>{" "}
+              </li>
+              <li className="text-xl text-white ">
+                <a href="#contact">Contact </a>{" "}
+              </li>
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
@@ -226,7 +232,8 @@ export default function Home() {
               I will do my best to respond back. 😊 The quickest way to reach
               out to me is via an email.
             </p>
-            <a id="get-in-touch"
+            <a
+              id="get-in-touch"
               className="bg-gradient-to-r from-cyan-500 to-teal-500 font-bold text-white p-7 md:text-center md:text-xl hover:bg-black  inline-block md:w-[310px] md:h-20 mb-12"
               href="mailto: fulya.ertay@gmail.com"
             >
