@@ -80,7 +80,7 @@ export default function Home() {
                 <Image
                   className=" h-auto  "
                   alt="fulya"
-                  width={1800}
+                  width={2000}
                   height={1800}
                   src={fe}
                 ></Image>
