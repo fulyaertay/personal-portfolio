@@ -8,7 +8,7 @@ import {
   AiFillGithub,
 } from "react-icons/ai";
 import Image from "next/legacy/image";
-import fe from "../public/avatar.png";
+import fe from "../public/avatar.jpg";
 import desing from "../public/design.png";
 import code from "../public/code.png";
 import consulting from "../public/consulting.png";
@@ -78,10 +78,9 @@ export default function Home() {
             <div className="sm:flex lg:justify-between  gap-10 ">
               <div className="md:hidden lg:flex">
                 <Image
-                  className=" w-full h-auto  "
+                  className=" max-w-full h-auto  "
                   alt="fulya"
-                  width={2000}
-                  height={1800}
+                  
                   src={fe}
                 ></Image>
               </div>
