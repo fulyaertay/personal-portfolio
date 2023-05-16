@@ -105,7 +105,7 @@ export default function Home() {
         </section>
         <hr className="border-gray-600"></hr>
         <section className="px-10 md:px-20 lg:px-40 mb-5">
-          <h3 className="text-3xl text-teal-600 font-medium py-1 md:text-left mt-12 md:text-5xl ">
+          <h3 className="text-3xl text-teal-600 font-medium py-1 md:text-center mt-12 md:text-5xl ">
             My Skills
           </h3>
           <div className="lg:flex text-center justify-center">
@@ -146,7 +146,7 @@ export default function Home() {
         <hr className="border-gray-600"></hr>
         <section className="px-10 md:px-20 lg:px-40" id="projects">
           <div>
-            <h3 className="text-3xl text-teal-600 font-medium py-1 md:text-left mt-5 mb-10 md:text-5xl">
+            <h3 className="text-3xl text-teal-600 font-medium py-1 md:text-center mt-5 mb-10 md:text-5xl">
               My Portfolio
             </h3>
           </div>
