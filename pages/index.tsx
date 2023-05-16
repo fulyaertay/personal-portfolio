@@ -57,9 +57,9 @@ export default function Home() {
             </ul>
           </nav>
 
-          <div className="flex flex-col gap-5  ">
+          <div className="flex flex-col gap-5 mb-12 ">
             <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
-              Hi, I am Fulya Ertay
+              Hi, I am Fulya Ertay 
             </h2>
             <h3 className="text-2xl py-2 md:text-3xl text-white ">
               Front-End Developer
@@ -72,7 +72,7 @@ export default function Home() {
           </div>
         </section>
         <hr className="border-gray-600"></hr>
-        <section className="px-10 md:px-20 lg:px-40 mb-10" id="about">
+        <section className="px-10 md:px-20 lg:px-40 mb-12" id="about">
           <div>
             <h3 className="text-3xl text-teal-600 font-medium py-1 md:text-left md:text-5xl mt-12 mb-10 ">
               About Me
@@ -150,7 +150,7 @@ export default function Home() {
               My Portfolio
             </h3>
           </div>
-          <div className="flex flex-col gap-5 py-5 lg:flex-row lg:flex-wrap py-8  ">
+          <div className="flex flex-col gap-5 lg:flex-row lg:flex-wrap py-8  ">
             <div className="flex flex-col items-center flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
               <a href="https://github.com/fulyaertay/scrimba-tailwind-projects ">
                 <Image src={web1} className="w-50 h-50 "></Image>
@@ -178,7 +178,7 @@ export default function Home() {
               <p className="font-md p-5 text-white md:text-xl">Image Gallery</p>
             </div>
           </div>
-          <div className="flex flex-col gap-5 py-5 lg:flex-row lg:flex-wrap py-8  ">
+          <div className="flex flex-col gap-5  lg:flex-row lg:flex-wrap py-8  ">
             <div className="flex flex-col items-center flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
               <a href="https://scrimba-quiz-app.netlify.app/ ">
                 <Image src={web5} className="w-50 h-50 "></Image>
