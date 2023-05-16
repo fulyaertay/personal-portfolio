@@ -58,7 +58,7 @@ export default function Home() {
 
           <div className="flex flex-col gap-5 mb-12 ">
             <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
-              Hi, I am Fulya Ertay
+              Hi, I am <b>Fulya Ertay</b>
             </h2>
             <h3 className="text-2xl py-2 md:text-3xl text-white ">
               Front-End Developer
@@ -221,7 +221,7 @@ export default function Home() {
               Are you looking for a fast-performing and user-friendly website to
               represent your product or business? or looking for any kind of
               consultation? or want to ask questions? or have some advice for me
-              or just want to say "Hi 👋" in any case feel free to Let me know.
+              or just want to say <b>Hi 👋</b> in any case feel free to Let me know.
               I will do my best to respond back. 😊 The quickest way to reach
               out to me is via an email.
             </p>
