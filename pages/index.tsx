@@ -45,7 +45,7 @@ export default function Home() {
               <li className="text-xl text-white ">
                 <a href="#contact">Contact </a>{" "}
               </li>
-              <li>
+              <li className="hidden lg:flex md:flex">
                 <a
                   className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
                   href="https://www.showwcase.com/fulyaertay"
@@ -75,9 +75,9 @@ export default function Home() {
             <h3 className="text-3xl text-teal-600 font-medium py-1 md:text-left md:text-5xl mt-12 mb-10 ">
               About Me
             </h3>
-            <div className="flex  md:justify-between gap-10 ">
+            <div className="sm:flex lg:justify-between  gap-10 ">
               <Image
-                className="w-100 h-auto "
+                className=" h-auto "
                 alt="fulya"
                 width={1800}
                 height={1800}
@@ -148,7 +148,7 @@ export default function Home() {
               My Portfolio
             </h3>
           </div>
-          <div className="flex flex-col gap-5 lg:flex-row lg:flex-wrap py-8  ">
+          <div className="flex flex-col gap-5 lg:flex-row lg:flex-wrap lg:py-8  ">
             <div className="flex flex-col items-center flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
               <a href="https://github.com/fulyaertay/scrimba-tailwind-projects ">
                 <Image src={web1} className="w-50 h-50 "></Image>
@@ -176,7 +176,7 @@ export default function Home() {
               <p className="font-md p-5 text-white md:text-xl">Image Gallery</p>
             </div>
           </div>
-          <div className="flex flex-col gap-5  lg:flex-row lg:flex-wrap py-8  ">
+          <div className="flex flex-col gap-5  lg:flex-row lg:flex-wrap lg:py-8  ">
             <div className="flex flex-col items-center flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
               <a href="https://scrimba-quiz-app.netlify.app/ ">
                 <Image src={web5} className="w-50 h-50 "></Image>
@@ -227,7 +227,7 @@ export default function Home() {
             </p>
             <a
               id="get-in-touch"
-              className="bg-gradient-to-r from-cyan-500 to-teal-500 font-bold text-white p-7 md:text-center md:text-xl hover:bg-black  inline-block md:w-[310px] md:h-20 mb-12"
+              className="bg-gradient-to-r from-cyan-500 to-teal-500 font-bold text-white p-7 md:text-center md:text-xl hover:bg-black  inline-block sm:w-[310px] md:h-20  mb-12"
               href="mailto: fulya.ertay@gmail.com"
             >
               Send Mail
