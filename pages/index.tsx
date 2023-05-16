@@ -76,16 +76,8 @@ export default function Home() {
               About Me
             </h3>
             <div className="sm:flex lg:justify-between  gap-10 ">
-              <div className="md:hidden lg:flex">
-                <Image
-                  className=" max-w-full h-auto  "
-                  alt="fulya"
-                  
-                  src={fe}
-                ></Image>
-              </div>
-
-              <div className="md:mx-10 ">
+        
+              <div>
                 <p className="text-md py-2 leading-loose tracking-widest text-gray-80 md:text-xl md:max-w-[200] text-white  ">
                   I am a web developer and designer based out of İzmir, Turkey.
                   Armed with a associate degree in computer programming and a
