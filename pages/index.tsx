@@ -57,13 +57,13 @@ export default function Home() {
           </nav>
 
           <div className="flex flex-col gap-5 mb-12 ">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
+            <h2 className="text-5xl py-2 text-teal-600 tracking-widest  font-medium md:text-6xl">
               Hi, I am <b>Fulya Ertay</b>
             </h2>
-            <h3 className="text-2xl py-2 md:text-3xl text-white ">
+            <h3 className="text-2xl py-2 md:text-3xl tracking-widest  text-white ">
               Front-End Developer
             </h3>
-            <p className="text-md py-5 leading-8 text-white  md:text-xl  ">
+            <p className="text-md py-5 leading-8 tracking-widest  text-white  md:text-xl  ">
               Providing services for user-friendly web applications. Join me
               down below and collaborate on awesome projects!{" "}
             </p>
@@ -72,19 +72,22 @@ export default function Home() {
         <hr className="border-gray-600"></hr>
         <section className="px-10 md:px-20 lg:px-40 mb-12" id="about">
           <div>
-            <h3 className="text-3xl text-teal-600 font-medium py-1 md:text-left md:text-5xl mt-12 mb-10 ">
+            <h3 className="text-3xl text-teal-600 font-medium py-1 md:text-center xl:text-left md:text-5xl mt-12 mb-10 ">
               About Me
             </h3>
             <div className="sm:flex lg:justify-between  gap-10 ">
-              <Image
-                className=" h-auto "
-                alt="fulya"
-                width={1800}
-                height={1800}
-                src={fe}
-              ></Image>
+              <div className="md:hidden lg:flex">
+                <Image
+                  className=" h-auto  "
+                  alt="fulya"
+                  width={1800}
+                  height={1800}
+                  src={fe}
+                ></Image>
+              </div>
+
               <div className="md:mx-10 ">
-                <p className="text-md py-2 leading-8 text-gray-80 md:text-xl md:max-w-[200] text-white ">
+                <p className="text-md py-2 leading-loose tracking-widest text-gray-80 md:text-xl md:max-w-[200] text-white  ">
                   I am a web developer and designer based out of İzmir, Turkey.
                   Armed with a associate degree in computer programming and a
                   bachelor degree in computer engineering, I love building apps
@@ -217,17 +220,17 @@ export default function Home() {
             <h3 className="text-3xl text-teal-600 font-medium py-1 md:text-left md:text-5xl mt-12 mb-10 ">
               Get in Touch
             </h3>
-            <p className="text-md py-5 leading-8 text-white  md:text-xl md:max-w-4xl mb-5 ">
+            <p className="text-md py-5 leading-8 tracking-widest  text-white  md:text-xl md:max-w-4xl mb-5 ">
               Are you looking for a fast-performing and user-friendly website to
               represent your product or business? or looking for any kind of
               consultation? or want to ask questions? or have some advice for me
-              or just want to say <b>Hi 👋</b> in any case feel free to Let me know.
-              I will do my best to respond back. 😊 The quickest way to reach
-              out to me is via an email.
+              or just want to say <b>Hi 👋</b> in any case feel free to Let me
+              know. I will do my best to respond back. 😊 The quickest way to
+              reach out to me is via an email.
             </p>
             <a
               id="get-in-touch"
-              className="bg-gradient-to-r from-cyan-500 to-teal-500 font-bold text-white p-7 md:text-center md:text-xl hover:bg-black  inline-block sm:w-[310px] md:h-20  mb-12"
+              className="bg-gradient-to-r from-cyan-500 tracking-widest  to-teal-500 font-bold text-white p-7 md:text-center md:text-xl hover:bg-black  inline-block sm:w-[310px] md:h-20  mb-12"
               href="mailto: fulya.ertay@gmail.com"
             >
               Send Mail
