@@ -72,13 +72,13 @@ export default function Home() {
         <hr className="border-gray-600"></hr>
         <section className="px-10 md:px-20 lg:px-40 mb-12" id="about">
           <div>
-            <h3 className="text-3xl text-teal-600 font-medium py-1 md:text-center  md:text-5xl mt-12 mb-10 ">
+            <h3 className="text-3xl text-teal-600 font-medium py-1  md:text-5xl md:text-left mt-12 mb-10 ">
               About Me
             </h3>
             <div className="sm:flex lg:justify-between  gap-10 ">
         
               <div>
-                <p className="text-md py-2 leading-loose tracking-widest text-gray-80 md:text-xl md:max-w-[200] text-white  ">
+                <p className="text-md py-2 leading-loose tracking-widest text-gray-80 md:text-xl md:max-w-8xl text-white  ">
                   I am a web developer and designer based out of İzmir, Turkey.
                   Armed with a associate degree in computer programming and a
                   bachelor degree in computer engineering, I love building apps
@@ -91,7 +91,17 @@ export default function Home() {
                   informative. My skills include: HTML, CSS, Tailwind CSS, UI
                   Design, JavaScript, React, Git, GitHub.
                 </p>
+                <a
+              id="get-in-touch"
+              className="bg-gradient-to-r from-cyan-500 tracking-widest  to-teal-500 font-bold text-white p-7 md:text-center md:text-xl hover:bg-black  inline-block sm:w-[310px] md:h-20  mt-10 mb-12"
+              href="mailto: fulya.ertay@gmail.com"
+            >
+              See My Resume
+            </a>
               </div>
+              
+  
+
             </div>
           </div>
         </section>
@@ -211,7 +221,7 @@ export default function Home() {
             <h3 className="text-3xl text-teal-600 font-medium py-1 md:text-left md:text-5xl mt-12 mb-10 ">
               Get in Touch
             </h3>
-            <p className="text-md py-5 leading-8 tracking-widest  text-white  md:text-xl md:max-w-4xl mb-5 ">
+            <p className="text-md py-5 leading-8 tracking-widest  text-white  md:text-xl md:max-w-8xl mb-5 ">
               Are you looking for a fast-performing and user-friendly website to
               represent your product or business? or looking for any kind of
               consultation? or want to ask questions? or have some advice for me
