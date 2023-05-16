@@ -32,12 +32,14 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-white px-10 md:px-20 lg:px-40 ">
-        <section className=" min-h-screen">
+      <main className="bg-black  ">
+        <section className="px-10 md:px-20 lg:px-40">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl font-burtons">developedbyfe</h1>
-            <ul className="flex items-center">
-              
+            <h1 className="text-xl font-burtons text-white  "></h1>
+            <ul className="flex items-center gap-10">
+              <li className="text-xl  text-white "><a href="#projects">Projects </a></li>
+              <li className="text-xl  text-white "><a href="#about">About </a> </li>
+              <li className="text-xl text-white "><a href="#contact">Contact </a> </li>
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
@@ -48,120 +50,131 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className="text-center p-10">
+
+          <div className="flex flex-col gap-5  ">
             <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
               Fulya Ertay
             </h2>
-            <h3 className="text-2xl py-2 md:text-3xl">
-              Junior Software Developer
+            <h3 className="text-2xl py-2 md:text-3xl text-white ">
+              Front-End Developer
             </h3>
-            <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto">
+            <p className="text-md py-5 leading-8 text-white  md:text-xl  ">
               Providing services for user-friendly web applications. Join me
               down below and collaborate on awesome projects!{" "}
             </p>
-          </div>
-          <div className="text-5xl flex justify-center gap-16 py-3">
-            <a href="https://twitter.com/Fulinin_">
-              <AiFillTwitterCircle></AiFillTwitterCircle>
+            <a
+              className="bg-gradient-to-r from-cyan-500 to-teal-500 font-bold text-white p-7 md:text-center md:text-xl hover:bg-black  inline-block md:max-w-xs md:h-20 mb-12"
+              href="#get-in-touch"
+            >
+              Get in Touch
             </a>
-            <a href="https://www.linkedin.com/in/fulyaertay/">
-              <AiFillLinkedin></AiFillLinkedin>
-            </a>
-            <a href="https://github.com/fulyaertay">
-              <AiFillGithub></AiFillGithub>
-            </a>
-          </div>
-          <div className="w-60 h-60 mt-20 mx-auto">
-            <Image className="max-w-full h-auto rounded-full" src={fe}></Image>
           </div>
         </section>
-        <section>
+        <hr className="border-gray-600"></hr>
+        <section className="px-10 md:px-20 lg:px-40 mb-10" id="about">
           <div>
-            <h3 className="text-3xl text-teal-600 font-medium py-1 md:text-left mt-5 md:text-center">About Me</h3>
-            <p className="text-md py-2 leading-8 text-gray-80">
-              Armed with a associate degree in computer programming and a
-              bachelor degree in computer engineering, I developed many
-              projects in Java and C#. Before dwelling on the world of programming, I loved writing
-              poetry. And now, combining my love for writing with my knowledge
-              of programming I became a technical writer. Whether I am writing
-              documentation or designing user experiences, my goal is always to
-              create content that is engaging and informative. My skills include:
-              HTML, CSS, Tailwind CSS, UI Design, JavaScript, React, Git,
-              GitHub.
-            </p>
-        
-            <p className="text-md py-2 leading-8 text-gray-80">
-              I am excited to connect with like-minded individuals and companies
-              who share my passion for code and creativity and I am always
-              looking to collaborate on exciting projects. So, If you are
-              looking for a technical writer or a front-end developer, please
-              reach out to me.
-            </p>
+            <h3 className="text-3xl text-teal-600 font-medium py-1 md:text-left md:text-5xl mt-12 mb-10 ">
+              About Me
+            </h3>
+            <div className="flex  md:justify-between gap-10 ">
+              <Image
+                className="w-100 h-auto "
+                alt="fulya"
+                width={1800}
+                height={1800}
+                src={fe}
+              ></Image>
+              <div className="md:mx-10 ">
+                <p className="text-md py-2 leading-8 text-gray-80 md:text-xl md:max-w-[200] text-white ">
+                  I am a web developer and designer based out of İzmir, Turkey.
+                  Armed with a associate degree in computer programming and a
+                  bachelor degree in computer engineering, I love building apps
+                  that solve real-world problems, and that are delightful to
+                  use. Before dwelling on the world of programming, I loved
+                  writing poetry. And now, combining my love for writing with my
+                  knowledge of programming I became a technical writer. Whether
+                  I am writing documentation or designing user experiences, my
+                  goal is always to create content that is engaging and
+                  informative. My skills include: HTML, CSS, Tailwind CSS, UI
+                  Design, JavaScript, React, Git, GitHub.
+                </p>
+              </div>
+            </div>
           </div>
-          <h3 className="text-3xl text-teal-600 font-medium py-1 md:text-left mt-5 md:text-center">My Skills</h3>
+        </section>
+        <hr className="border-gray-600"></hr>
+        <section className="px-10 md:px-20 lg:px-40 mb-5">
+          <h3 className="text-3xl text-teal-600 font-medium py-1 md:text-left mt-12 md:text-5xl ">
+            My Skills
+          </h3>
           <div className="lg:flex text-center justify-center">
             <div className="text-center  shadow-lg p-20 rounded-xl my-10 flex-1">
               <div>
                 <Image src={desing} width={100} height={100}></Image>
-                <h4 className="py-4 text-teal-800 text-lg font-medium pt-8 pb-2">
+                <h4 className="py-4 text-teal-600 text-lg font-medium md:text-4xl pt-8 pb-2">
                   Front-End
                 </h4>
-                <p className="text-gray-800 py-1">HTML/CSS</p>
-                <p className="text-gray-800 py-1">Tailwind CSS</p>
-                <p className="text-gray-800 py-1">JavaScript</p>
-                <p className="text-gray-800 py-1">React</p>
+                <p className="text-white py-5 md:text-xl">HTML/CSS</p>
+                <p className="text-white py-5 md:text-xl">Tailwind CSS</p>
+                <p className="text-white py-5 md:text-xl">JavaScript</p>
+                <p className="text-white py-5 md:text-xl">React</p>
               </div>
             </div>
             <div className="text-center shadow-lg p-20  rounded-xl my-10 flex-1">
               <div>
                 <Image src={code} width={100} height={100}></Image>
-                <h4 className="py-4 text-teal-800 text-lg font-medium pt-8 pb-2">
+                <h4 className="py-4 text-teal-600 text-lg font-medium md:text-4xl  pt-8 pb-2">
                   Back-End
                 </h4>
-                <p className="text-gray-800 py-1">Python</p>
-                <p className="text-gray-800 py-1">Django</p>
+                <p className="text-white py-5 md:text-xl">Python</p>
+                <p className="text-white py-5 md:text-xl">Django</p>
               </div>
             </div>
             <div className="text-center shadow-lg p-20 rounded-xl my-10 flex-1">
               <div>
                 <Image src={consulting} width={100} height={100}></Image>
-                <h4 className="py-4 text-teal-800 text-lg font-medium pt-8 pb-2">
+                <h4 className="py-4 text-teal-600 text-lg font-medium md:text-4xl  pt-8 pb-2">
                   Databases
                 </h4>
-                <p className="text-gray-800 py-1">MongoDB</p>
-                <p className="text-gray-800 py-1">MSSQL</p>
+                <p className="text-white py-5 md:text-xl">MongoDB</p>
+                <p className="text-white py-5 md:text-xl">MSSQL</p>
               </div>
             </div>
           </div>
         </section>
-        <section className="mt-10 ">
+        <hr className="border-gray-600"></hr>
+        <section className="px-10 md:px-20 lg:px-40" id="projects">
           <div>
-          <h3 className="text-3xl text-teal-600 font-medium py-1 md:text-left mt-5 md:text-center">My Portfolio</h3>
+            <h3 className="text-3xl text-teal-600 font-medium py-1 md:text-left mt-5 mb-10 md:text-5xl">
+              My Portfolio
+            </h3>
           </div>
           <div className="flex flex-col gap-5 py-5 lg:flex-row lg:flex-wrap py-8  ">
             <div className="flex flex-col items-center flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
               <a href="https://github.com/fulyaertay/scrimba-tailwind-projects ">
                 <Image src={web1} className="w-50 h-50 "></Image>
               </a>
-              <p className="font-md p-5 mt-7">Spotify Clone</p>
+              <p className="font-md p-5 mt-7 text-white md:text-xl">
+                Spotify Clone
+              </p>
             </div>
             <div className=" flex flex-col items-center flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
               <a href="https://github.com/fulyaertay/mini-blog-app">
                 <Image src={web2} className="w-50 h-50"></Image>
               </a>
-              <p className="font-md p-5">Mini Blog App</p>
+              <p className="font-md p-5 text-white md:text-xl">Mini Blog App</p>
             </div>
             <div className=" flex flex-col items-center  flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
               <a href="https://github.com/fulyaertay/react-search-filter">
                 <Image src={web3} className="max-w-full h-auto"></Image>
               </a>
-              <p className="font-md p-5">Search Filter</p>
+              <p className="font-md p-5 text-white md:text-xl">Search Filter</p>
             </div>
             <div className=" flex flex-col items-center  flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
               <a href="https://github.com/fulyaertay/react-image-gallery">
                 <Image src={web4} className="max-w-full h-auto"></Image>
               </a>
-              <p className="font-md p-5">Image Gallery</p>
+              <p className="font-md p-5 text-white md:text-xl">Image Gallery</p>
             </div>
           </div>
           <div className="flex flex-col gap-5 py-5 lg:flex-row lg:flex-wrap py-8  ">
@@ -169,41 +182,81 @@ export default function Home() {
               <a href="https://scrimba-quiz-app.netlify.app/ ">
                 <Image src={web5} className="w-50 h-50 "></Image>
               </a>
-              <p className="font-md p-5 mt-7">React Quiz App</p>
+              <p className="font-md p-5 mt-7 text-white md:text-xl">
+                React Quiz App
+              </p>
             </div>
             <div className="flex flex-col items-center flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
               <a href="https://fe-photo-store.netlify.app/ ">
                 <Image src={web6} className="w-50 h-50 "></Image>
               </a>
-              <p className="font-md p-5 mt-7">Photo Store App</p>
+              <p className="font-md p-5 mt-7 text-white md:text-xl">
+                Photo Store App
+              </p>
             </div>
             <div className="flex flex-col items-center flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
               <a href="https://react-site-meme-generator.netlify.app/ ">
                 <Image src={web7} className="w-50 h-50 "></Image>
               </a>
-              <p className="font-md p-5 mt-7">Meme Generator</p>
+              <p className="font-md p-5 mt-7 text-white md:text-xl">
+                Meme Generator
+              </p>
             </div>
             <div className="flex flex-col items-center flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
               <a href="https://fe-tenzies-app.netlify.app/ ">
                 <Image src={web8} className="w-50 h-50 "></Image>
               </a>
-              <p className="font-md p-5 mt-7">Tenzies Game</p>
+              <p className="font-md p-5 mt-7 text-white md:text-xl">
+                Tenzies Game
+              </p>
             </div>
           </div>
-
+        </section>
+        <hr className="border-gray-600"></hr>
+        <section className="px-10 md:px-20 lg:px-40 " id="contact">
+          <div>
+            <h3 className="text-3xl text-teal-600 font-medium py-1 md:text-left md:text-5xl mt-12 mb-10 ">
+              Get in Touch
+            </h3>
+            <p className="text-md py-5 leading-8 text-white  md:text-xl md:max-w-4xl mb-5 ">
+              Are you looking for a fast-performing and user-friendly website to
+              represent your product or business? or looking for any kind of
+              consultation? or want to ask questions? or have some advice for me
+              or just want to say "Hi 👋" in any case feel free to Let me know.
+              I will do my best to respond back. 😊 The quickest way to reach
+              out to me is via an email.
+            </p>
+            <a id="get-in-touch"
+              className="bg-gradient-to-r from-cyan-500 to-teal-500 font-bold text-white p-7 md:text-center md:text-xl hover:bg-black  inline-block md:w-[310px] md:h-20 mb-12"
+              href="mailto: fulya.ertay@gmail.com"
+            >
+              Send Mail
+            </a>
+          </div>
         </section>
       </main>
 
-      <footer className="p-5 m-5 bg-gray-200  md:flex md:justify-center md:max-w-full md:p-6 dark:bg-gray-800 shadow-lg">
-        <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-          © 2023{" "}
+      <hr className="border-gray-600"></hr>
+      <footer className="p-5 bg-black  md:flex md:justify-center md:max-w-full md:p-6 dark:bg-gray-800 shadow-lg">
+        <span className="text-sm sm:text-center ">
+          <div className="text-5xl flex justify-center gap-16 py-3">
+            <a href="https://twitter.com/Fulinin_" className="text-gray-200">
+              <AiFillTwitterCircle></AiFillTwitterCircle>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/fulyaertay/"
+              className="text-gray-200"
+            >
+              <AiFillLinkedin></AiFillLinkedin>
+            </a>
+            <a href="https://github.com/fulyaertay" className="text-gray-200">
+              <AiFillGithub></AiFillGithub>
+            </a>
+          </div>
           <a
             href="https://www.showwcase.com/fulyaertay"
-            className="hover:underline font-bold"
-          >
-            By FE
-          </a>
-          . All Rights Reserved.
+            className="hover:underline font-bold text-gray-200"
+          ></a>
         </span>
       </footer>
     </div>
