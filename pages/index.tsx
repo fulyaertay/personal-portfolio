@@ -33,7 +33,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="bg-black  ">
-        <section className="px-10 md:px-20 lg:px-40">
+        <section className="px-10 md:px-20 lg:px-40 text-center">
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl font-burtons text-white  "></h1>
             <ul className="flex items-center gap-10">
@@ -59,7 +59,7 @@ export default function Home() {
 
           <div className="flex flex-col gap-5  ">
             <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
-              Fulya Ertay
+              Hi, I am Fulya Ertay
             </h2>
             <h3 className="text-2xl py-2 md:text-3xl text-white ">
               Front-End Developer
@@ -68,12 +68,7 @@ export default function Home() {
               Providing services for user-friendly web applications. Join me
               down below and collaborate on awesome projects!{" "}
             </p>
-            <a
-              className="bg-gradient-to-r from-cyan-500 to-teal-500 font-bold text-white p-7 md:text-center md:text-xl hover:bg-black  inline-block md:max-w-xs md:h-20 mb-12"
-              href="#get-in-touch"
-            >
-              Get in Touch
-            </a>
+           
           </div>
         </section>
         <hr className="border-gray-600"></hr>
