@@ -8,7 +8,6 @@ import {
   AiFillGithub,
 } from "react-icons/ai";
 import Image from "next/legacy/image";
-const inter = Inter({ subsets: ["latin"] });
 import fe from "../public/avatar.png";
 import desing from "../public/design.png";
 import code from "../public/code.png";
@@ -32,7 +31,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-black  ">
+      <main className="bg-black ">
         <section className="px-10 md:px-20 lg:px-40 text-center">
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl font-burtons text-white  "></h1>
