@@ -76,7 +76,6 @@ export default function Home() {
               About Me
             </h3>
             <div className="sm:flex lg:justify-between  gap-10 ">
-        
               <div>
                 <p className="text-md py-2 leading-loose tracking-widest text-gray-80 text-center md:text-left md:text-xl md:max-w-8xl text-white  ">
                   I am a web developer and designer based out of İzmir, Turkey.
@@ -92,19 +91,15 @@ export default function Home() {
                   Design, JavaScript, React, Git, GitHub.
                 </p>
                 <div className="text-center md:text-left">
-                      <a
-              id="get-in-touch"
-              className="bg-gradient-to-r from-cyan-500 tracking-widest  to-teal-500 font-bold text-white p-7 md:text-center md:text-xl hover:bg-black  inline-block sm:w-[310px] md:h-20  mt-10 mb-12"
-              href="https://www.showwcase.com/fulyaertay"
-            >
-              See My Resume
-            </a>
+                  <a
+                    id="get-in-touch"
+                    className="bg-gradient-to-r from-cyan-500 tracking-widest  to-teal-500 font-bold text-white p-7 md:text-center md:text-xl hover:bg-black  inline-block sm:w-[310px] md:h-20  mt-10 mb-12"
+                    href="https://www.showwcase.com/fulyaertay"
+                  >
+                    See My Resume
+                  </a>
                 </div>
-            
               </div>
-              
-  
-
             </div>
           </div>
         </section>
@@ -233,15 +228,14 @@ export default function Home() {
               reach out to me is via an email.
             </p>
             <div className="text-center md:text-left">
-                    <a
-              id="get-in-touch"
-              className="bg-gradient-to-r from-cyan-500 tracking-widest  to-teal-500 font-bold text-white p-7 md:text-center md:text-xl hover:bg-black  inline-block sm:w-[310px] md:h-20  mb-12"
-              href="mailto: fulya.ertay@gmail.com"
-            >
-              Send Mail
-            </a>
+              <a
+                id="get-in-touch"
+                className="bg-gradient-to-r from-cyan-500 tracking-widest  to-teal-500 font-bold text-white p-7 md:text-center md:text-xl hover:bg-black  inline-block sm:w-[310px] md:h-20  mb-12"
+                href="mailto: fulya.ertay@gmail.com"
+              >
+                Send Mail
+              </a>
             </div>
-      
           </div>
         </section>
       </main>
