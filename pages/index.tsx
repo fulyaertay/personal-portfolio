@@ -78,7 +78,7 @@ export default function Home() {
             <div className="sm:flex lg:justify-between  gap-10 ">
         
               <div>
-                <p className="text-md py-2 leading-loose tracking-widest text-gray-80 md:text-xl md:max-w-8xl text-white  ">
+                <p className="text-md py-2 leading-loose tracking-widest text-gray-80 text-center md:text-left md:text-xl md:max-w-8xl text-white  ">
                   I am a web developer and designer based out of İzmir, Turkey.
                   Armed with a associate degree in computer programming and a
                   bachelor degree in computer engineering, I love building apps
@@ -91,13 +91,16 @@ export default function Home() {
                   informative. My skills include: HTML, CSS, Tailwind CSS, UI
                   Design, JavaScript, React, Git, GitHub.
                 </p>
-                <a
+                <div className="text-center md:text-left">
+                      <a
               id="get-in-touch"
               className="bg-gradient-to-r from-cyan-500 tracking-widest  to-teal-500 font-bold text-white p-7 md:text-center md:text-xl hover:bg-black  inline-block sm:w-[310px] md:h-20  mt-10 mb-12"
               href="https://www.showwcase.com/fulyaertay"
             >
               See My Resume
             </a>
+                </div>
+            
               </div>
               
   
@@ -107,7 +110,7 @@ export default function Home() {
         </section>
         <hr className="border-gray-600"></hr>
         <section className="px-10 md:px-20 lg:px-40 mb-5">
-          <h3 className="text-3xl text-teal-600 font-medium py-1  md:text-center mt-12 md:text-5xl ">
+          <h3 className="text-3xl text-teal-600 font-medium py-1 text-center  mt-12 md:text-5xl ">
             My Skills
           </h3>
           <div className="lg:flex text-center justify-center">
@@ -148,7 +151,7 @@ export default function Home() {
         <hr className="border-gray-600"></hr>
         <section className="px-10 md:px-20 lg:px-40" id="projects">
           <div>
-            <h3 className="text-3xl text-teal-600 font-medium py-1  md:text-center mt-5 mb-10 md:text-5xl">
+            <h3 className="text-3xl text-teal-600 font-medium py-1  text-center mt-5 mb-10 md:text-5xl">
               My Portfolio
             </h3>
           </div>
@@ -218,10 +221,10 @@ export default function Home() {
         <hr className="border-gray-600"></hr>
         <section className="px-10 md:px-20 lg:px-40 " id="contact">
           <div>
-            <h3 className="text-3xl text-teal-600 font-medium text-center py-1 md:text-left md:text-5xl mt-12 mb-10 ">
+            <h3 className="text-3xl text-teal-600 font-medium text-center md:text-left py-1  md:text-5xl mt-12 mb-10 ">
               Get in Touch
             </h3>
-            <p className="text-md py-5 leading-8 tracking-widest  text-white  md:text-xl md:max-w-8xl mb-5 ">
+            <p className="text-md py-5 leading-8 tracking-widest  text-white text-center md:text-left  md:text-xl md:max-w-8xl mb-5 ">
               Are you looking for a fast-performing and user-friendly website to
               represent your product or business? or looking for any kind of
               consultation? or want to ask questions? or have some advice for me
@@ -229,13 +232,16 @@ export default function Home() {
               know. I will do my best to respond back. 😊 The quickest way to
               reach out to me is via an email.
             </p>
-            <a
+            <div className="text-center md:text-left">
+                    <a
               id="get-in-touch"
               className="bg-gradient-to-r from-cyan-500 tracking-widest  to-teal-500 font-bold text-white p-7 md:text-center md:text-xl hover:bg-black  inline-block sm:w-[310px] md:h-20  mb-12"
               href="mailto: fulya.ertay@gmail.com"
             >
               Send Mail
             </a>
+            </div>
+      
           </div>
         </section>
       </main>
