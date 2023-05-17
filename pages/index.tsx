@@ -34,7 +34,7 @@ export default function Home() {
       <main className="bg-black ">
         <section className="px-10 md:px-20 lg:px-40 text-center">
           <nav className="py-10 px-10 mb-12 flex text-center md:justify-between">
-            <h1 className="text-xl font-burtons text-white  "></h1>
+            <h1 className="text-xl font-burtons text-white hidden md:flex "> developedbyfe</h1>
             <ul className="flex items-center gap-10">
               <li className="text-xl  text-white ">
                 <a href="#projects">Projects </a>
