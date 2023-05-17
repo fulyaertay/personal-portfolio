@@ -148,7 +148,7 @@ export default function Home() {
         <hr className="border-gray-600"></hr>
         <section className="px-10 md:px-20 lg:px-40" id="projects">
           <div>
-            <h3 className="text-3xl text-teal-600 font-medium py-1 md:text-center mt-5 mb-10 md:text-5xl">
+            <h3 className="text-3xl text-teal-600 font-medium py-1 sm:text-center md:text-center mt-5 mb-10 md:text-5xl">
               My Portfolio
             </h3>
           </div>
@@ -218,7 +218,7 @@ export default function Home() {
         <hr className="border-gray-600"></hr>
         <section className="px-10 md:px-20 lg:px-40 " id="contact">
           <div>
-            <h3 className="text-3xl text-teal-600 font-medium py-1 md:text-left md:text-5xl mt-12 mb-10 ">
+            <h3 className="text-3xl text-teal-600 font-medium sm:text-center py-1 md:text-left md:text-5xl mt-12 mb-10 ">
               Get in Touch
             </h3>
             <p className="text-md py-5 leading-8 tracking-widest  text-white  md:text-xl md:max-w-8xl mb-5 ">
