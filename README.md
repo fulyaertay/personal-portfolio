@@ -18,7 +18,9 @@ This is my personal portfolio page. It's a single-page website that shows my per
 ## 💻 Features
 
 - List My Projects
-- My Resume
+- My Resume Link
+- My About
+- Contact Info
 - Fully Responsive
 - Cross Platform
 ## 🔋 Installation
