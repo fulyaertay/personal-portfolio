@@ -196,11 +196,11 @@ export default function Home() {
               </p>
             </div>
             <div className="flex flex-col items-center flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
-              <a href="https://react-site-meme-generator.netlify.app/ ">
+              <a href="https://fe-vans-app.netlify.app/ ">
                 <Image src={web7} className="w-50 h-50 "></Image>
               </a>
               <p className="font-md p-5 mt-7 text-white md:text-xl">
-                Meme Generator
+                Vans App
               </p>
             </div>
             <div className="flex flex-col items-center flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
