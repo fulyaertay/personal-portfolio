@@ -159,7 +159,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-5 lg:flex-row lg:flex-wrap lg:py-8  ">
             <div className="flex flex-col items-center flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
-              <a href="https://github.com/fulyaertay/scrimba-tailwind-projects ">
+              <a href="https://github.com/fulyaertay/scrimba-tailwind-projects/tree/master/3-solo-project-spotify-clone ">
                 <Image src={web1} className="w-50 h-50 "></Image>
               </a>
               <p className="font-md p-5 mt-7 text-white md:text-xl">
