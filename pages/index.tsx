@@ -72,7 +72,7 @@ export default function Home() {
         <hr className="border-gray-600"></hr>
         <section className="px-10 md:px-20 lg:px-40 mb-12" id="about">
           <div>
-            <h3 className="text-3xl text-teal-600 font-medium py-1  text-center md:text-5xl md:text-left lg:text-left mt-12 mb-10 ">
+            <h3 className="text-3xl text-teal-600 font-medium py-1  text-center md:text-4xl md:text-left lg:text-left mt-12 mb-10 ">
               About Me
             </h3>
             <div className="sm:flex lg:justify-between  gap-10 ">
@@ -105,14 +105,14 @@ export default function Home() {
         </section>
         <hr className="border-gray-600"></hr>
         <section className="px-10 md:px-20 lg:px-40 mb-5">
-          <h3 className="text-3xl text-teal-600 font-medium py-1 text-center  mt-12 md:text-5xl ">
+          <h3 className="text-3xl text-teal-600 font-medium py-1 text-center  mt-12 md:text-4xl ">
             My Skills
           </h3>
           <div className="lg:flex text-center justify-center">
             <div className="text-center  shadow-lg p-20 rounded-xl my-10 flex-1">
               <div>
                 <Image src={desing} width={100} height={100}></Image>
-                <h4 className="py-4 text-teal-600 text-lg font-medium md:text-4xl pt-8 pb-2">
+                <h4 className="py-4 text-teal-600 text-lg font-medium md:text-2xl pt-8 pb-2">
                   Front-End
                 </h4>
                 <p className="text-white py-5 md:text-xl">HTML/CSS</p>
@@ -124,7 +124,7 @@ export default function Home() {
             <div className="text-center shadow-lg p-20  rounded-xl my-10 flex-1">
               <div>
                 <Image src={code} width={100} height={100}></Image>
-                <h4 className="py-4 text-teal-600 text-lg font-medium md:text-4xl  pt-8 pb-2">
+                <h4 className="py-4 text-teal-600 text-lg font-medium md:text-2xl  pt-8 pb-2">
                   Back-End
                 </h4>
                 <p className="text-white py-5 md:text-xl">Python</p>
@@ -134,7 +134,7 @@ export default function Home() {
             <div className="text-center shadow-lg p-20 rounded-xl my-10 flex-1">
               <div>
                 <Image src={consulting} width={100} height={100}></Image>
-                <h4 className="py-4 text-teal-600 text-lg font-medium md:text-4xl  pt-8 pb-2">
+                <h4 className="py-4 text-teal-600 text-lg font-medium md:text-2xl  pt-8 pb-2">
                   Databases
                 </h4>
                 <p className="text-white py-5 md:text-xl">MongoDB</p>
@@ -146,7 +146,7 @@ export default function Home() {
         <hr className="border-gray-600"></hr>
         <section className="px-10 md:px-20 lg:px-40" id="projects">
           <div>
-            <h3 className="text-3xl text-teal-600 font-medium py-1  text-center mt-5 mb-10 md:text-5xl">
+            <h3 className="text-3xl text-teal-600 font-medium py-1  text-center mt-5 mb-10 md:text-4xl">
               My Portfolio
             </h3>
           </div>
@@ -216,7 +216,7 @@ export default function Home() {
         <hr className="border-gray-600"></hr>
         <section className="px-10 md:px-20 lg:px-40 " id="contact">
           <div>
-            <h3 className="text-3xl text-teal-600 font-medium text-center md:text-left py-1  md:text-5xl mt-12 mb-10 ">
+            <h3 className="text-3xl text-teal-600 font-medium text-center md:text-left py-1  md:text-4xl mt-12 mb-10 ">
               Get in Touch
             </h3>
             <p className="text-md py-5 leading-8 tracking-widest  text-white text-center md:text-left  md:max-w-8xl mb-5 ">
