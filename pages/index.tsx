@@ -6,6 +6,7 @@ import {
   AiFillTwitterCircle,
   AiFillLinkedin,
   AiFillGithub,
+  AiOutlineDribbble
 } from "react-icons/ai";
 import Image from "next/legacy/image";
 import fe from "../public/avatar.jpg";
@@ -58,7 +59,7 @@ export default function Home() {
 
           <div className="flex flex-col gap-5 mb-12 ">
             <h2 className="text-5xl py-2 text-teal-300 tracking-widest  font-medium md:text-6xl">
-              Hi, I am <b className="text-teal-600 ">Fulya Ertay</b>
+              Hi, I am <b className="text-teal-500 ">Fulya Ertay</b>
             </h2>
             <h3 className="text-2xl py-2 md:text-3xl tracking-widest  text-white ">
               Front-End Developer
@@ -99,7 +100,7 @@ export default function Home() {
                 <div className="text-center md:text-left">
                   <a
                     id="get-in-touch"
-                    className="bg-gradient-to-r from-cyan-500 tracking-widest  to-teal-500 font-bold text-white p-7 md:text-center  hover:bg-black  inline-block w-[350px] md:h-20  mt-10 mb-12"
+                    className="bg-gradient-to-r from-cyan-500 tracking-widest  to-teal-800 font-bold text-white p-7 md:text-center  hover:bg-black  inline-block w-[350px] md:h-20  mt-10 mb-12"
                     href="https://www.showwcase.com/fulyaertay"
                   >
                     See My Resume
@@ -236,7 +237,7 @@ export default function Home() {
             <div className="text-center md:text-left">
               <a
                 id="get-in-touch"
-                className="bg-gradient-to-r from-cyan-500 tracking-widest  to-teal-500 font-bold text-white p-7 md:text-center  hover:bg-black  inline-block w-[350px] md:h-20  mb-12"
+                className="bg-gradient-to-r from-cyan-800 tracking-widest  to-teal-500 font-bold text-white p-7 md:text-center  hover:bg-black  inline-block w-[350px] md:h-20  mb-12"
                 href="mailto: fulya.ertay@gmail.com"
               >
                 Send Mail
@@ -250,6 +251,12 @@ export default function Home() {
       <footer className="p-5 bg-black  md:flex md:justify-center md:max-w-full md:p-6 dark:bg-gray-800 shadow-lg">
         <span className="text-sm sm:text-center ">
           <div className="text-5xl flex justify-center gap-16 py-3">
+          <a href="https://dribbble.com/fulyaertay" className="text-gray-200">
+          <  AiOutlineDribbble></AiOutlineDribbble>
+          
+          </a>
+
+           
             <a href="https://twitter.com/Fulinin_" className="text-gray-200">
               <AiFillTwitterCircle></AiFillTwitterCircle>
             </a>
