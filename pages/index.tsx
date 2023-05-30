@@ -73,7 +73,7 @@ export default function Home() {
         <hr className="border-gray-600"></hr>
         <section className="px-10 md:px-20 lg:px-40 mb-12" id="about">
           <div>
-            <h3 className="text-3xl text-teal-600 font-medium py-1  text-center md:text-4xl md:text-left lg:text-left mt-12 mb-10 ">
+            <h3 className="text-3xl text-teal-600 font-medium py-1  text-center md:text-4xl md:text-left lg:text-left mt-12  ">
             
             About Me
               
@@ -223,7 +223,7 @@ export default function Home() {
         <hr className="border-gray-600"></hr>
         <section className="px-10 md:px-20 lg:px-40 " id="contact">
           <div>
-            <h3 className="text-3xl text-teal-600 font-medium text-center md:text-left py-1  md:text-4xl mt-12 mb-10 ">
+            <h3 className="text-3xl text-teal-600 font-medium text-center md:text-left py-1  md:text-4xl mt-12 ">
               Get in Touch
             </h3>
             <p className="text-md py-5 leading-8 tracking-widest  text-white text-center md:text-left  md:max-w-8xl mb-5 ">
