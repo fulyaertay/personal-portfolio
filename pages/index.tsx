@@ -6,7 +6,7 @@ import {
   AiFillTwitterCircle,
   AiFillLinkedin,
   AiFillGithub,
-  AiOutlineDribbble
+  AiOutlineDribbble,
 } from "react-icons/ai";
 import Image from "next/legacy/image";
 import fe from "../public/avatar.jpg";
@@ -35,7 +35,10 @@ export default function Home() {
       <main className="bg-black ">
         <section className="px-10 md:px-20  text-center">
           <nav className="py-10 px-10 mb-12 flex text-center md:justify-between">
-            <h1 className="text-xl font-burtons text-white hidden lg:flex "> developedbyfe</h1>
+            <h1 className="text-xl font-burtons text-white hidden lg:flex ">
+              {" "}
+              developedbyfe
+            </h1>
             <ul className="flex items-center gap-10">
               <li className="text-xl  text-white ">
                 <a href="#projects">Projects </a>
@@ -74,13 +77,8 @@ export default function Home() {
         <section className="px-10 md:px-20 lg:px-40 mb-12" id="about">
           <div>
             <h3 className="text-3xl text-teal-600 font-medium py-1  text-center md:text-4xl md:text-left lg:text-left mt-12  ">
-            
-            About Me
-              
-              <div className="border-red-500 border-10 border-b absolute  ">
-                
-              </div>
-             
+              About Me
+              <div className="border-red-500 border-10 border-b absolute  "></div>
             </h3>
             <div className="sm:flex lg:justify-between  gap-10 ">
               <div>
@@ -206,9 +204,7 @@ export default function Home() {
               <a href="https://fe-vans-app.netlify.app/ ">
                 <Image src={web7} className="w-50 h-50 "></Image>
               </a>
-              <p className="font-md p-5 mt-7 text-white md:text-xl">
-                Vans App
-              </p>
+              <p className="font-md p-5 mt-7 text-white md:text-xl">Vans App</p>
             </div>
             <div className="flex flex-col items-center flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
               <a href="https://fe-tenzies-app.netlify.app/ ">
@@ -251,12 +247,10 @@ export default function Home() {
       <footer className="p-5 bg-black  md:flex md:justify-center md:max-w-full md:p-6 dark:bg-gray-800 shadow-lg">
         <span className="text-sm sm:text-center ">
           <div className="text-5xl flex justify-center gap-16 py-3">
-          <a href="https://dribbble.com/fulyaertay" className="text-gray-200">
-          <  AiOutlineDribbble></AiOutlineDribbble>
-          
-          </a>
+            <a href="https://dribbble.com/fulyaertay" className="text-gray-200">
+              <AiOutlineDribbble></AiOutlineDribbble>
+            </a>
 
-           
             <a href="https://twitter.com/Fulinin_" className="text-gray-200">
               <AiFillTwitterCircle></AiFillTwitterCircle>
             </a>
