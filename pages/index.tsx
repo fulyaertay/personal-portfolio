@@ -57,8 +57,8 @@ export default function Home() {
           </nav>
 
           <div className="flex flex-col gap-5 mb-12 ">
-            <h2 className="text-5xl py-2 text-teal-600 tracking-widest  font-medium md:text-6xl">
-              Hi, I am <b>Fulya Ertay</b>
+            <h2 className="text-5xl py-2 text-teal-300 tracking-widest  font-medium md:text-6xl">
+              Hi, I am <b className="text-teal-600 ">Fulya Ertay</b>
             </h2>
             <h3 className="text-2xl py-2 md:text-3xl tracking-widest  text-white ">
               Front-End Developer
@@ -73,7 +73,13 @@ export default function Home() {
         <section className="px-10 md:px-20 lg:px-40 mb-12" id="about">
           <div>
             <h3 className="text-3xl text-teal-600 font-medium py-1  text-center md:text-4xl md:text-left lg:text-left mt-12 mb-10 ">
-              About Me
+            
+            About Me
+              
+              <div className="border-red-500 border-10 border-b absolute  ">
+                
+              </div>
+             
             </h3>
             <div className="sm:flex lg:justify-between  gap-10 ">
               <div>
