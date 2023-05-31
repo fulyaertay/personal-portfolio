@@ -109,7 +109,7 @@ export default function Home() {
           </div>
         </section>
         <hr className="border-gray-600"></hr>
-        <section className="px-10 md:px-20 lg:px-40 mb-5">
+        <section className="px-10 md:px-20  mb-5">
           <h3 className="text-3xl text-teal-600 font-medium py-1 text-center  mt-12 md:text-4xl ">
             My Skills
           </h3>
@@ -149,7 +149,7 @@ export default function Home() {
           </div>
         </section>
         <hr className="border-gray-600"></hr>
-        <section className="px-10 md:px-20 lg:px-40" id="projects">
+        <section className="px-10 md:px-20 " id="projects">
           <div>
             <h3 className="text-3xl text-teal-600 font-medium py-1  text-center mt-5 mb-10 md:text-4xl">
               My Portfolio
