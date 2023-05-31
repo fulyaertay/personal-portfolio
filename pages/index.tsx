@@ -51,7 +51,7 @@ export default function Home() {
               </li>
               <li className="hidden lg:flex md:flex">
                 <a
-                  className="bg-gradient-to-r from-cyan-500 to-teal-500 hover:to-teal-300  text-white px-4 py-2 rounded-md ml-8"
+                  className="bg-gradient-to-r from-cyan-500 tracking-widest hover:to-teal-400  to-teal-800 text-white px-4 py-2 rounded-md ml-8"
                   href="https://www.showwcase.com/fulyaertay"
                 >
                   Resume
@@ -233,7 +233,7 @@ export default function Home() {
             <div className="text-center md:text-left">
               <a
                 id="get-in-touch"
-                className="bg-gradient-to-r from-cyan-800 tracking-widest  to-teal-500 hover:to-teal-300 font-bold text-white p-7 md:text-center  hover:bg-black  inline-block w-[350px] md:h-20  mb-12"
+                className="tracking-widest bg-gradient-to-r from-cyan-500  hover:to-teal-400  to-teal-800 font-bold text-white p-7 md:text-center  hover:bg-black  inline-block w-[350px] md:h-20  mb-12"
                 href="mailto: fulya.ertay@gmail.com"
               >
                 Send Mail
