@@ -283,9 +283,9 @@ export default function Home() {
       </main>
 
       <hr className="border-gray-600"></hr>
-      <footer className="p-5 bg-black  md:flex md:justify-center md:max-w-full md:p-6 dark:bg-gray-800 shadow-lg">
-        <span className="text-sm sm:text-center ">
-          <div className="text-5xl flex justify-center gap-16 py-3">
+      <footer className="p-5 bg-black  flex justify-center max-w-full  dark:bg-gray-800 shadow-lg">
+        
+          <div className="text-4xl flex justify-center gap-16 py-3">
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -326,7 +326,7 @@ export default function Home() {
             href="https://www.showwcase.com/fulyaertay"
             className="hover:underline font-bold text-gray-200"
           ></a>
-        </span>
+    
       </footer>
     </div>
   );
