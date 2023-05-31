@@ -8,7 +8,7 @@ import {
   AiFillGithub,
   AiOutlineDribbble,
 } from "react-icons/ai";
-import header from "../public/header.svg"
+import header from "../public/header.svg";
 import Image from "next/legacy/image";
 import fe from "../public/avatar.jpg";
 import desing from "../public/design.png";
@@ -54,7 +54,9 @@ export default function Home() {
               <li className="hidden lg:flex md:flex">
                 <a
                   className="bg-gradient-to-r from-cyan-500  hover:to-teal-400  to-teal-800 text-white px-4 py-2 rounded-md ml-8"
-                  href="https://www.showwcase.com/fulyaertay" target="_blank" rel="noopener noreferrer"
+                  href="https://www.showwcase.com/fulyaertay"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Resume
                 </a>
@@ -63,12 +65,10 @@ export default function Home() {
           </nav>
 
           <div className="flex flex-col gap-5 mb-12 ">
-            <div> 
-              <Image src={header} alt="header" ></Image>
-          
+            <div>
+              <Image src={header} alt="header"></Image>
             </div>
 
-    
             <h3 className="sm:text-md py-2 md:text-3xl tracking-widest  text-white ">
               Front-End Developer
             </h3>
@@ -104,7 +104,9 @@ export default function Home() {
                   <a
                     id="get-in-touch"
                     className="bg-gradient-to-r from-cyan-500 tracking-widest hover:to-teal-400  to-teal-800 font-bold text-white p-7 md:text-center  hover:bg-black  inline-block w-[350px] md:h-20  mt-10 mb-12"
-                    href="https://www.showwcase.com/fulyaertay" target="_blank" rel="noopener noreferrer"
+                    href="https://www.showwcase.com/fulyaertay"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     See My Resume
                   </a>
@@ -162,7 +164,11 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-5 lg:flex-row lg:flex-wrap lg:py-8  ">
             <div className="flex flex-col items-center flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
-              <a target="_blank" rel="noopener noreferrer" href="https://github.com/fulyaertay/scrimba-tailwind-projects/tree/master/3-solo-project-spotify-clone ">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/fulyaertay/scrimba-tailwind-projects/tree/master/3-solo-project-spotify-clone "
+              >
                 <Image src={web1} className="w-50 h-50 "></Image>
               </a>
               <p className="font-md p-5 mt-7 text-white md:text-xl">
@@ -170,19 +176,31 @@ export default function Home() {
               </p>
             </div>
             <div className=" flex flex-col items-center flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
-              <a target="_blank" rel="noopener noreferrer" href="https://github.com/fulyaertay/mini-blog-app">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/fulyaertay/mini-blog-app"
+              >
                 <Image src={web2} className="w-50 h-50"></Image>
               </a>
               <p className="font-md p-5 text-white md:text-xl">Mini Blog App</p>
             </div>
             <div className=" flex flex-col items-center  flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
-              <a target="_blank" rel="noopener noreferrer" href="https://github.com/fulyaertay/react-search-filter">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/fulyaertay/react-search-filter"
+              >
                 <Image src={web3} className="max-w-full h-auto"></Image>
               </a>
               <p className="font-md p-5 text-white md:text-xl">Search Filter</p>
             </div>
             <div className=" flex flex-col items-center  flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
-              <a target="_blank" rel="noopener noreferrer" href="https://github.com/fulyaertay/react-image-gallery">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/fulyaertay/react-image-gallery"
+              >
                 <Image src={web4} className="max-w-full h-auto"></Image>
               </a>
               <p className="font-md p-5 text-white md:text-xl">Image Gallery</p>
@@ -190,7 +208,11 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-5  lg:flex-row lg:flex-wrap lg:py-8  ">
             <div className="flex flex-col items-center flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
-              <a target="_blank" rel="noopener noreferrer" href="https://scrimba-quiz-app.netlify.app/ ">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://scrimba-quiz-app.netlify.app/ "
+              >
                 <Image src={web5} className="w-50 h-50 "></Image>
               </a>
               <p className="font-md p-5 mt-7 text-white md:text-xl">
@@ -198,7 +220,11 @@ export default function Home() {
               </p>
             </div>
             <div className="flex flex-col items-center flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
-              <a target="_blank" rel="noopener noreferrer" href="https://fe-photo-store.netlify.app/ ">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://fe-photo-store.netlify.app/ "
+              >
                 <Image src={web6} className="w-50 h-50 "></Image>
               </a>
               <p className="font-md p-5 mt-7 text-white md:text-xl">
@@ -206,13 +232,21 @@ export default function Home() {
               </p>
             </div>
             <div className="flex flex-col items-center flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
-              <a target="_blank" rel="noopener noreferrer" href="https://fe-vans-app.netlify.app/ ">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://fe-vans-app.netlify.app/ "
+              >
                 <Image src={web7} className="w-50 h-50 "></Image>
               </a>
               <p className="font-md p-5 mt-7 text-white md:text-xl">Vans App</p>
             </div>
             <div className="flex flex-col items-center flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
-              <a target="_blank" rel="noopener noreferrer" href="https://fe-tenzies-app.netlify.app/ ">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://fe-tenzies-app.netlify.app/ "
+              >
                 <Image src={web8} className="w-50 h-50 "></Image>
               </a>
               <p className="font-md p-5 mt-7 text-white md:text-xl">
@@ -252,24 +286,43 @@ export default function Home() {
       <footer className="p-5 bg-black  md:flex md:justify-center md:max-w-full md:p-6 dark:bg-gray-800 shadow-lg">
         <span className="text-sm sm:text-center ">
           <div className="text-5xl flex justify-center gap-16 py-3">
-            <a target="_blank" rel="noopener noreferrer" href="https://dribbble.com/fulyaertay" className="text-gray-200">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://dribbble.com/fulyaertay"
+              className="text-gray-200"
+            >
               <AiOutlineDribbble></AiOutlineDribbble>
             </a>
 
-            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/Fulinin_" className="text-gray-200">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://twitter.com/Fulinin_"
+              className="text-gray-200"
+            >
               <AiFillTwitterCircle></AiFillTwitterCircle>
             </a>
-            <a target="_blank" rel="noopener noreferrer"
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
               href="https://www.linkedin.com/in/fulyaertay/"
               className="text-gray-200"
             >
               <AiFillLinkedin></AiFillLinkedin>
             </a>
-            <a target="_blank" rel="noopener noreferrer" href="https://github.com/fulyaertay" className="text-gray-200">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/fulyaertay"
+              className="text-gray-200"
+            >
               <AiFillGithub></AiFillGithub>
             </a>
           </div>
-          <a target="_blank" rel="noopener noreferrer"
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
             href="https://www.showwcase.com/fulyaertay"
             className="hover:underline font-bold text-gray-200"
           ></a>
