@@ -63,7 +63,7 @@ export default function Home() {
           </nav>
 
           <div className="flex flex-col gap-5 mb-12 ">
-            <div className="text-center px-12"> 
+            <div > 
               <Image src={header} alt="header" ></Image>
               
 
