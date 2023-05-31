@@ -87,7 +87,7 @@ export default function Home() {
             </h3>
             <div className="sm:flex lg:justify-between  gap-10 ">
               <div>
-                <p className="text-sm py-2 leading-loose tracking-widest text-gray-80  md:text-left  md:max-w-8xl text-white  ">
+                <p className="text-sm md:text-md py-2 leading-loose tracking-widest text-gray-80  md:text-left  md:max-w-8xl text-white  ">
                   I am a web developer and designer based out of İzmir, Turkey.
                   Armed with a associate degree in computer programming and a
                   bachelor degree in computer engineering, I love building apps
@@ -261,7 +261,7 @@ export default function Home() {
             <h3 className="text-lg text-teal-600 font-medium md:text-left py-1  md:text-4xl mt-12 ">
               Get in Touch
             </h3>
-            <p className="text-sm py-5 leading-8 tracking-widest  text-white md:text-left  md:max-w-8xl mb-5 ">
+            <p className="text-sm md:text-md py-5 leading-8 tracking-widest  text-white md:text-left  md:max-w-8xl mb-5 ">
               Are you looking for a fast-performing and user-friendly website to
               represent your product or business? or looking for any kind of
               consultation? or want to ask questions? or have some advice for me
