@@ -63,16 +63,16 @@ export default function Home() {
           </nav>
 
           <div className="flex flex-col gap-5 mb-12 ">
-            <div > 
+            <div> 
               <Image src={header} alt="header" ></Image>
-              
-
-            
+          
             </div>
-            <h3 className="text-2xl py-2 md:text-3xl tracking-widest  text-white ">
+
+    
+            <h3 className="sm:text-md py-2 md:text-3xl tracking-widest  text-white ">
               Front-End Developer
             </h3>
-            <p className="text-md py-5 leading-8 tracking-widest  text-white   ">
+            <p className="text-sm py-5 leading-8 tracking-widest  text-white   ">
               Providing services for user-friendly web applications. Join me
               down below and collaborate on awesome projects!{" "}
             </p>
@@ -81,13 +81,13 @@ export default function Home() {
         <hr className="border-gray-600"></hr>
         <section className="px-10 md:px-20  mb-12" id="about">
           <div>
-            <h3 className="text-3xl text-teal-600 font-medium py-1  text-center md:text-4xl md:text-left lg:text-left mt-12  ">
+            <h3 className="text-lg text-teal-600 font-medium py-1  md:text-4xl md:text-left lg:text-left mt-12  ">
               About Me
               <div className="border-red-500 border-10 border-b absolute  "></div>
             </h3>
             <div className="sm:flex lg:justify-between  gap-10 ">
               <div>
-                <p className="text-md py-2 leading-loose tracking-widest text-gray-80 text-center md:text-left  md:max-w-8xl text-white  ">
+                <p className="text-sm py-2 leading-loose tracking-widest text-gray-80  md:text-left  md:max-w-8xl text-white  ">
                   I am a web developer and designer based out of İzmir, Turkey.
                   Armed with a associate degree in computer programming and a
                   bachelor degree in computer engineering, I love building apps
@@ -114,12 +114,12 @@ export default function Home() {
           </div>
         </section>
         <hr className="border-gray-600"></hr>
-        <section className="px-10 md:px-20  mb-5">
-          <h3 className="text-3xl text-teal-600 font-medium py-1 text-center  mt-12 md:text-4xl ">
+        <section className=" md:px-20  mb-5">
+          <h3 className="text-lg text-teal-600 font-medium py-1 text-center  my-12 md:text-4xl ">
             My Skills
           </h3>
           <div className="lg:flex text-center justify-center">
-            <div className="text-center  shadow-lg p-20 rounded-xl my-10 flex-1">
+            <div className="text-center  shadow-lg rounded-xl my-10 flex-1">
               <div>
                 <Image src={desing} width={100} height={100}></Image>
                 <h4 className="py-4 text-teal-600 text-lg font-medium md:text-2xl pt-8 pb-2">
@@ -131,17 +131,17 @@ export default function Home() {
                 <p className="text-white py-5 md:text-xl">React</p>
               </div>
             </div>
-            <div className="text-center shadow-lg p-20  rounded-xl my-10 flex-1">
+            <div className="text-center shadow-lg  rounded-xl my-10 flex-1">
               <div>
                 <Image src={code} width={100} height={100}></Image>
-                <h4 className="py-4 text-teal-600 text-lg font-medium md:text-2xl  pt-8 pb-2">
+                <h4 className="text-lg py-4 text-teal-600  font-medium md:text-2xl  pt-8 pb-2">
                   Back-End
                 </h4>
                 <p className="text-white py-5 md:text-xl">Python</p>
                 <p className="text-white py-5 md:text-xl">Django</p>
               </div>
             </div>
-            <div className="text-center shadow-lg p-20 rounded-xl my-10 flex-1">
+            <div className="text-center shadow-lg rounded-xl my-10 flex-1">
               <div>
                 <Image src={consulting} width={100} height={100}></Image>
                 <h4 className="py-4 text-teal-600 text-lg font-medium md:text-2xl  pt-8 pb-2">
@@ -156,7 +156,7 @@ export default function Home() {
         <hr className="border-gray-600"></hr>
         <section className="px-10 md:px-20 " id="projects">
           <div>
-            <h3 className="text-3xl text-teal-600 font-medium py-1  text-center mt-5 mb-10 md:text-4xl">
+            <h3 className="text-lg text-teal-600 font-medium py-1  text-center mt-5 mb-10 md:text-4xl">
               My Portfolio
             </h3>
           </div>
@@ -224,10 +224,10 @@ export default function Home() {
         <hr className="border-gray-600"></hr>
         <section className="px-10 md:px-20  " id="contact">
           <div>
-            <h3 className="text-3xl text-teal-600 font-medium text-center md:text-left py-1  md:text-4xl mt-12 ">
+            <h3 className="text-lg text-teal-600 font-medium md:text-left py-1  md:text-4xl mt-12 ">
               Get in Touch
             </h3>
-            <p className="text-md py-5 leading-8 tracking-widest  text-white text-center md:text-left  md:max-w-8xl mb-5 ">
+            <p className="text-sm py-5 leading-8 tracking-widest  text-white md:text-left  md:max-w-8xl mb-5 ">
               Are you looking for a fast-performing and user-friendly website to
               represent your product or business? or looking for any kind of
               consultation? or want to ask questions? or have some advice for me
