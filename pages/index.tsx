@@ -74,7 +74,7 @@ export default function Home() {
             </h3>
             <p className="sm:text-sm md:text-lg py-5 leading-8 tracking-widest  text-white   ">
               Providing services for user-friendly web applications. Join me
-              down below and collaborate on awesome projects!{" "}
+              down below and collaborate on awesome projects!
             </p>
           </div>
         </section>
