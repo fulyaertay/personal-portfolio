@@ -34,10 +34,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="bg-black ">
-        <section className="px-10 md:px-20  text-center">
-          <nav className="py-10 px-10 mb-12 flex text-center md:justify-between">
+        <section className=" md:px-20  text-center">
+          <nav className="py-10 px-16 mb-12 flex text-center md:justify-between">
             <h1 className="text-xl font-burtons text-white hidden lg:flex ">
-              {" "}
               developedbyfe
             </h1>
 
@@ -46,10 +45,10 @@ export default function Home() {
                 <a href="#projects">Projects </a>
               </li>
               <li className="text-xl  text-white ">
-                <a href="#about">About </a>{" "}
+                <a href="#about">About </a>
               </li>
               <li className="text-xl text-white ">
-                <a href="#contact">Contact </a>{" "}
+                <a href="#contact">Contact </a>
               </li>
               <li className="hidden lg:flex md:flex">
                 <a
