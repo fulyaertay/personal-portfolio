@@ -72,7 +72,7 @@ export default function Home() {
             <h3 className="sm:text-md py-2 md:text-3xl tracking-widest  text-white ">
               Front-End Developer
             </h3>
-            <p className="text-sm py-5 leading-8 tracking-widest  text-white   ">
+            <p className="sm:text-sm md:text-lg py-5 leading-8 tracking-widest  text-white   ">
               Providing services for user-friendly web applications. Join me
               down below and collaborate on awesome projects!{" "}
             </p>
