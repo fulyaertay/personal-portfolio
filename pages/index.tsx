@@ -8,6 +8,7 @@ import {
   AiFillGithub,
   AiOutlineDribbble,
 } from "react-icons/ai";
+import header from "../public/header.svg"
 import Image from "next/legacy/image";
 import fe from "../public/avatar.jpg";
 import desing from "../public/design.png";
@@ -39,6 +40,7 @@ export default function Home() {
               {" "}
               developedbyfe
             </h1>
+
             <ul className="flex items-center gap-10">
               <li className="text-xl  text-white ">
                 <a href="#projects">Projects </a>
@@ -61,9 +63,12 @@ export default function Home() {
           </nav>
 
           <div className="flex flex-col gap-5 mb-12 ">
-            <h2 className="text-5xl py-2 text-teal-300 tracking-widest  font-medium md:text-6xl">
-              Hi, I am <b className="text-teal-500 ">Fulya Ertay</b>
-            </h2>
+            <div className="text-center px-12"> 
+              <Image src={header} alt="header" ></Image>
+              
+
+            
+            </div>
             <h3 className="text-2xl py-2 md:text-3xl tracking-widest  text-white ">
               Front-End Developer
             </h3>
