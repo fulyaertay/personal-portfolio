@@ -33,9 +33,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-black ">
-        <section className=" md:px-20  text-center">
-          <nav className="py-10 px-16 mb-12 flex text-center md:justify-between">
+      <main className="bg-black max-w-full ">
+        <section className=" md:px-20  text-center     ">
+          <nav className="py-10  mb-12 flex text-center md:justify-between ">
             <h1 className="text-xl font-burtons text-white hidden lg:flex ">
               developedbyfe
             </h1>
