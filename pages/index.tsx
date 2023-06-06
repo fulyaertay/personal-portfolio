@@ -297,14 +297,6 @@ export default function Home() {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://twitter.com/Fulinin_"
-              className="text-gray-200"
-            >
-              <AiFillTwitterCircle></AiFillTwitterCircle>
-            </a>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
               href="https://www.linkedin.com/in/fulyaertay/"
               className="text-gray-200"
             >
