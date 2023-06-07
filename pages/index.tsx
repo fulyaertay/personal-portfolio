@@ -7,6 +7,7 @@ import {
   AiFillLinkedin,
   AiFillGithub,
   AiOutlineDribbble,
+  GrMedium,
 } from "react-icons/ai";
 import header from "../public/header.svg";
 import Image from "next/legacy/image";
@@ -309,6 +310,14 @@ export default function Home() {
               className="text-gray-200"
             >
               <AiFillGithub></AiFillGithub>
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://medium.com/@fulyaertay"
+              className="text-gray-200"
+            >
+              <GrMedium></GrMedium>
             </a>
           </div>
           <a
