@@ -36,16 +36,16 @@ export default function Home() {
 
             <ul className="flex items-center gap-10">
               <li className="text-xl  text-white ">
-                <a href="#projects" id="projects">Projects </a>
+                <a href="#projects" id="projects-link">Projects </a>
               </li>
               <li className="text-xl  text-white ">
-                <a id="about" href="#about">About </a>
+                <a id="about-link" href="#about">About </a>
               </li>
               <li className="text-xl text-white ">
-                <a id="contact" href="#contact">Contact </a>
+                <a id="contact-link" href="#contact">Contact </a>
               </li>
               <li className="hidden lg:flex md:flex">
-                <a id="resume"
+                <a id="resume-link"
                   className="bg-gradient-to-r from-cyan-500  hover:to-teal-400  to-teal-800 text-white px-4 py-2 rounded-md ml-8"
                   href="https://www.showwcase.com/fulyaertay"
                   target="_blank"
@@ -95,7 +95,7 @@ export default function Home() {
                 </p>
                 <div className="text-left">
                   <a 
-                    id="get-in-touch"
+                    id="see-resume"
                     className="bg-gradient-to-r from-cyan-500 tracking-widest hover:to-teal-400  to-teal-800 font-bold text-white p-7 text-center  hover:bg-black  inline-block w-[200px]  md:h-20  mt-10 mb-12"
                     href="https://www.showwcase.com/fulyaertay"
                     target="_blank"
@@ -263,7 +263,7 @@ export default function Home() {
               reach out to me is via an email.
             </p>
             <div className="text-left">
-              <a id="mail"
+              <a id="send-mail"
                 className="tracking-widest bg-gradient-to-r from-cyan-500  hover:to-teal-400  to-teal-800 font-bold text-white p-7 text-center  hover:bg-black  inline-block w-[200px] md:h-20  mb-12"
                 href="mailto: fulya.ertay@gmail.com"
               >
