@@ -284,49 +284,47 @@ export default function Home() {
 
       <hr className="border-gray-600"></hr>
       <footer className="p-5 bg-black  flex justify-center max-w-full  dark:bg-gray-800 shadow-lg">
-        
-          <div className="text-4xl flex justify-center gap-16 py-3">
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://dribbble.com/fulyaertay"
-              className="text-gray-200"
-            >
-              <AiOutlineDribbble></AiOutlineDribbble>
-            </a>
-
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.linkedin.com/in/fulyaertay/"
-              className="text-gray-200"
-            >
-              <AiFillLinkedin></AiFillLinkedin>
-            </a>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://github.com/fulyaertay"
-              className="text-gray-200"
-            >
-              <AiFillGithub></AiFillGithub>
-            </a>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://medium.com/@fulyaertay"
-              className="text-gray-200"
-            >
-              <AiOutlineMedium></AiOutlineMedium>
-            </a>
-          </div>
+        <div className="text-4xl flex justify-center gap-16 py-3">
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.showwcase.com/fulyaertay"
-            className="hover:underline font-bold text-gray-200"
-          ></a>
-    
+            href="https://dribbble.com/fulyaertay"
+            className="text-gray-200"
+          >
+            <AiOutlineDribbble></AiOutlineDribbble>
+          </a>
+
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/fulyaertay/"
+            className="text-gray-200"
+          >
+            <AiFillLinkedin></AiFillLinkedin>
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/fulyaertay"
+            className="text-gray-200"
+          >
+            <AiFillGithub></AiFillGithub>
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://medium.com/@fulyaertay"
+            className="text-gray-200"
+          >
+            <AiOutlineMedium></AiOutlineMedium>
+          </a>
+        </div>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.showwcase.com/fulyaertay"
+          className="hover:underline font-bold text-gray-200"
+        ></a>
       </footer>
     </div>
   );
