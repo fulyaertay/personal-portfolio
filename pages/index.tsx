@@ -36,16 +36,16 @@ export default function Home() {
 
             <ul className="flex items-center gap-10">
               <li className="text-xl  text-white ">
-                <a href="#projects">Projects </a>
+                <a href="#projects" id="projects">Projects </a>
               </li>
               <li className="text-xl  text-white ">
-                <a href="#about">About </a>
+                <a id="about" href="#about">About </a>
               </li>
               <li className="text-xl text-white ">
-                <a href="#contact">Contact </a>
+                <a id="contact" href="#contact">Contact </a>
               </li>
               <li className="hidden lg:flex md:flex">
-                <a
+                <a id="resume"
                   className="bg-gradient-to-r from-cyan-500  hover:to-teal-400  to-teal-800 text-white px-4 py-2 rounded-md ml-8"
                   href="https://www.showwcase.com/fulyaertay"
                   target="_blank"
@@ -94,7 +94,7 @@ export default function Home() {
                   Design, JavaScript, React, Git, GitHub.
                 </p>
                 <div className="text-left">
-                  <a
+                  <a id="resume2"
                     id="get-in-touch"
                     className="bg-gradient-to-r from-cyan-500 tracking-widest hover:to-teal-400  to-teal-800 font-bold text-white p-7 text-center  hover:bg-black  inline-block w-[200px]  md:h-20  mt-10 mb-12"
                     href="https://www.showwcase.com/fulyaertay"
@@ -157,7 +157,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-5 lg:flex-row lg:flex-wrap lg:py-8  ">
             <div className="flex flex-col items-center flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
-              <a
+              <a id="first-project"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://github.com/fulyaertay/scrimba-tailwind-projects/tree/master/3-solo-project-spotify-clone "
@@ -169,7 +169,7 @@ export default function Home() {
               </p>
             </div>
             <div className=" flex flex-col items-center flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
-              <a
+              <a id="second-project"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://github.com/fulyaertay/mini-blog-app"
@@ -179,7 +179,7 @@ export default function Home() {
               <p className="font-md p-5 text-white md:text-xl">Mini Blog App</p>
             </div>
             <div className=" flex flex-col items-center  flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
-              <a
+              <a id="third-project"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://github.com/fulyaertay/react-search-filter"
@@ -189,7 +189,7 @@ export default function Home() {
               <p className="font-md p-5 text-white md:text-xl">Search Filter</p>
             </div>
             <div className=" flex flex-col items-center  flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
-              <a
+              <a id="fourth-project"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://github.com/fulyaertay/react-image-gallery"
@@ -201,7 +201,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-5  lg:flex-row lg:flex-wrap lg:py-8  ">
             <div className="flex flex-col items-center flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
-              <a
+              <a id="fifth-project"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://scrimba-quiz-app.netlify.app/ "
@@ -213,7 +213,7 @@ export default function Home() {
               </p>
             </div>
             <div className="flex flex-col items-center flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
-              <a
+              <a id="sixth-project"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://fe-photo-store.netlify.app/ "
@@ -225,7 +225,7 @@ export default function Home() {
               </p>
             </div>
             <div className="flex flex-col items-center flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
-              <a
+              <a id="seventh-project"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://fe-vans-app.netlify.app/ "
@@ -235,7 +235,7 @@ export default function Home() {
               <p className="font-md p-5 mt-7 text-white md:text-xl">Vans App</p>
             </div>
             <div className="flex flex-col items-center flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
-              <a
+              <a id="eight-project"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://fe-tenzies-app.netlify.app/ "
@@ -263,7 +263,7 @@ export default function Home() {
               reach out to me is via an email.
             </p>
             <div className="text-left">
-              <a
+              <a id="mail"
                 id="get-in-touch"
                 className="tracking-widest bg-gradient-to-r from-cyan-500  hover:to-teal-400  to-teal-800 font-bold text-white p-7 text-center  hover:bg-black  inline-block w-[200px] md:h-20  mb-12"
                 href="mailto: fulya.ertay@gmail.com"
@@ -278,7 +278,7 @@ export default function Home() {
       <hr className="border-gray-600"></hr>
       <footer className="p-5 bg-black  flex justify-center max-w-full  dark:bg-gray-800 shadow-lg">
         <div className="text-4xl flex justify-center gap-16 py-3">
-          <a
+          <a id="dribble"
             target="_blank"
             rel="noopener noreferrer"
             href="https://dribbble.com/fulyaertay"
@@ -287,7 +287,7 @@ export default function Home() {
             <AiOutlineDribbble></AiOutlineDribbble>
           </a>
 
-          <a
+          <a id="linkedin"
             target="_blank"
             rel="noopener noreferrer"
             href="https://www.linkedin.com/in/fulyaertay/"
@@ -295,7 +295,7 @@ export default function Home() {
           >
             <AiFillLinkedin></AiFillLinkedin>
           </a>
-          <a
+          <a id="github"
             target="_blank"
             rel="noopener noreferrer"
             href="https://github.com/fulyaertay"
@@ -303,7 +303,7 @@ export default function Home() {
           >
             <AiFillGithub></AiFillGithub>
           </a>
-          <a
+          <a id="medium"
             target="_blank"
             rel="noopener noreferrer"
             href="https://medium.com/@fulyaertay"
@@ -312,12 +312,7 @@ export default function Home() {
             <AiOutlineMedium></AiOutlineMedium>
           </a>
         </div>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.showwcase.com/fulyaertay"
-          className="hover:underline font-bold text-gray-200"
-        ></a>
+       
       </footer>
     </div>
   );
