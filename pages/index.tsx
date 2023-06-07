@@ -276,7 +276,7 @@ export default function Home() {
 
       <hr className="border-gray-600"></hr>
       <footer className="p-5 bg-black  flex justify-center max-w-full  dark:bg-gray-800 shadow-lg">
-        <div className="text-6xl flex justify-center gap-16 py-3">
+        <div className="text-4xl flex justify-center gap-16 py-3">
           <a id="dribble"
             target="_blank"
             rel="noopener noreferrer"
