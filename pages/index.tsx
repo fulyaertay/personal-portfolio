@@ -116,7 +116,7 @@ export default function Home() {
           <div className="lg:flex text-center justify-center">
             <div className="text-center  shadow-lg rounded-xl my-10 flex-1">
               <div>
-                <Image src={desing} width={100} height={100}></Image>
+                <Image alt="front-end-title" src={desing} width={100} height={100}></Image>
                 <h4 className="py-4 text-teal-600 text-lg font-medium md:text-2xl pt-8 pb-2">
                   Front-End
                 </h4>
@@ -128,7 +128,7 @@ export default function Home() {
             </div>
             <div className="text-center shadow-lg  rounded-xl my-10 flex-1">
               <div>
-                <Image src={code} width={100} height={100}></Image>
+                <Image alt="back-end-title" src={code} width={100} height={100}></Image>
                 <h4 className="text-lg py-4 text-teal-600  font-medium md:text-2xl  pt-8 pb-2">
                   Back-End
                 </h4>
@@ -138,7 +138,7 @@ export default function Home() {
             </div>
             <div className="text-center shadow-lg rounded-xl my-10 flex-1">
               <div>
-                <Image src={consulting} width={100} height={100}></Image>
+                <Image alt="database-title" src={consulting} width={100} height={100}></Image>
                 <h4 className="py-4 text-teal-600 text-lg font-medium md:text-2xl  pt-8 pb-2">
                   Databases
                 </h4>
@@ -162,7 +162,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 href="https://github.com/fulyaertay/scrimba-tailwind-projects/tree/master/3-solo-project-spotify-clone "
               >
-                <Image src={web1} className="w-50 h-50 "></Image>
+                <Image alt="spotify" src={web1} className="w-50 h-50 "></Image>
               </a>
               <p className="font-md p-5 mt-7 text-white md:text-xl">
                 Spotify Clone
@@ -174,7 +174,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 href="https://github.com/fulyaertay/mini-blog-app"
               >
-                <Image src={web2} className="w-50 h-50"></Image>
+                <Image  alt="blog-app" src={web2} className="w-50 h-50"></Image>
               </a>
               <p className="font-md p-5 text-white md:text-xl">Mini Blog App</p>
             </div>
@@ -184,7 +184,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 href="https://github.com/fulyaertay/react-search-filter"
               >
-                <Image src={web3} className="max-w-full h-auto"></Image>
+                <Image alt="search-filter-app" src={web3} className="max-w-full h-auto"></Image>
               </a>
               <p className="font-md p-5 text-white md:text-xl">Search Filter</p>
             </div>
@@ -194,7 +194,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 href="https://github.com/fulyaertay/react-image-gallery"
               >
-                <Image src={web4} className="max-w-full h-auto"></Image>
+                <Image alt="image-gallery-app" src={web4} className="max-w-full h-auto"></Image>
               </a>
               <p className="font-md p-5 text-white md:text-xl">Image Gallery</p>
             </div>
@@ -206,7 +206,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 href="https://scrimba-quiz-app.netlify.app/ "
               >
-                <Image src={web5} className="w-50 h-50 "></Image>
+                <Image alt="quiz-app" src={web5} className="w-50 h-50 "></Image>
               </a>
               <p className="font-md p-5 mt-7 text-white md:text-xl">
                 React Quiz App
@@ -218,7 +218,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 href="https://fe-photo-store.netlify.app/ "
               >
-                <Image src={web6} className="w-50 h-50 "></Image>
+                <Image alt="photo-store-app" src={web6} className="w-50 h-50 "></Image>
               </a>
               <p className="font-md p-5 mt-7 text-white md:text-xl">
                 Photo Store App
@@ -230,7 +230,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 href="https://fe-vans-app.netlify.app/ "
               >
-                <Image src={web7} className="w-50 h-50 "></Image>
+                <Image alt="vans-app" src={web7} className="w-50 h-50 "></Image>
               </a>
               <p className="font-md p-5 mt-7 text-white md:text-xl">Vans App</p>
             </div>
@@ -240,7 +240,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 href="https://fe-tenzies-app.netlify.app/ "
               >
-                <Image src={web8} className="w-50 h-50 "></Image>
+                <Image alt="tenzies-app" src={web8} className="w-50 h-50 "></Image>
               </a>
               <p className="font-md p-5 mt-7 text-white md:text-xl">
                 Tenzies Game
