@@ -94,7 +94,7 @@ export default function Home() {
                   Design, JavaScript, React, Git, GitHub.
                 </p>
                 <div className="text-left">
-                  <a id="resume2"
+                  <a 
                     id="get-in-touch"
                     className="bg-gradient-to-r from-cyan-500 tracking-widest hover:to-teal-400  to-teal-800 font-bold text-white p-7 text-center  hover:bg-black  inline-block w-[200px]  md:h-20  mt-10 mb-12"
                     href="https://www.showwcase.com/fulyaertay"
@@ -264,7 +264,6 @@ export default function Home() {
             </p>
             <div className="text-left">
               <a id="mail"
-                id="get-in-touch"
                 className="tracking-widest bg-gradient-to-r from-cyan-500  hover:to-teal-400  to-teal-800 font-bold text-white p-7 text-center  hover:bg-black  inline-block w-[200px] md:h-20  mb-12"
                 href="mailto: fulya.ertay@gmail.com"
               >
