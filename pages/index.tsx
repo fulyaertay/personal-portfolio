@@ -238,12 +238,12 @@ export default function Home() {
               <a id="eight-project"
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://fe-tenzies-app.netlify.app/ "
+                href="https://github.com/fulyaertay/chatbot-with-gpt-3 "
               >
-                <Image alt="tenzies-app" src={web8} className="w-50 h-50 "></Image>
+                <Image alt="chatbot-app" src={web8} className="w-50 h-50 "></Image>
               </a>
               <p className="font-md p-5 mt-7 text-white md:text-xl">
-                Tenzies Game
+                Chatbot with GPT-3
               </p>
             </div>
           </div>
