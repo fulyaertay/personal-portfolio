@@ -28,7 +28,7 @@ This is my personal portfolio page. It's a single-page website that shows my per
 **1. Clone the Repository**
 
 ```
-  git clone https://github.com/fulyaertay/react-personal-portfolio
+  git clone https://github.com/fulyaertay/personal-portfolio.git
 ```
 
 **2. Move into the working directory**
