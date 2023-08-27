@@ -91,7 +91,7 @@ export default function Home() {
             </h3>
           </div>
           <div className="flex flex-col  ">
-            <div className="grid grid-cols-1 md:grid-cols-2 mb-10 ">
+            <div className="grid grid-cols-1 md:grid-cols-2 mb-10 gap-4 ">
               <div>
                 {" "}
                 <Image
@@ -102,7 +102,7 @@ export default function Home() {
                 ></Image>
               </div>
               <div>
-                <p className="font-md mt-7 text-white text-2xl">
+                <p className="font-md  text-white text-2xl">
                   Spotify Clone
                 </p>
                 <p className="font-md mt-7 text-gray-300">
