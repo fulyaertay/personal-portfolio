@@ -46,7 +46,7 @@ export default function Home() {
               </li>
               <li className="hidden lg:flex md:flex">
                 <a id="resume-link"
-                  className="bg-gradient-to-r text-lg from-cyan-500  hover:to-teal-400  to-teal-800 text-white px-4 py-2 rounded-md ml-8"
+                  className="bg-gradient-to-r text-lg from-cyan-500  hover:to-teal-400  to-teal-800 text-white px-4 py-2  ml-8"
                   href="https://www.showwcase.com/fulyaertay"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -57,101 +57,28 @@ export default function Home() {
             </ul>
           </nav>
 
-          <div className="flex flex-col gap-5 mb-12 ">
-            <div>
-              <Image src={header} alt="header"></Image>
-            </div>
+          <div className="flex flex-col px-10 md:px-0 text-center md:text-left gap-2 mb-12  ">
+          <h3 className="text-3xl py-2 md:text-6xl tracking-widest  text-white ">
+             Fulya Ertay
+            </h3>
 
-            <h3 className="sm:text-md py-2 md:text-3xl tracking-widest  text-white ">
-              Front-End Developer
-            </h3>
-            <p className="sm:text-sm md:text-lg py-5 leading-8 tracking-widest  text-white   ">
-              Providing services for user-friendly web applications. Join me
-              down below and collaborate on awesome projects!
+            <p className="sm:text-md md:text-lg py-5 leading-8 tracking-widest  text-white   ">
+              A Front-End developer who provides services for user-friendly web applications.
             </p>
-          </div>
-        </section>
-        <hr className="border-gray-600"></hr>
-        <section className="px-10 md:px-20  mb-12" id="about">
-          <div>
-            <h3 className="text-lg text-teal-600 font-medium py-1  md:text-4xl md:text-left lg:text-left mt-12  ">
-              About Me
-              <div className="border-red-500 border-10 border-b absolute  "></div>
-            </h3>
-            <div className="sm:flex lg:justify-between  gap-10 ">
-              <div>
-                <p className="text-sm md:text-md py-2 leading-loose tracking-widest text-gray-80  md:text-left  md:max-w-8xl text-white  ">
-                  I am a web developer and designer based out of İzmir, Turkey.
-                  Armed with a associate degree in computer programming and a
-                  bachelor degree in computer engineering, I love building apps
-                  that solve real-world problems, and that are delightful to
-                  use. Before dwelling on the world of programming, I loved
-                  writing poetry. And now, combining my love for writing with my
-                  knowledge of programming I became a technical writer. Whether
-                  I am writing documentation or designing user experiences, my
-                  goal is always to create content that is engaging and
-                  informative. My skills include: HTML, CSS, Tailwind CSS, UI
-                  Design, JavaScript, React, Git, GitHub.
-                </p>
-                <div className="text-left">
-                  <a 
-                    id="see-resume"
-                    className="bg-gradient-to-r from-cyan-500 tracking-widest hover:to-teal-400  to-teal-800 font-bold text-white p-7 text-center  hover:bg-black  inline-block w-[200px]  md:h-20  mt-10 mb-12"
-                    href="https://www.showwcase.com/fulyaertay"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    See My Resume
-                  </a>
-                </div>
-              </div>
+            <div className="text-center md:text-left">
+              <a 
+                className="tracking-widest border-2 border-cyan-500 hover:bg-gradient-to-r hover:border-none hover:from-cyan-500  hover:to-teal-800  text-white pt-4 pb-4 text-center  hover:bg-black  inline-block w-[200px] md:h-14  mb-12"
+                href="#contact"
+              >
+                Get in Touch
+              </a>
             </div>
           </div>
         </section>
-        <hr className="border-gray-600"></hr>
-        <section className=" md:px-20  mb-5">
-          <h3 className="text-lg text-teal-600 font-medium py-1 text-center  my-12 md:text-4xl ">
-            My Skills
-          </h3>
-          <div className="lg:flex text-center justify-center">
-            <div className="text-center  shadow-lg rounded-xl my-10 flex-1">
-              <div>
-                <Image alt="front-end-title" src={desing} width={100} height={100}></Image>
-                <h4 className="py-4 text-teal-600 text-lg font-medium md:text-2xl pt-8 pb-2">
-                  Front-End
-                </h4>
-                <p className="text-white py-5 md:text-xl">HTML/CSS</p>
-                <p className="text-white py-5 md:text-xl">Tailwind CSS</p>
-                <p className="text-white py-5 md:text-xl">JavaScript</p>
-                <p className="text-white py-5 md:text-xl">React</p>
-              </div>
-            </div>
-            <div className="text-center shadow-lg  rounded-xl my-10 flex-1">
-              <div>
-                <Image alt="back-end-title" src={code} width={100} height={100}></Image>
-                <h4 className="text-lg py-4 text-teal-600  font-medium md:text-2xl  pt-8 pb-2">
-                  Back-End
-                </h4>
-                <p className="text-white py-5 md:text-xl">Python</p>
-                <p className="text-white py-5 md:text-xl">Django</p>
-              </div>
-            </div>
-            <div className="text-center shadow-lg rounded-xl my-10 flex-1">
-              <div>
-                <Image alt="database-title" src={consulting} width={100} height={100}></Image>
-                <h4 className="py-4 text-teal-600 text-lg font-medium md:text-2xl  pt-8 pb-2">
-                  Databases
-                </h4>
-                <p className="text-white py-5 md:text-xl">MongoDB</p>
-                <p className="text-white py-5 md:text-xl">MSSQL</p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <hr className="border-gray-600"></hr>
+        <hr></hr>
         <section className="px-10 md:px-20 " id="projects">
           <div>
-            <h3 className="text-lg text-teal-600 font-medium py-1  text-center mt-5 mb-10 md:text-4xl">
+            <h3 className="text-lg text-teal-600 text-center md:text-left font-medium py-1  mt-5 mb-10 md:text-4xl">
               My Portfolio
             </h3>
           </div>
@@ -249,6 +176,85 @@ export default function Home() {
           </div>
         </section>
         <hr className="border-gray-600"></hr>
+        <section className="px-10 md:px-20  mb-12" id="about">
+          <div>
+            <h3 className="text-lg text-teal-600 font-medium py-1  md:text-4xl md:text-left lg:text-left mt-12  ">
+              About Me
+              <div className="border-red-500 border-10 border-b absolute  "></div>
+            </h3>
+            <div className="sm:flex lg:justify-between  gap-10 ">
+              <div>
+                <p className="text-sm md:text-md py-5 leading-loose tracking-widest text-gray-80  md:text-left  md:max-w-8xl text-white  ">
+                  I am a web developer and designer based out of İzmir, Turkey.
+                  Armed with a associate degree in computer programming and a
+                  bachelor degree in computer engineering, I love building apps
+                  that solve real-world problems, and that are delightful to
+                  use. Before dwelling on the world of programming, I loved
+                  writing poetry. And now, combining my love for writing with my
+                  knowledge of programming I became a technical writer. Whether
+                  I am writing documentation or designing user experiences, my
+                  goal is always to create content that is engaging and
+                  informative. My skills include: HTML, CSS, Tailwind CSS, UI
+                  Design, JavaScript, React, Git, GitHub.
+                </p>
+                <div className="text-left">
+                  <a 
+                    id="see-resume"
+                    className="tracking-widest border-2 border-cyan-500 hover:bg-gradient-to-r hover:border-none hover:from-cyan-500  hover:to-teal-800  text-white pt-4 pb-4 text-center  hover:bg-black  inline-block w-[200px] md:h-14  mb-12"
+                    href="https://www.showwcase.com/fulyaertay"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    See My Resume
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr className="border-gray-600"></hr>
+        <section className=" md:px-20  mb-5">
+          <h3 className="text-lg text-teal-600 font-medium py-1 text-center  my-12 md:text-4xl ">
+            My Skills
+          </h3>
+          <div className="lg:flex text-center justify-center">
+            <div className="text-center  shadow-lg rounded-xl my-10 flex-1">
+              <div>
+                <Image alt="front-end-title" src={desing} width={100} height={100}></Image>
+                <h4 className="py-4 text-teal-600 text-lg font-medium md:text-2xl pt-8 pb-2">
+                  Front-End
+                </h4>
+                <p className="text-white py-5 md:text-xl">HTML/CSS</p>
+                <p className="text-white py-5 md:text-xl">Tailwind CSS</p>
+                <p className="text-white py-5 md:text-xl">JavaScript</p>
+                <p className="text-white py-5 md:text-xl">React</p>
+              </div>
+            </div>
+            <div className="text-center shadow-lg  rounded-xl my-10 flex-1">
+              <div>
+                <Image alt="back-end-title" src={code} width={100} height={100}></Image>
+                <h4 className="text-lg py-4 text-teal-600  font-medium md:text-2xl  pt-8 pb-2">
+                  Back-End
+                </h4>
+                <p className="text-white py-5 md:text-xl">Python</p>
+                <p className="text-white py-5 md:text-xl">Django</p>
+              </div>
+            </div>
+            <div className="text-center shadow-lg rounded-xl my-10 flex-1">
+              <div>
+                <Image alt="database-title" src={consulting} width={100} height={100}></Image>
+                <h4 className="py-4 text-teal-600 text-lg font-medium md:text-2xl  pt-8 pb-2">
+                  Databases
+                </h4>
+                <p className="text-white py-5 md:text-xl">MongoDB</p>
+                <p className="text-white py-5 md:text-xl">MSSQL</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr className="border-gray-600"></hr>
+       
+        <hr className="border-gray-600"></hr>
         <section className="px-10 md:px-20  " id="contact">
           <div>
             <h3 className="text-lg text-teal-600 font-medium md:text-left py-1  md:text-4xl mt-12 ">
@@ -264,7 +270,7 @@ export default function Home() {
             </p>
             <div className="text-left">
               <a id="send-mail"
-                className="tracking-widest bg-gradient-to-r from-cyan-500  hover:to-teal-400  to-teal-800 font-bold text-white p-7 text-center  hover:bg-black  inline-block w-[200px] md:h-20  mb-12"
+               className="tracking-widest border-2 border-cyan-500 hover:bg-gradient-to-r hover:border-none hover:from-cyan-500  hover:to-teal-800  text-white pt-4 pb-4 text-center  hover:bg-black  inline-block w-[200px] md:h-14  mb-12"
                 href="mailto: fulya.ertay@gmail.com"
               >
                 Send Mail
