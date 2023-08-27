@@ -75,10 +75,10 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <hr></hr>
+        <hr className="border-gray-600"></hr>
         <section className="px-10 md:px-20 " id="projects">
           <div>
-            <h3 className="text-lg text-teal-600 text-center md:text-left font-medium py-1  mt-5 mb-10 md:text-4xl">
+            <h3 className="text-2xl text-teal-600 text-center md:text-left font-medium py-1  mt-5 mb-10 md:text-4xl">
               My Portfolio
             </h3>
           </div>
@@ -178,7 +178,7 @@ export default function Home() {
         <hr className="border-gray-600"></hr>
         <section className="px-10 md:px-20  mb-12" id="about">
           <div>
-            <h3 className="text-lg text-teal-600 font-medium py-1  md:text-4xl md:text-left lg:text-left mt-12  ">
+            <h3 className="text-2xl text-teal-600 font-medium py-1  md:text-4xl md:text-left lg:text-left mt-12  ">
               About Me
               <div className="border-red-500 border-10 border-b absolute  "></div>
             </h3>
@@ -214,7 +214,7 @@ export default function Home() {
         </section>
         <hr className="border-gray-600"></hr>
         <section className=" md:px-20  mb-5">
-          <h3 className="text-lg text-teal-600 font-medium py-1 text-center  my-12 md:text-4xl ">
+          <h3 className="text-2xl text-teal-600 font-medium py-1 text-center  my-12 md:text-4xl ">
             My Skills
           </h3>
           <div className="lg:flex text-center justify-center">
@@ -254,10 +254,10 @@ export default function Home() {
         </section>
         <hr className="border-gray-600"></hr>
        
-        <hr className="border-gray-600"></hr>
+      
         <section className="px-10 md:px-20  " id="contact">
           <div>
-            <h3 className="text-lg text-teal-600 font-medium md:text-left py-1  md:text-4xl mt-12 ">
+            <h3 className="text-2xl text-teal-600 font-medium md:text-left py-1  md:text-4xl mt-12 ">
               Get in Touch
             </h3>
             <p className="text-sm md:text-md py-5 leading-8 tracking-widest  text-white md:text-left  md:max-w-8xl mb-5 ">
