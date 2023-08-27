@@ -5,6 +5,8 @@ import {
   AiOutlineDribbble,
   AiOutlineMedium,
 } from "react-icons/ai";
+import { useState,useEffect } from "react";
+import { FaArrowCircleUp } from "react-icons/fa";
 import header from "../public/header.svg";
 import Image from "next/legacy/image";
 import desing from "../public/design.png";
@@ -18,7 +20,50 @@ import web5 from "../public/web7.png";
 import web6 from "../public/web8.png";
 import web7 from "../public/web9.png";
 import web8 from "../public/web10.png";
+const btnScrollTop = {
+  position: "fixed",
+  bottom: "40px",
+  fontSize: "3rem",
+  zIndex: 1,
+  cursor: "pointer",
+  color: "white",
+  right: "2%",
+  background: "none",
+  borderRadius: "50px",
+  padding: "0px",
+  border: "none",
+  opacity: 0.7,
+};
+
+
+
 export default function Home() {
+
+  const [isVisible, setIsVisible] = useState(false);
+
+  const ScrollToTop = () => {
+    return (
+      <button className="btnScrollTop">
+        <FaArrowCircleUp />
+      </button>
+    );
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    });
+  }, []);
+
+  const goTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <div>
       <Head>
@@ -65,6 +110,14 @@ export default function Home() {
           </nav>
 
           <div className="flex flex-col px-10 md:px-0 text-center md:text-left gap-2 mb-12  ">
+          <div style={btnScrollTop}>
+            <button
+              style={{ display: isVisible ? "block" : "none" }}
+              onClick={goTop}
+            >
+              <FaArrowCircleUp />
+            </button>
+          </div>
             <h3 className="text-3xl py-2 md:text-6xl tracking-widest  text-white ">
               Fulya Ertay
             </h3>
