@@ -36,16 +36,23 @@ export default function Home() {
 
             <ul className="flex items-center gap-10">
               <li className="text-lg  text-white ">
-                <a href="#projects" id="projects-link">Projects </a>
+                <a href="#projects" id="projects-link">
+                  Projects{" "}
+                </a>
               </li>
               <li className="text-lg  text-white ">
-                <a id="about-link" href="#about">About </a>
+                <a id="about-link" href="#about">
+                  About{" "}
+                </a>
               </li>
               <li className="text-lg text-white ">
-                <a id="contact-link" href="#contact">Contact </a>
+                <a id="contact-link" href="#contact">
+                  Contact{" "}
+                </a>
               </li>
               <li className="hidden lg:flex md:flex">
-                <a id="resume-link"
+                <a
+                  id="resume-link"
                   className="bg-gradient-to-r text-lg from-cyan-500  hover:to-teal-400  to-teal-800 text-white px-4 py-2  ml-8"
                   href="https://www.showwcase.com/fulyaertay"
                   target="_blank"
@@ -58,15 +65,16 @@ export default function Home() {
           </nav>
 
           <div className="flex flex-col px-10 md:px-0 text-center md:text-left gap-2 mb-12  ">
-          <h3 className="text-3xl py-2 md:text-6xl tracking-widest  text-white ">
-             Fulya Ertay
+            <h3 className="text-3xl py-2 md:text-6xl tracking-widest  text-white ">
+              Fulya Ertay
             </h3>
 
             <p className="sm:text-md md:text-lg py-5 leading-8 tracking-widest  text-white   ">
-              A Front-End developer who provides services for user-friendly web applications.
+              A Front-End developer who provides services for user-friendly web
+              applications.
             </p>
             <div className="text-center md:text-left">
-              <a 
+              <a
                 className="tracking-widest border-2 border-cyan-500 hover:bg-gradient-to-r hover:border-none hover:from-cyan-500  hover:to-teal-800  text-white pt-4 pb-4 text-center  hover:bg-black  inline-block w-[200px] md:h-14  mb-12"
                 href="#contact"
               >
@@ -82,96 +90,223 @@ export default function Home() {
               My Portfolio
             </h3>
           </div>
-          <div className="flex flex-col gap-5 lg:flex-row lg:flex-wrap lg:py-8  ">
-            <div className="flex flex-col items-center flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
-              <a id="first-project"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/fulyaertay/scrimba-tailwind-projects/tree/master/3-solo-project-spotify-clone "
-              >
-                <Image alt="spotify" src={web1} className="w-50 h-50 "></Image>
-              </a>
-              <p className="font-md p-5 mt-7 text-white md:text-xl">
-                Spotify Clone
-              </p>
-            </div>
-            <div className=" flex flex-col items-center flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
-              <a id="second-project"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/fulyaertay/mini-blog-app"
-              >
-                <Image  alt="blog-app" src={web2} className="w-50 h-50"></Image>
-              </a>
-              <p className="font-md p-5 text-white md:text-xl">Mini Blog App</p>
-            </div>
-            <div className=" flex flex-col items-center  flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
-              <a id="third-project"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/fulyaertay/react-search-filter"
-              >
-                <Image alt="search-filter-app" src={web3} className="max-w-full h-auto"></Image>
-              </a>
-              <p className="font-md p-5 text-white md:text-xl">Search Filter</p>
-            </div>
-            <div className=" flex flex-col items-center  flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
-              <a id="fourth-project"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/fulyaertay/react-image-gallery"
-              >
-                <Image alt="image-gallery-app" src={web4} className="max-w-full h-auto"></Image>
-              </a>
-              <p className="font-md p-5 text-white md:text-xl">Image Gallery</p>
-            </div>
-          </div>
-          <div className="flex flex-col gap-5  lg:flex-row lg:flex-wrap lg:py-8  ">
-            <div className="flex flex-col items-center flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
-              <a id="fifth-project"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://scrimba-quiz-app.netlify.app/ "
-              >
-                <Image alt="quiz-app" src={web5} className="w-50 h-50 "></Image>
-              </a>
-              <p className="font-md p-5 mt-7 text-white md:text-xl">
-                React Quiz App
-              </p>
-            </div>
-            <div className="flex flex-col items-center flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
-              <a id="sixth-project"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://fe-photo-store.netlify.app/ "
-              >
-                <Image alt="photo-store-app" src={web6} className="w-50 h-50 "></Image>
-              </a>
-              <p className="font-md p-5 mt-7 text-white md:text-xl">
-                Photo Store App
-              </p>
-            </div>
-            <div className="flex flex-col items-center flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
-              <a id="seventh-project"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://fe-vans-app.netlify.app/ "
-              >
-                <Image alt="vans-app" src={web7} className="w-50 h-50 "></Image>
-              </a>
-              <p className="font-md p-5 mt-7 text-white md:text-xl">Vans App</p>
-            </div>
-            <div className="flex flex-col items-center flex-1 transition ease-in-out delay-150 hover:-translate-5 hover:scale-110 duration-300 shadow-xl">
-              <a id="eight-project"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/fulyaertay/chatbot-with-gpt-3 "
-              >
-                <Image alt="chatbot-app" src={web8} className="w-50 h-50 "></Image>
-              </a>
-              <p className="font-md p-5 mt-7 text-white md:text-xl">
-                Chatbot with GPT-3
-              </p>
+          <div className="flex flex-col  ">
+            <div className="grid grid-cols-1 md:grid-cols-2 mb-10 ">
+              <div>
+                {" "}
+                <Image
+                  alt="spotify"
+                  src={web1}
+                  width={550}
+                  height={250}
+                ></Image>
+              </div>
+              <div>
+                <p className="font-md mt-7 text-white text-2xl">
+                  Spotify Clone
+                </p>
+                <p className="font-md mt-7 text-gray-300">
+                  The clone project is developed using Tailwind CSS.
+                </p>
+                <div className="text-left flex items-center gap-8">
+                  <a
+                    className="tracking-widest    text-white pt-4 pb-7 text-left   inline-block  md:h-14  "
+                    href="https://scrimba-spotify-clone.netlify.app/"
+                  >
+                    <span className="inline-block underline">
+                      Visit Site{" "}
+                      <svg
+                        className="inline-block"
+                        width="30"
+                        height="10"
+                        viewBox="0 0 16 9"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill="#ffffff"
+                          d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5Z"
+                        />
+                        <path
+                          fill="#ffffff"
+                          d="M10 8.5a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71l3.15-3.15l-3.15-3.15c-.2-.2-.2-.51 0-.71c.2-.2.51-.2.71 0l3.5 3.5c.2.2.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z"
+                        />
+                      </svg>{" "}
+                    </span>
+                  </a>
+
+                  <a
+                    id="github"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/fulyaertay/scrimba-tailwind-projects/tree/master/3-solo-project-spotify-clone"
+                    className="text-gray-200 text-5xl pt-4 pb-7 hover:text-slate-400"
+                  >
+                    <AiFillGithub></AiFillGithub>
+                  </a>
+                </div>
+              </div>
+
+              <div className="mt-10">
+                {" "}
+                <Image
+                  alt="mini-blog-app"
+                  src={web2}
+                  width={550}
+                  height={300}
+                ></Image>
+              </div>
+              <div>
+                <p className="font-md  text-white text-2xl mt-10">
+                  Mini Blog App
+                </p>
+                <p className="font-md mt-7 text-gray-300">
+                  Developed the blog application that it can be used to add/list
+                  blogs and designed using Javascript, HTML, Materialize CSS and
+                  Firebase.
+                </p>
+                <div className="text-left flex items-center gap-8">
+                  <a
+                    className="tracking-widest    text-white pt-4 pb-7 text-left   inline-block  md:h-14  "
+                    href="https://mini-blog-website.netlify.app/"
+                  >
+                    <span className="inline-block underline">
+                      Visit Site{" "}
+                      <svg
+                        className="inline-block"
+                        width="30"
+                        height="10"
+                        viewBox="0 0 16 9"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill="#ffffff"
+                          d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5Z"
+                        />
+                        <path
+                          fill="#ffffff"
+                          d="M10 8.5a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71l3.15-3.15l-3.15-3.15c-.2-.2-.2-.51 0-.71c.2-.2.51-.2.71 0l3.5 3.5c.2.2.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z"
+                        />
+                      </svg>{" "}
+                    </span>
+                  </a>
+
+                  <a
+                    id="github"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/fulyaertay/mini-blog-app"
+                    className="text-gray-200 text-5xl pt-4 pb-7 hover:text-slate-400"
+                  >
+                    <AiFillGithub></AiFillGithub>
+                  </a>
+                </div>
+              </div>
+              <div className="mt-10">
+                {" "}
+                <Image
+                  alt="quiz-app"
+                  src={web5}
+                  width={550}
+                  height={300}
+                ></Image>
+              </div>
+              <div>
+                <p className="font-md  text-white text-2xl mt-10">Quiz App</p>
+                <p className="font-md mt-7 text-gray-300">
+                  Created interactive quiz app using React. The Trivia API is
+                  used to list questions.
+                </p>
+                <div className="text-left flex items-center gap-8">
+                  <a
+                    className="tracking-widest    text-white pt-4 pb-7 text-left   inline-block  md:h-14  "
+                    href="https://scrimba-quiz-app.netlify.app/"
+                  >
+                    <span className="inline-block underline">
+                      Visit Site{" "}
+                      <svg
+                        className="inline-block"
+                        width="30"
+                        height="10"
+                        viewBox="0 0 16 9"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill="#ffffff"
+                          d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5Z"
+                        />
+                        <path
+                          fill="#ffffff"
+                          d="M10 8.5a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71l3.15-3.15l-3.15-3.15c-.2-.2-.2-.51 0-.71c.2-.2.51-.2.71 0l3.5 3.5c.2.2.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z"
+                        />
+                      </svg>{" "}
+                    </span>
+                  </a>
+
+                  <a
+                    id="github"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/fulyaertay/react-basics/tree/master/8-quiz-app"
+                    className="text-gray-200 text-5xl pt-4 pb-7 hover:text-slate-400"
+                  >
+                    <AiFillGithub></AiFillGithub>
+                  </a>
+                </div>
+              </div>
+
+              <div className="mt-10">
+                {" "}
+                <Image
+                  alt="vans-app"
+                  src={web7}
+                  width={550}
+                  height={300}
+                ></Image>
+              </div>
+              <div>
+                <p className="font-md  text-white text-2xl mt-10">
+                  VanLife App
+                </p>
+                <p className="font-md mt-7 text-gray-300">
+                  Build rental van travel app using React Router 6 and Firebase.
+                </p>
+                <div className="text-left flex items-center gap-8">
+                  <a
+                    className="tracking-widest    text-white pt-4 pb-7 text-left   inline-block  md:h-14  "
+                    href="https://fe-vans-app.netlify.app/"
+                  >
+                    <span className="inline-block underline">
+                      Visit Site{" "}
+                      <svg
+                        className="inline-block"
+                        width="30"
+                        height="10"
+                        viewBox="0 0 16 9"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill="#ffffff"
+                          d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5Z"
+                        />
+                        <path
+                          fill="#ffffff"
+                          d="M10 8.5a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71l3.15-3.15l-3.15-3.15c-.2-.2-.2-.51 0-.71c.2-.2.51-.2.71 0l3.5 3.5c.2.2.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z"
+                        />
+                      </svg>{" "}
+                    </span>
+                  </a>
+
+                  <a
+                    id="github"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/fulyaertay/react-router-v6"
+                    className="text-gray-200 text-5xl pt-4 pb-7 hover:text-slate-400"
+                  >
+                    <AiFillGithub></AiFillGithub>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -198,7 +333,7 @@ export default function Home() {
                   Design, JavaScript, React, Git, GitHub.
                 </p>
                 <div className="text-left">
-                  <a 
+                  <a
                     id="see-resume"
                     className="tracking-widest border-2 border-cyan-500 hover:bg-gradient-to-r hover:border-none hover:from-cyan-500  hover:to-teal-800  text-white pt-4 pb-4 text-center  hover:bg-black  inline-block w-[200px] md:h-14  mb-12"
                     href="https://www.showwcase.com/fulyaertay"
@@ -220,7 +355,12 @@ export default function Home() {
           <div className="lg:flex text-center justify-center">
             <div className="text-center  shadow-lg rounded-xl my-10 flex-1">
               <div>
-                <Image alt="front-end-title" src={desing} width={100} height={100}></Image>
+                <Image
+                  alt="front-end-title"
+                  src={desing}
+                  width={100}
+                  height={100}
+                ></Image>
                 <h4 className="py-4 text-teal-600 text-lg font-medium md:text-2xl pt-8 pb-2">
                   Front-End
                 </h4>
@@ -232,7 +372,12 @@ export default function Home() {
             </div>
             <div className="text-center shadow-lg  rounded-xl my-10 flex-1">
               <div>
-                <Image alt="back-end-title" src={code} width={100} height={100}></Image>
+                <Image
+                  alt="back-end-title"
+                  src={code}
+                  width={100}
+                  height={100}
+                ></Image>
                 <h4 className="text-lg py-4 text-teal-600  font-medium md:text-2xl  pt-8 pb-2">
                   Back-End
                 </h4>
@@ -242,7 +387,12 @@ export default function Home() {
             </div>
             <div className="text-center shadow-lg rounded-xl my-10 flex-1">
               <div>
-                <Image alt="database-title" src={consulting} width={100} height={100}></Image>
+                <Image
+                  alt="database-title"
+                  src={consulting}
+                  width={100}
+                  height={100}
+                ></Image>
                 <h4 className="py-4 text-teal-600 text-lg font-medium md:text-2xl  pt-8 pb-2">
                   Databases
                 </h4>
@@ -253,8 +403,7 @@ export default function Home() {
           </div>
         </section>
         <hr className="border-gray-600"></hr>
-       
-      
+
         <section className="px-10 md:px-20  " id="contact">
           <div>
             <h3 className="text-2xl text-teal-600 font-medium md:text-left py-1  md:text-4xl mt-12 ">
@@ -269,8 +418,9 @@ export default function Home() {
               reach out to me is via an email.
             </p>
             <div className="text-left">
-              <a id="send-mail"
-               className="tracking-widest border-2 border-cyan-500 hover:bg-gradient-to-r hover:border-none hover:from-cyan-500  hover:to-teal-800  text-white pt-4 pb-4 text-center  hover:bg-black  inline-block w-[200px] md:h-14  mb-12"
+              <a
+                id="send-mail"
+                className="tracking-widest border-2 border-cyan-500 hover:bg-gradient-to-r hover:border-none hover:from-cyan-500  hover:to-teal-800  text-white pt-4 pb-4 text-center  hover:bg-black  inline-block w-[200px] md:h-14  mb-12"
                 href="mailto: fulya.ertay@gmail.com"
               >
                 Send Mail
@@ -283,7 +433,8 @@ export default function Home() {
       <hr className="border-gray-600"></hr>
       <footer className="p-5 bg-black  flex justify-center max-w-full  dark:bg-gray-800 shadow-lg">
         <div className="text-4xl flex justify-center gap-16 py-3">
-          <a id="dribble"
+          <a
+            id="dribble"
             target="_blank"
             rel="noopener noreferrer"
             href="https://dribbble.com/fulyaertay"
@@ -292,7 +443,8 @@ export default function Home() {
             <AiOutlineDribbble></AiOutlineDribbble>
           </a>
 
-          <a id="linkedin"
+          <a
+            id="linkedin"
             target="_blank"
             rel="noopener noreferrer"
             href="https://www.linkedin.com/in/fulyaertay/"
@@ -300,7 +452,8 @@ export default function Home() {
           >
             <AiFillLinkedin></AiFillLinkedin>
           </a>
-          <a id="github"
+          <a
+            id="github"
             target="_blank"
             rel="noopener noreferrer"
             href="https://github.com/fulyaertay"
@@ -308,7 +461,8 @@ export default function Home() {
           >
             <AiFillGithub></AiFillGithub>
           </a>
-          <a id="medium"
+          <a
+            id="medium"
             target="_blank"
             rel="noopener noreferrer"
             href="https://medium.com/@fulyaertay"
@@ -317,7 +471,6 @@ export default function Home() {
             <AiOutlineMedium></AiOutlineMedium>
           </a>
         </div>
-       
       </footer>
     </div>
   );
