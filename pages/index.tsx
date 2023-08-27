@@ -5,7 +5,7 @@ import {
   AiOutlineDribbble,
   AiOutlineMedium,
 } from "react-icons/ai";
-import { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { FaArrowCircleUp } from "react-icons/fa";
 import header from "../public/header.svg";
 import Image from "next/legacy/image";
@@ -16,30 +16,28 @@ import web1 from "../public/web1.png";
 import web2 from "../public/web2.png";
 import web5 from "../public/web7.png";
 import web7 from "../public/web9.png";
-const btnScrollTop = {
-  position: "fixed",
-  bottom: "40px",
-  fontSize: "3rem",
-  zIndex: 1,
-  cursor: "pointer",
-  color: "white",
-  right: "2%",
-  background: "none",
-  borderRadius: "50px",
-  padding: "0px",
-  border: "none",
-  opacity: 0.7,
-};
-
-
 
 export default function Home() {
-
   const [isVisible, setIsVisible] = useState(false);
 
   const ScrollToTop = () => {
     return (
-      <button className="btnScrollTop">
+      <button
+        style={{
+          position: "fixed",
+          bottom: "40px",
+          fontSize: "3rem",
+          zIndex: 1,
+          cursor: "pointer",
+          color: "white",
+          right: "2%",
+          background: "none",
+          borderRadius: "50px",
+          padding: "0px",
+          border: "none",
+          opacity: 0.7,
+        }}
+      >
         <FaArrowCircleUp />
       </button>
     );
@@ -106,14 +104,29 @@ export default function Home() {
           </nav>
 
           <div className="flex flex-col px-10 md:px-0 text-center md:text-left gap-2 mb-12  ">
-          <div style={btnScrollTop}>
-            <button
-              style={{ display: isVisible ? "block" : "none" }}
-              onClick={goTop}
+            <div
+              style={{
+                position: "fixed",
+                bottom: "40px",
+                fontSize: "3rem",
+                zIndex: 1,
+                cursor: "pointer",
+                color: "white",
+                right: "2%",
+                background: "none",
+                borderRadius: "50px",
+                padding: "0px",
+                border: "none",
+                opacity: 0.7,
+              }}
             >
-              <FaArrowCircleUp />
-            </button>
-          </div>
+              <button
+                style={{ display: isVisible ? "block" : "none" }}
+                onClick={goTop}
+              >
+                <FaArrowCircleUp />
+              </button>
+            </div>
             <h3 className="text-3xl py-2 md:text-6xl tracking-widest  text-white ">
               Fulya Ertay
             </h3>
@@ -151,9 +164,7 @@ export default function Home() {
                 ></Image>
               </div>
               <div>
-                <p className="font-md  text-white text-2xl">
-                  Spotify Clone
-                </p>
+                <p className="font-md  text-white text-2xl">Spotify Clone</p>
                 <p className="font-md mt-7 text-gray-300">
                   The clone project is developed using Tailwind CSS.
                 </p>
@@ -396,9 +407,8 @@ export default function Home() {
             </div>
           </div>
         </section>
-      
+
         <section className=" md:px-20  mb-5">
-       
           <div className="lg:flex text-center justify-center">
             <div className="text-center  shadow-lg rounded-xl my-10 flex-1">
               <div>
