@@ -14,12 +14,8 @@ import code from "../public/code.png";
 import consulting from "../public/consulting.png";
 import web1 from "../public/web1.png";
 import web2 from "../public/web2.png";
-import web3 from "../public/web3.png";
-import web4 from "../public/web4.png";
 import web5 from "../public/web7.png";
-import web6 from "../public/web8.png";
 import web7 from "../public/web9.png";
-import web8 from "../public/web10.png";
 const btnScrollTop = {
   position: "fixed",
   bottom: "40px",
