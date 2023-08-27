@@ -347,11 +347,9 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <hr className="border-gray-600"></hr>
+      
         <section className=" md:px-20  mb-5">
-          <h3 className="text-2xl text-teal-600 font-medium py-1 text-center  my-12 md:text-4xl ">
-            My Skills
-          </h3>
+       
           <div className="lg:flex text-center justify-center">
             <div className="text-center  shadow-lg rounded-xl my-10 flex-1">
               <div>
@@ -364,10 +362,10 @@ export default function Home() {
                 <h4 className="py-4 text-teal-600 text-lg font-medium md:text-2xl pt-8 pb-2">
                   Front-End
                 </h4>
-                <p className="text-white py-5 md:text-xl">HTML/CSS</p>
-                <p className="text-white py-5 md:text-xl">Tailwind CSS</p>
-                <p className="text-white py-5 md:text-xl">JavaScript</p>
-                <p className="text-white py-5 md:text-xl">React</p>
+                <p className="text-white py-5 md:text-md">HTML/CSS</p>
+                <p className="text-white py-5 md:text-md">Tailwind CSS</p>
+                <p className="text-white py-5 md:text-md">JavaScript</p>
+                <p className="text-white py-5 md:text-md">React</p>
               </div>
             </div>
             <div className="text-center shadow-lg  rounded-xl my-10 flex-1">
@@ -381,8 +379,8 @@ export default function Home() {
                 <h4 className="text-lg py-4 text-teal-600  font-medium md:text-2xl  pt-8 pb-2">
                   Back-End
                 </h4>
-                <p className="text-white py-5 md:text-xl">Python</p>
-                <p className="text-white py-5 md:text-xl">Django</p>
+                <p className="text-white py-5 md:text-md">Python</p>
+                <p className="text-white py-5 md:text-md">Django</p>
               </div>
             </div>
             <div className="text-center shadow-lg rounded-xl my-10 flex-1">
@@ -396,8 +394,8 @@ export default function Home() {
                 <h4 className="py-4 text-teal-600 text-lg font-medium md:text-2xl  pt-8 pb-2">
                   Databases
                 </h4>
-                <p className="text-white py-5 md:text-xl">MongoDB</p>
-                <p className="text-white py-5 md:text-xl">MSSQL</p>
+                <p className="text-white py-5 md:text-md">MongoDB</p>
+                <p className="text-white py-5 md:text-md">MSSQL</p>
               </div>
             </div>
           </div>
