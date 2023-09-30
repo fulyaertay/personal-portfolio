@@ -16,7 +16,7 @@ import web1 from "../public/web1.png";
 import web2 from "../public/web2.png";
 import web5 from "../public/web7.png";
 import web7 from "../public/web9.png";
-
+import bookApplication from "../public/book-homepage.png"
 export default function Home() {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -205,7 +205,34 @@ export default function Home() {
                   </a>
                 </div>
               </div>
+              <div>
+                {" "}
+                <Image
+                  alt="book-shop"
+                  src={bookApplication}
+                  width={550}
+                  height={250}
+                ></Image>
+              </div>
+              <div>
+                <p className="font-md  text-white text-2xl">Jonquil's Book Shop</p>
+                <p className="font-md mt-7 text-gray-300">
+                  The application developed using React JS, Express JS and MySql database.
+                </p>
+                <div className="text-left flex items-center gap-8">
+                 
 
+                  <a
+                    id="github"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/fulyaertay/react-mysql-book-application/tree/main"
+                    className="text-gray-200 text-5xl pt-4 pb-7 hover:text-slate-400"
+                  >
+                    <AiFillGithub></AiFillGithub>
+                  </a>
+                </div>
+              </div>
               <div className="mt-10">
                 {" "}
                 <Image
@@ -367,6 +394,7 @@ export default function Home() {
                   </a>
                 </div>
               </div>
+              
             </div>
           </div>
         </section>
