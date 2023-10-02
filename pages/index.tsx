@@ -132,7 +132,7 @@ export default function Home() {
             </h3>
 
             <p className="sm:text-md md:text-lg py-5 leading-8 tracking-widest  text-white   ">
-              A Front-End developer who provides services for user-friendly web
+              A software developer who provides services for user-friendly web
               applications.
             </p>
             <div className="text-center md:text-left">
@@ -452,7 +452,8 @@ export default function Home() {
                 <p className="text-white py-5 md:text-md">HTML/CSS</p>
                 <p className="text-white py-5 md:text-md">Tailwind CSS</p>
                 <p className="text-white py-5 md:text-md">JavaScript</p>
-                <p className="text-white py-5 md:text-md">React</p>
+                <p className="text-white py-5 md:text-md">React JS</p>
+                <p className="text-white py-5 md:text-md">Cypress JS</p>
               </div>
             </div>
             <div className="text-center shadow-lg  rounded-xl my-10 flex-1">
@@ -468,6 +469,8 @@ export default function Home() {
                 </h4>
                 <p className="text-white py-5 md:text-md">Python</p>
                 <p className="text-white py-5 md:text-md">Django</p>
+                <p className="text-white py-5 md:text-md">Node JS</p>
+                <p className="text-white py-5 md:text-md">Express JS</p>
               </div>
             </div>
             <div className="text-center shadow-lg rounded-xl my-10 flex-1">
@@ -482,7 +485,8 @@ export default function Home() {
                   Databases
                 </h4>
                 <p className="text-white py-5 md:text-md">MongoDB</p>
-                <p className="text-white py-5 md:text-md">MSSQL</p>
+                <p className="text-white py-5 md:text-md">MYSQL</p>
+                <p className="text-white py-5 md:text-md">Firebase</p>
               </div>
             </div>
           </div>
