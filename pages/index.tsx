@@ -217,7 +217,7 @@ export default function Home() {
               <div>
                 <p className="font-md  text-white text-2xl">Jonquils Book Shop</p>
                 <p className="font-md mt-7 text-gray-300">
-                  The application developed using React JS, Express JS and MySql database.
+                  The application developed using React JS, Express JS, Cypress JS and MySql database.
                 </p>
                 <div className="text-left flex items-center gap-8">
                  
