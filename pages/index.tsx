@@ -18,25 +18,38 @@ import web5 from "../public/web7.png";
 import web7 from "../public/web9.png";
 import bookApplication from "../public/book-homepage.png"
 export default function Home() {
-  const [isVisible, setIsVisible] = useState(false);
-
+  const [isVisible, setIsVisible] = useState<boolean>(false);
+  interface ScrollToTopProps {
+    bottom:  string,
+    fontSize:  string,
+    zIndex: number,
+    cursor:  string,
+    color:  string,
+    right:  string,
+    background:  string,
+    borderRadius:  string,
+    padding:  string,
+    border:  string,
+    opacity: number,
+  }
+  const buttonProps: ScrollToTopProps = {
+   
+    bottom: "40px",
+    fontSize: "3rem",
+    zIndex: 1,
+    cursor: "pointer",
+    color: "white",
+    right: "2%",
+    background: "none",
+    borderRadius: "50px",
+    padding: "0px",
+    border: "none",
+    opacity: 0.7,
+  }
   const ScrollToTop = () => {
     return (
       <button
-        style={{
-          position: "fixed",
-          bottom: "40px",
-          fontSize: "3rem",
-          zIndex: 1,
-          cursor: "pointer",
-          color: "white",
-          right: "2%",
-          background: "none",
-          borderRadius: "50px",
-          padding: "0px",
-          border: "none",
-          opacity: 0.7,
-        }}
+        style={buttonProps}
       >
         <FaArrowCircleUp />
       </button>
