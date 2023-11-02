@@ -12,6 +12,7 @@ import Image from "next/legacy/image";
 import desing from "../public/design.png";
 import code from "../public/code.png";
 import consulting from "../public/consulting.png";
+import test from "../public/test.png";
 import web1 from "../public/web1.png";
 import web2 from "../public/web2.png";
 import web5 from "../public/web7.png";
@@ -145,7 +146,7 @@ export default function Home() {
             </h3>
 
             <p className="sm:text-md md:text-lg py-5 leading-8 tracking-widest  text-white   ">
-              A software developer who provides services for user-friendly web
+              A software developer and test engineer who provides and tests products for user-friendly web
               applications.
             </p>
             <div className="text-center md:text-left">
@@ -421,17 +422,10 @@ export default function Home() {
             <div className="sm:flex lg:justify-between  gap-10 ">
               <div>
                 <p className="text-sm md:text-md py-5 leading-loose tracking-widest text-gray-80  md:text-left  md:max-w-8xl text-white  ">
-                  I am a web developer and designer based out of İzmir, Turkey.
+                  I am a web developer and test engineer based out of İzmir, Turkey.
                   Armed with a associate degree in computer programming and a
-                  bachelor degree in computer engineering, I love building apps
-                  that solve real-world problems, and that are delightful to
-                  use. Before dwelling on the world of programming, I loved
-                  writing poetry. And now, combining my love for writing with my
-                  knowledge of programming I became a technical writer. Whether
-                  I am writing documentation or designing user experiences, my
-                  goal is always to create content that is engaging and
-                  informative. My skills include: HTML, CSS, Tailwind CSS, UI
-                  Design, JavaScript, React, Git, GitHub.
+                  bachelor degree in computer engineering, I love building and testing apps
+                  that solve real-world problems.
                 </p>
                 <div className="text-left">
                   <a
@@ -466,7 +460,7 @@ export default function Home() {
                 <p className="text-white py-5 md:text-md">Tailwind CSS</p>
                 <p className="text-white py-5 md:text-md">JavaScript</p>
                 <p className="text-white py-5 md:text-md">React JS</p>
-                <p className="text-white py-5 md:text-md">Cypress JS</p>
+          
               </div>
             </div>
             <div className="text-center shadow-lg  rounded-xl my-10 flex-1">
@@ -500,6 +494,22 @@ export default function Home() {
                 <p className="text-white py-5 md:text-md">MongoDB</p>
                 <p className="text-white py-5 md:text-md">MYSQL</p>
                 <p className="text-white py-5 md:text-md">Firebase</p>
+              </div>
+            </div>
+            <div className="text-center shadow-lg rounded-xl my-10 flex-1">
+              <div>
+                <Image
+                  alt="database-title"
+                  src={test}
+                  width={100}
+                  height={100}
+                ></Image>
+                <h4 className="py-4 text-teal-600 text-lg font-medium md:text-2xl  pt-8 pb-2">
+                  Test Frameworks
+                </h4>
+                <p className="text-white py-5 md:text-md">Cypress JS</p>
+                <p className="text-white py-5 md:text-md">Codecept JS</p>
+                <p className="text-white py-5 md:text-md">Selenium IDE</p>
               </div>
             </div>
           </div>
