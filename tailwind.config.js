@@ -12,5 +12,6 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [ 
+  require("tailwindcss/nesting")],
 }

@@ -9,6 +9,7 @@ import React, { useState, useEffect } from "react";
 import { FaArrowCircleUp } from "react-icons/fa";
 import header from "../public/header.svg";
 import Image from "next/legacy/image";
+import testrelic from "../public/testrelic.png";
 import desing from "../public/design.png";
 import code from "../public/code.png";
 import consulting from "../public/consulting.png";
