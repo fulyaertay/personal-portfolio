@@ -184,7 +184,7 @@ export default function Home() {
               <div>
                 <p className="font-md  text-white text-2xl">FalcoWMS Web Project</p>
                 <p className="font-md mt-7 text-gray-300">
-                  I developed FalcoWMS for the <a href="https://networksystem.com.tr">Network System </a>Company. It provides to track employee tasks based on their locations.
+                  I developed FalcoWMS for the <a href="https://networksystem.com.tr">Network System </a>Company. It provides to track employee tasks based on their locations.Using technologies like; React JS, Node JS, Tailwind CSS, MUI Component Library, Google Maps API and The JavaScript Geolocation API.
                 </p>
                 <div className="text-left flex items-center gap-8">
                   <a
