@@ -83,25 +83,25 @@ export default function Home() {
         <meta name="google-site-verification" content="RM-c9-j8_Ko3MXtk3-P59ua07QJkC-F7aRnTxPPKBP4" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-black max-w-full ">
-        <section className=" md:px-20  text-center     ">
-          <nav className="py-10 px-16 lg:px-0 mb-12 flex text-center md:justify-between ">
-            <h1 className="text-xl font-burtons text-white hidden lg:flex ">
+      <main className="bg-white max-w-full ">
+      <div className="bg-gray-900 md:px-20 ">
+          <nav className="   py-6 px-20 md:px-16 lg:px-0 mb-12 flex text-center md:justify-between ">
+            <h1 className="text-xl font-burtons lg:items-center text-white hidden lg:flex ">
               developedbyfe
             </h1>
 
             <ul className="flex items-center gap-10">
-              <li className="text-lg  text-white ">
+              <li className="text-lg  text-white hover:text-gray-300">
                 <a href="#projects" id="projects-link">
                   Projects{" "}
                 </a>
               </li>
-              <li className="text-lg  text-white ">
+              <li className="text-lg  text-white hover:text-gray-300">
                 <a id="about-link" href="#about">
                   About{" "}
                 </a>
               </li>
-              <li className="text-lg text-white ">
+              <li className="text-lg text-white hover:text-gray-300 ">
                 <a id="contact-link" href="#contact">
                   Contact{" "}
                 </a>
@@ -109,7 +109,7 @@ export default function Home() {
               <li className="hidden lg:flex md:flex">
                 <a
                   id="resume-link"
-                  className="bg-gradient-to-r text-lg from-cyan-500  hover:to-teal-400  to-teal-800 text-white px-4 py-2  ml-8"
+                  className="bg-gradient-to-r text-lg  bg-blue-500 hover:bg-blue-600 text-white px-4 py-2  ml-8"
                   href="https://www.showwcase.com/fulyaertay"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -119,7 +119,9 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-
+</div>
+        <section className=" md:px-20  text-center     ">
+    
           <div className="flex flex-col px-10 md:px-0 text-center md:text-left gap-2 mb-12  ">
             <div
               style={{
@@ -128,7 +130,7 @@ export default function Home() {
                 fontSize: "3rem",
                 zIndex: 1,
                 cursor: "pointer",
-                color: "white",
+                color: "gray",
                 right: "2%",
                 background: "none",
                 borderRadius: "50px",
@@ -144,17 +146,17 @@ export default function Home() {
                 <FaArrowCircleUp />
               </button>
             </div>
-            <h3 className="text-3xl py-2 md:text-6xl tracking-widest  text-white ">
+            <h3 className="text-3xl py-2 md:text-6xl tracking-widest  text-blue-500 ">
               Fulya Ertay
             </h3>
 
-            <p className="sm:text-md md:text-lg py-5 leading-8 tracking-widest  text-white   ">
+            <p className="sm:text-md md:text-lg py-5 leading-8 tracking-widest  text-gray-900   ">
               A software developer and test engineer who provides and tests products for user-friendly web
               applications.
             </p>
             <div className="text-center md:text-left">
               <a
-                className="tracking-widest border-2 border-cyan-500 hover:bg-gradient-to-r hover:border-none hover:from-cyan-500  hover:to-teal-800  text-white pt-4 pb-4 text-center  hover:bg-black  inline-block w-[200px] md:h-14  mb-12"
+                className="tracking-widest border-2 border-blue-500 hover:bg-blue-500  hover:border-none  text-gray-900 hover:text-white pt-4 pb-4 text-center   inline-block w-[200px] md:h-14  mb-12"
                 href="#contact"
               >
                 Get in Touch
@@ -165,7 +167,7 @@ export default function Home() {
         <hr className="border-gray-600"></hr>
         <section className="px-10 md:px-20 " id="projects">
           <div>
-            <h3 className="text-2xl text-teal-600 text-center md:text-left font-medium py-1  mt-5 mb-10 md:text-4xl">
+            <h3 className="text-2xl text-blue-500 text-center md:text-left font-medium py-1  mt-5 mb-10 md:text-4xl">
               My Portfolio
             </h3>
           </div>
@@ -182,45 +184,45 @@ export default function Home() {
                 ></Image>
               </div>
               <div>
-                <p className="font-md  text-white text-2xl">FalcoWMS Web Project</p>
-                <p className="font-md mt-7 text-gray-300">
+                <p className="font-md  text-gray-900 text-2xl">FalcoWMS Web Project</p>
+                <p className="font-md mt-7 text-gray-900">
                   I developed FalcoWMS for the <a href="https://networksystem.com.tr">Network System </a>Company. It provides to track employee tasks based on their locations.Using technologies like; React JS, Node JS, Tailwind CSS, MUI Component Library, Google Maps API and The JavaScript Geolocation API.
                 </p>
                 <div className="text-left flex items-center gap-8">
-                  <a
-                    className="tracking-widest    text-white pt-4 pb-7 text-left   inline-block  md:h-14  "
+                <a
+                    id="github"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/fulyaertay/FalcoWMS-Is-Yonetim-Sistemi"
+                    className="text-gray-900 text-5xl pt-4 pb-7 hover:text-slate-400"
+                  >
+                    <AiFillGithub></AiFillGithub>
+                  </a> <a
+                    className="tracking-widest    text-gray-900 pt-4 pb-7 text-left   inline-block  md:h-14  "
                     href="http://195.244.36.115:3000/login"
                   >
-                    <span className="inline-block underline">
+                    <span className="inline-block underline hover:text-gray-600">
                       Visit Site{" "}
                       <svg
-                        className="inline-block"
+                        className="inline-block "
                         width="30"
                         height="10"
                         viewBox="0 0 16 9"
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          fill="#ffffff"
+                          fill="black"
                           d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5Z"
                         />
                         <path
-                          fill="#ffffff"
+                          fill="black"
                           d="M10 8.5a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71l3.15-3.15l-3.15-3.15c-.2-.2-.2-.51 0-.71c.2-.2.51-.2.71 0l3.5 3.5c.2.2.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z"
                         />
                       </svg>{" "}
                     </span>
                   </a>
 
-                  <a
-                    id="github"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://github.com/fulyaertay/FalcoWMS-Is-Yonetim-Sistemi"
-                    className="text-gray-200 text-5xl pt-4 pb-7 hover:text-slate-400"
-                  >
-                    <AiFillGithub></AiFillGithub>
-                  </a>
+                
                 </div>
               </div>
 
@@ -236,16 +238,24 @@ export default function Home() {
                 ></Image>
               </div>
               <div>
-                <p className="font-md  text-white text-2xl">Spotify Clone</p>
-                <p className="font-md mt-7 text-gray-300">
+                <p className="font-md  text-gray-900 text-2xl">Spotify Clone</p>
+                <p className="font-md mt-7 text-gray-900">
                   The clone project is developed using Tailwind CSS.
                 </p>
                 <div className="text-left flex items-center gap-8">
-                  <a
-                    className="tracking-widest    text-white pt-4 pb-7 text-left   inline-block  md:h-14  "
+                   <a
+                    id="github"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/fulyaertay/scrimba-tailwind-projects/tree/master/3-solo-project-spotify-clone"
+                    className="ttext-gray-900 text-5xl pt-4 pb-7 hover:text-slate-400"
+                  >
+                    <AiFillGithub></AiFillGithub>
+                  </a> <a
+                    className="tracking-widest    text-gray-900 pt-4 pb-7 text-left   inline-block  md:h-14  "
                     href="https://scrimba-spotify-clone.netlify.app/"
                   >
-                    <span className="inline-block underline">
+                    <span className="inline-block underline hover:text-gray-600">
                       Visit Site{" "}
                       <svg
                         className="inline-block"
@@ -255,26 +265,18 @@ export default function Home() {
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          fill="#ffffff"
+                          fill="black"
                           d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5Z"
                         />
                         <path
-                          fill="#ffffff"
+                          fill="black"
                           d="M10 8.5a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71l3.15-3.15l-3.15-3.15c-.2-.2-.2-.51 0-.71c.2-.2.51-.2.71 0l3.5 3.5c.2.2.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z"
                         />
                       </svg>{" "}
                     </span>
                   </a>
 
-                  <a
-                    id="github"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://github.com/fulyaertay/scrimba-tailwind-projects/tree/master/3-solo-project-spotify-clone"
-                    className="text-gray-200 text-5xl pt-4 pb-7 hover:text-slate-400"
-                  >
-                    <AiFillGithub></AiFillGithub>
-                  </a>
+                
                 </div>
               </div>
               <div>
@@ -287,8 +289,8 @@ export default function Home() {
                 ></Image>
               </div>
               <div>
-                <p className="font-md  text-white text-2xl">Jonquils Book Shop</p>
-                <p className="font-md mt-7 text-gray-300">
+                <p className="font-md  text-gray-900 text-2xl">Jonquils Book Shop</p>
+                <p className="font-md mt-7 text-gray-900">
                   The application developed using React JS, Express JS, Cypress JS and MySql database.
                 </p>
                 <div className="text-left flex items-center gap-8">
@@ -299,7 +301,7 @@ export default function Home() {
                     target="_blank"
                     rel="noopener noreferrer"
                     href="https://github.com/fulyaertay/react-mysql-book-application/tree/main"
-                    className="text-gray-200 text-5xl pt-4 pb-7 hover:text-slate-400"
+                    className="text-gray-900 text-5xl pt-4 pb-7 hover:text-slate-400"
                   >
                     <AiFillGithub></AiFillGithub>
                   </a>
@@ -315,20 +317,28 @@ export default function Home() {
                 ></Image>
               </div>
               <div>
-                <p className="font-md  text-white text-2xl mt-10">
+                <p className="font-md  text-gray-900 text-2xl mt-10">
                   Mini Blog App
                 </p>
-                <p className="font-md mt-7 text-gray-300">
+                <p className="font-md mt-7 text-gray-900">
                   Developed the blog application that it can be used to add/list
                   blogs and designed using Javascript, HTML, Materialize CSS and
                   Firebase.
                 </p>
                 <div className="text-left flex items-center gap-8">
                   <a
-                    className="tracking-widest    text-white pt-4 pb-7 text-left   inline-block  md:h-14  "
+                    id="github"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/fulyaertay/mini-blog-app"
+                    className="text-gray-900 text-5xl pt-4 pb-7 hover:text-slate-400"
+                  >
+                    <AiFillGithub></AiFillGithub>
+                  </a>  <a
+                    className="tracking-widest    text-gray-900 pt-4 pb-7 text-left   inline-block  md:h-14  "
                     href="https://mini-blog-website.netlify.app/"
                   >
-                    <span className="inline-block underline">
+                    <span className="inline-block underline hover:text-gray-600">
                       Visit Site{" "}
                       <svg
                         className="inline-block"
@@ -338,26 +348,18 @@ export default function Home() {
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          fill="#ffffff"
+                          fill="black"
                           d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5Z"
                         />
                         <path
-                          fill="#ffffff"
+                          fill="black"
                           d="M10 8.5a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71l3.15-3.15l-3.15-3.15c-.2-.2-.2-.51 0-.71c.2-.2.51-.2.71 0l3.5 3.5c.2.2.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z"
                         />
                       </svg>{" "}
                     </span>
                   </a>
 
-                  <a
-                    id="github"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://github.com/fulyaertay/mini-blog-app"
-                    className="text-gray-200 text-5xl pt-4 pb-7 hover:text-slate-400"
-                  >
-                    <AiFillGithub></AiFillGithub>
-                  </a>
+                
                 </div>
               </div>
               <div className="mt-10">
@@ -370,17 +372,25 @@ export default function Home() {
                 ></Image>
               </div>
               <div>
-                <p className="font-md  text-white text-2xl mt-10">Quiz App</p>
-                <p className="font-md mt-7 text-gray-300">
+                <p className="font-md  text-gray-900  text-2xl mt-10">Quiz App</p>
+                <p className="font-md mt-7 text-gray-900 ">
                   Created interactive quiz app using React. The Trivia API is
                   used to list questions.
                 </p>
                 <div className="text-left flex items-center gap-8">
-                  <a
-                    className="tracking-widest    text-white pt-4 pb-7 text-left   inline-block  md:h-14  "
+                   <a
+                    id="github"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/fulyaertay/react-basics/tree/master/8-quiz-app"
+                    className="text-gray-900  text-5xl pt-4 pb-7 hover:text-slate-400"
+                  >
+                    <AiFillGithub></AiFillGithub>
+                  </a>  <a
+                    className="tracking-widest    text-gray-900  pt-4 pb-7 text-left   inline-block  md:h-14  "
                     href="https://scrimba-quiz-app.netlify.app/"
                   >
-                    <span className="inline-block underline">
+                    <span className="inline-block underline hover:text-gray-600">
                       Visit Site{" "}
                       <svg
                         className="inline-block"
@@ -390,26 +400,18 @@ export default function Home() {
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          fill="#ffffff"
+                          fill="black"
                           d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5Z"
                         />
                         <path
-                          fill="#ffffff"
+                          fill="black"
                           d="M10 8.5a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71l3.15-3.15l-3.15-3.15c-.2-.2-.2-.51 0-.71c.2-.2.51-.2.71 0l3.5 3.5c.2.2.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z"
                         />
                       </svg>{" "}
                     </span>
                   </a>
 
-                  <a
-                    id="github"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://github.com/fulyaertay/react-basics/tree/master/8-quiz-app"
-                    className="text-gray-200 text-5xl pt-4 pb-7 hover:text-slate-400"
-                  >
-                    <AiFillGithub></AiFillGithub>
-                  </a>
+               
                 </div>
               </div>
 
@@ -423,18 +425,26 @@ export default function Home() {
                 ></Image>
               </div>
               <div>
-                <p className="font-md  text-white text-2xl mt-10">
+                <p className="font-md  text-gray-900  text-2xl mt-10">
                   VanLife App
                 </p>
-                <p className="font-md mt-7 text-gray-300">
+                <p className="font-md mt-7 text-gray-900 ">
                   Build rental van travel app using React Router 6 and Firebase.
                 </p>
                 <div className="text-left flex items-center gap-8">
-                  <a
-                    className="tracking-widest    text-white pt-4 pb-7 text-left   inline-block  md:h-14  "
+                 <a
+                    id="github"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/fulyaertay/react-router-v6"
+                    className="text-gray-900  text-5xl pt-4 pb-7 hover:text-slate-400"
+                  >
+                    <AiFillGithub></AiFillGithub>
+                  </a>  <a
+                    className="tracking-widest    text-gray-900  pt-4 pb-7 text-left   inline-block  md:h-14  "
                     href="https://fe-vans-app.netlify.app/"
                   >
-                    <span className="inline-block underline">
+                    <span className="inline-block underline hover:text-gray-600">
                       Visit Site{" "}
                       <svg
                         className="inline-block"
@@ -444,26 +454,18 @@ export default function Home() {
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          fill="#ffffff"
+                          fill="black"
                           d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5Z"
                         />
                         <path
-                          fill="#ffffff"
+                          fill="black"
                           d="M10 8.5a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71l3.15-3.15l-3.15-3.15c-.2-.2-.2-.51 0-.71c.2-.2.51-.2.71 0l3.5 3.5c.2.2.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z"
                         />
                       </svg>{" "}
                     </span>
                   </a>
 
-                  <a
-                    id="github"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://github.com/fulyaertay/react-router-v6"
-                    className="text-gray-200 text-5xl pt-4 pb-7 hover:text-slate-400"
-                  >
-                    <AiFillGithub></AiFillGithub>
-                  </a>
+                 
                 </div>
               </div>
               
@@ -473,13 +475,13 @@ export default function Home() {
         <hr className="border-gray-600"></hr>
         <section className="px-10 md:px-20  mb-12" id="about">
           <div>
-            <h3 className="text-2xl text-teal-600 font-medium py-1  md:text-4xl md:text-left lg:text-left mt-12  ">
+            <h3 className="text-2xl text-blue-500 font-medium py-1  md:text-4xl md:text-left lg:text-left mt-12  ">
               About Me
               <div className="border-red-500 border-10 border-b absolute  "></div>
             </h3>
             <div className="sm:flex lg:justify-between  gap-10 ">
               <div>
-                <p className="text-sm md:text-md py-5 leading-loose tracking-widest text-gray-80  md:text-left  md:max-w-8xl text-white  ">
+                <p className="text-sm md:text-md py-5 leading-loose tracking-widest text-gray-80  md:text-left  md:max-w-8xl text-gray-900  ">
                   I am a web developer and test engineer based out of İzmir, Turkey.
                   Armed with a associate degree in computer programming and a
                   bachelor degree in computer engineering, I love building and testing apps
@@ -488,7 +490,7 @@ export default function Home() {
                 <div className="text-left">
                   <a
                     id="see-resume"
-                    className="tracking-widest border-2 border-cyan-500 hover:bg-gradient-to-r hover:border-none hover:from-cyan-500  hover:to-teal-800  text-white pt-4 pb-4 text-center  hover:bg-black  inline-block w-[200px] md:h-14  mb-12"
+                    className="tracking-widest border-2 border-blue-500 hover:bg-gradient-to-r hover:border-none hover:bg-blue-500 text-gray-900 hover:text-white pt-4 pb-4 text-center    inline-block w-[200px] md:h-14  mb-12"
                     href="https://www.showwcase.com/fulyaertay"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -511,13 +513,13 @@ export default function Home() {
                   width={100}
                   height={100}
                 ></Image>
-                <h4 className="py-4 text-teal-600 text-lg font-medium md:text-2xl pt-8 pb-2">
+                <h4 className="py-4 text-blue-500 text-lg font-medium md:text-2xl pt-8 pb-2">
                   Front-End
                 </h4>
-                <p className="text-white py-5 md:text-md">HTML/CSS</p>
-                <p className="text-white py-5 md:text-md">Tailwind CSS</p>
-                <p className="text-white py-5 md:text-md">JavaScript</p>
-                <p className="text-white py-5 md:text-md">React JS</p>
+                <p className="text-gray-900  py-5 md:text-md">HTML/CSS</p>
+                <p className="text-gray-900  py-5 md:text-md">Tailwind CSS</p>
+                <p className="text-gray-900  py-5 md:text-md">JavaScript</p>
+                <p className="text-gray-900  py-5 md:text-md">React JS</p>
           
               </div>
             </div>
@@ -529,13 +531,13 @@ export default function Home() {
                   width={100}
                   height={100}
                 ></Image>
-                <h4 className="text-lg py-4 text-teal-600  font-medium md:text-2xl  pt-8 pb-2">
+                <h4 className="text-lg py-4 text-blue-500  font-medium md:text-2xl  pt-8 pb-2">
                   Back-End
                 </h4>
-                <p className="text-white py-5 md:text-md">Python</p>
-                <p className="text-white py-5 md:text-md">Django</p>
-                <p className="text-white py-5 md:text-md">Node JS</p>
-                <p className="text-white py-5 md:text-md">Express JS</p>
+                <p className="text-gray-900  py-5 md:text-md">Python</p>
+                <p className="text-gray-900  py-5 md:text-md">Django</p>
+                <p className="text-gray-900  py-5 md:text-md">Node JS</p>
+                <p className="text-gray-900  py-5 md:text-md">Express JS</p>
               </div>
             </div>
             <div className="text-center shadow-lg rounded-xl my-10 flex-1">
@@ -546,12 +548,12 @@ export default function Home() {
                   width={100}
                   height={100}
                 ></Image>
-                <h4 className="py-4 text-teal-600 text-lg font-medium md:text-2xl  pt-8 pb-2">
+                <h4 className="py-4 text-blue-500 text-lg font-medium md:text-2xl  pt-8 pb-2">
                   Databases
                 </h4>
-                <p className="text-white py-5 md:text-md">MongoDB</p>
-                <p className="text-white py-5 md:text-md">MYSQL</p>
-                <p className="text-white py-5 md:text-md">Firebase</p>
+                <p className="text-gray-900  py-5 md:text-md">MongoDB</p>
+                <p className="text-gray-900  py-5 md:text-md">MYSQL</p>
+                <p className="text-gray-900  py-5 md:text-md">Firebase</p>
               </div>
             </div>
             <div className="text-center shadow-lg rounded-xl my-10 flex-1">
@@ -562,24 +564,24 @@ export default function Home() {
                   width={100}
                   height={100}
                 ></Image>
-                <h4 className="py-4 text-teal-600 text-lg font-medium md:text-2xl  pt-8 pb-2">
+                <h4 className="py-4 text-blue-500 text-lg font-medium md:text-2xl  pt-8 pb-2">
                   Test Frameworks
                 </h4>
-                <p className="text-white py-5 md:text-md">Cypress JS</p>
-                <p className="text-white py-5 md:text-md">Codecept JS</p>
-                <p className="text-white py-5 md:text-md">Selenium IDE</p>
+                <p className="text-gray-900  py-5 md:text-md">Cypress JS</p>
+                <p className="text-gray-900  py-5 md:text-md">Codecept JS</p>
+                <p className="text-gray-900  py-5 md:text-md">Selenium IDE</p>
               </div>
             </div>
           </div>
         </section>
-        <hr className="border-gray-600"></hr>
+        <hr className="border-gray-100"></hr>
 
         <section className="px-10 md:px-20  " id="contact">
           <div>
-            <h3 className="text-2xl text-teal-600 font-medium md:text-left py-1  md:text-4xl mt-12 ">
+            <h3 className="text-2xl text-blue-500 font-medium md:text-left py-1  md:text-4xl mt-12 ">
               Get in Touch
             </h3>
-            <p className="text-sm md:text-md py-5 leading-8 tracking-widest  text-white md:text-left  md:max-w-8xl mb-5 ">
+            <p className="text-sm md:text-md py-5 leading-8 tracking-widest  text-gray-900  md:text-left  md:max-w-8xl mb-5 ">
               Are you looking for a fast-performing and user-friendly website to
               represent your product or business? or looking for any kind of
               consultation? or want to ask questions? or have some advice for me
@@ -590,7 +592,7 @@ export default function Home() {
             <div className="text-left">
               <a
                 id="send-mail"
-                className="tracking-widest border-2 border-cyan-500 hover:bg-gradient-to-r hover:border-none hover:from-cyan-500  hover:to-teal-800  text-white pt-4 pb-4 text-center  hover:bg-black  inline-block w-[200px] md:h-14  mb-12"
+                className="tracking-widest border-2 border-blue-500 hover:bg-gradient-to-r hover:border-none  text-gray-900 hover:text-white pt-4 pb-4 text-center  hover:bg-blue-500  inline-block w-[200px] md:h-14  mb-12"
                 href="mailto: fulya.ertay@gmail.com"
               >
                 Send Mail
@@ -601,14 +603,14 @@ export default function Home() {
       </main>
 
       <hr className="border-gray-600"></hr>
-      <footer className="p-5 bg-black  flex justify-center max-w-full  dark:bg-gray-800 shadow-lg">
+      <footer className="p-5 bg-gray-900  flex justify-center max-w-full  dark:bg-gray-800 shadow-lg">
         <div className="text-4xl flex justify-center gap-16 py-3">
           <a
             id="dribble"
             target="_blank"
             rel="noopener noreferrer"
             href="https://dribbble.com/fulyaertay"
-            className="text-gray-200"
+            className="text-gray-200 hover:text-gray-400"
           >
             <AiOutlineDribbble></AiOutlineDribbble>
           </a>
@@ -618,7 +620,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             href="https://www.linkedin.com/in/fulyaertay/"
-            className="text-gray-200"
+            className="text-gray-200 hover:text-gray-400"
           >
             <AiFillLinkedin></AiFillLinkedin>
           </a>
@@ -627,7 +629,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             href="https://github.com/fulyaertay"
-            className="text-gray-200"
+            className="text-gray-200 hover:text-gray-400"
           >
             <AiFillGithub></AiFillGithub>
           </a>
@@ -636,7 +638,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             href="https://medium.com/@fulyaertay"
-            className="text-gray-200"
+            className="text-gray-200 hover:text-gray-400"
           >
             <AiOutlineMedium></AiOutlineMedium>
           </a>
