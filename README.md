@@ -24,32 +24,7 @@ This is my personal portfolio page. It's a single-page website that shows my per
 - Contact Info
 - Fully Responsive
 - Cross Platform
-## 🔋 Installation
 
-**1. Clone the Repository**
-
-```
-  git clone https://github.com/fulyaertay/personal-portfolio.git
-```
-
-**2. Move into the working directory**
-
-```
-  cd personal-portfolio
-```
-
-**3. Install Dependencies**
-
-```
-  npm install
-```
-
-
-**4. Run the App**
-
-```
-  npm start
-```
 
 
 ## 🚀 About Me
