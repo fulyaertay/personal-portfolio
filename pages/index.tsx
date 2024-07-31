@@ -605,15 +605,7 @@ export default function Home() {
       <hr className="border-gray-600"></hr>
       <footer className="p-5 bg-gray-900  flex justify-center max-w-full  dark:bg-gray-800 shadow-lg">
         <div className="text-4xl flex justify-center gap-16 py-3">
-          <a
-            id="dribble"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://dribbble.com/fulyaertay"
-            className="text-gray-200 hover:text-gray-400"
-          >
-            <AiOutlineDribbble></AiOutlineDribbble>
-          </a>
+         
 
           <a
             id="linkedin"
