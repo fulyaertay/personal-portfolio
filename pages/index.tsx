@@ -19,7 +19,11 @@ import web2 from "../public/web2.png";
 import web5 from "../public/web7.png";
 import web7 from "../public/web9.png";
 import falcowms from "../public/falcowms.png";
+import patikastore from "../public/patikastore.png";
 import bookApplication from "../public/book-homepage.png"
+import eylul from "../public/9eylul.png"
+import djavac from "../public/djavac.png"
+
 export default function Home() {
   const [isVisible, setIsVisible] = useState<boolean>(false);
   interface ScrollToTopProps {
@@ -151,7 +155,7 @@ export default function Home() {
             </h3>
 
             <p className="sm:text-md md:text-lg py-5 leading-8 tracking-widest  text-gray-900   ">
-              A software developer and test engineer who provides and tests products for user-friendly web
+              I'm Software Engineer and I love to develop and test products for user-friendly web and mobile
               applications.
             </p>
             <div className="text-center md:text-left">
@@ -202,7 +206,34 @@ export default function Home() {
                 
                 </div>
               </div>
+              <div>
+                {" "}
+                <Image
+                  alt="PatikaStore"
+                  src={patikastore}
+                  width={550}
+                  height={250}
+                ></Image>
+              </div>
+              <div>
+                <p className="font-md  text-gray-900 text-2xl">PatikaStore Mobile App</p>
+                <p className="font-md mt-7 text-gray-900">
+                  A React Native project that provides to list product using FlatList component.
+                </p>
+                <div className="text-left flex items-center gap-8">
+                <a
+                    id="github"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/fulyaertay/PATIKASTORE-Mobile-App-?tab=readme-ov-file"
+                    className="text-gray-900 text-5xl pt-4 pb-7 hover:text-slate-400"
+                  >
+                    <AiFillGithub></AiFillGithub>
+                  </a> 
 
+                
+                </div>
+              </div>
              
              
               <div>
@@ -446,6 +477,74 @@ export default function Home() {
                 </div>
               </div>
               
+
+
+              <div className="mt-10">
+                {" "}
+                <Image
+                  alt="thesis"
+                  src={djavac}
+                  width={550}
+                  height={300}
+                ></Image>
+              </div>
+              <div>
+                <p className="font-md  text-gray-900 text-2xl mt-10">
+                DJAVAC Project(Bachelor's Thesis)
+                </p>
+                <p className="font-md mt-7 text-gray-900">
+                 My Bachelor's Thesis project aims to enable the Java programmer to write higher quality codes by spending less time
+                 and It works as an automated loaded engine for java methods compilation over the network using technologies like Java and RMI Server. 
+                </p>
+                <div className="text-left flex items-center gap-8">
+                  <a
+                    id="github"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/fulyaertay/DJAVAC-App"
+                    className="text-gray-900 text-5xl pt-4 pb-7 hover:text-slate-400"
+                  >
+                    <AiFillGithub></AiFillGithub>
+                  </a> 
+
+                
+                </div>
+              </div>
+
+              <div className="mt-10">
+                {" "}
+                <Image
+                  alt="internshipProject"
+                  src={eylul}
+                  width={550}
+                  height={300}
+                ></Image>
+              </div>
+              <div>
+                <p className="font-md  text-gray-900 text-2xl mt-10">
+                Device Tracking App(Internship Project)
+                </p>
+                <p className="font-md mt-7 text-gray-900">
+                My internship project aims to device tracking system for 9 Eylül University employees. I used technologies like .NET, C# and MSSQL languages
+                </p>
+                <div className="text-left flex items-center gap-8">
+                  <a
+                    id="github"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/fulyaertay/device-tracking-app"
+                    className="text-gray-900 text-5xl pt-4 pb-7 hover:text-slate-400"
+                  >
+                    <AiFillGithub></AiFillGithub>
+                  </a> 
+
+                
+                </div>
+              </div>
+              
+
+
+
             </div>
           </div>
         </section>
