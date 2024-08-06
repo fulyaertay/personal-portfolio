@@ -490,7 +490,7 @@ export default function Home() {
               </div>
               <div>
                 <p className="font-md  text-gray-900 text-2xl mt-10">
-                DJAVAC Project-Bachelor's Thesis
+                DJAVAC Project-Bachelors Thesis
                 </p>
                 <p className="font-md mt-7 text-gray-900">
                  My Bachelors Thesis project aims to enable the Java programmer to write higher quality codes by spending less time
