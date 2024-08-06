@@ -155,7 +155,7 @@ export default function Home() {
             </h3>
 
             <p className="sm:text-md md:text-lg py-5 leading-8 tracking-widest  text-gray-900   ">
-              I'm Software Engineer and I love to develop and test products for user-friendly web and mobile
+              I am Software Engineer and I love to develop and test products for user-friendly web and mobile
               applications.
             </p>
             <div className="text-center md:text-left">
@@ -490,10 +490,10 @@ export default function Home() {
               </div>
               <div>
                 <p className="font-md  text-gray-900 text-2xl mt-10">
-                DJAVAC Project(Bachelor's Thesis)
+                DJAVAC Project-Bachelor's Thesis
                 </p>
                 <p className="font-md mt-7 text-gray-900">
-                 My Bachelor's Thesis project aims to enable the Java programmer to write higher quality codes by spending less time
+                 My Bachelors Thesis project aims to enable the Java programmer to write higher quality codes by spending less time
                  and It works as an automated loaded engine for java methods compilation over the network using technologies like Java and RMI Server. 
                 </p>
                 <div className="text-left flex items-center gap-8">
