@@ -121,7 +121,7 @@ export default function Home() {
               <li className="hidden lg:flex md:flex">
                 <a
                   id="resume-link"
-                  className="bg-gradient-to-r text-lg  bg-blue-500 hover:bg-blue-600 text-white px-4 py-2  ml-8"
+                  className="bg-gradient-to-r text-lg  bg-blue-500 hover:bg-blue-600 text-white px-4  ml-8"
                   href="https://www.showwcase.com/fulyaertay"
                   target="_blank"
                   rel="noopener noreferrer"
