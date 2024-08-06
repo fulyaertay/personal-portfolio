@@ -596,7 +596,7 @@ export default function Home() {
                 <p className="text-gray-900  py-5 md:text-md">Tailwind CSS</p>
                 <p className="text-gray-900  py-5 md:text-md">JavaScript</p>
                 <p className="text-gray-900  py-5 md:text-md">React JS</p>
-          
+                <p className="text-gray-900  py-5 md:text-md">React Native</p>
               </div>
             </div>
             <div className="text-center shadow-lg  rounded-xl my-10 flex-1">
