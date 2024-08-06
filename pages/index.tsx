@@ -197,30 +197,7 @@ export default function Home() {
                     className="text-gray-900 text-5xl pt-4 pb-7 hover:text-slate-400"
                   >
                     <AiFillGithub></AiFillGithub>
-                  </a> <a
-                    className="tracking-widest    text-gray-900 pt-4 pb-7 text-left   inline-block  md:h-14  "
-                    href="http://195.244.36.115:3000/login"
-                  >
-                    <span className="inline-block underline hover:text-gray-600">
-                      Visit Site{" "}
-                      <svg
-                        className="inline-block "
-                        width="30"
-                        height="10"
-                        viewBox="0 0 16 9"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill="black"
-                          d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5Z"
-                        />
-                        <path
-                          fill="black"
-                          d="M10 8.5a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71l3.15-3.15l-3.15-3.15c-.2-.2-.2-.51 0-.71c.2-.2.51-.2.71 0l3.5 3.5c.2.2.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z"
-                        />
-                      </svg>{" "}
-                    </span>
-                  </a>
+                  </a> 
 
                 
                 </div>
