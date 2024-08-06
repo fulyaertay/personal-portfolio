@@ -102,7 +102,7 @@ export default function Home() {
               </li>
               <li className="text-lg  text-white hover:text-gray-300">
                 <a id="about-link" href="#about">
-                  About{" "}
+                  About Me{" "}
                 </a>
               </li>
               <li className="text-lg text-white hover:text-gray-300 ">
