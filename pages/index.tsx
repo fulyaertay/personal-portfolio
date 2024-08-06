@@ -172,7 +172,7 @@ export default function Home() {
         <section className="px-10 md:px-20 " id="projects">
           <div>
             <h3 className="text-2xl text-blue-500 text-center md:text-left font-medium py-1  mt-5 mb-10 md:text-4xl">
-              My Portfolio
+              My Projects
             </h3>
           </div>
           <div className="flex flex-col  ">
