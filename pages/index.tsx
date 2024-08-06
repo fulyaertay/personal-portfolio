@@ -95,16 +95,17 @@ export default function Home() {
             </h1>
 
             <ul className="flex items-center gap-10">
-              <li className="text-lg  text-white hover:text-gray-300">
-                <a href="#projects" id="projects-link">
-                  Projects{" "}
-                </a>
-              </li>
+             
               <li className="text-lg  text-white hover:text-gray-300">
                 <a id="about-link" href="#about">
                   About {" "}
                 </a>
 
+              </li>
+              <li className="text-lg  text-white hover:text-gray-300">
+                <a href="#projects" id="projects-link">
+                  Projects{" "}
+                </a>
               </li>
               <li className="text-lg  text-white hover:text-gray-300">
                 <a id="about-link" href="#about">
