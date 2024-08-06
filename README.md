@@ -1,4 +1,4 @@
-## [Live Link](https://fulyaertay.netlify.app/)
+## -> [Live Link](https://fulyaertay.netlify.app/)
 
 ![Logo](./public/layout.png)
 
