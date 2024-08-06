@@ -107,12 +107,7 @@ export default function Home() {
                   Projects{" "}
                 </a>
               </li>
-              <li className="text-lg  text-white hover:text-gray-300">
-                <a id="about-link" href="#about">
-                  Skills {" "}
-                </a>
-                
-              </li>
+              
               <li className="text-lg text-white hover:text-gray-300 ">
                 <a id="contact-link" href="#contact">
                   Contact{" "}
