@@ -16,6 +16,7 @@
     "@types/react-dom": "18.0.10",
     "eslint": "8.31.0",
     "eslint-config-next": "13.1.1",
+    "firebase": "^11.3.1",
     "i": "^0.3.7",
     "next": "13.1.1",
     "nodemon": "^3.1.4",
