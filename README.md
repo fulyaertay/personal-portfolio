@@ -13,24 +13,11 @@ This is my personal portfolio page. It's a single-page website that shows my per
 - Supabase Database
 ```
 
-
-
-## 💻 Features
-
-- List My Projects
-- My Resume Link
-- My About
-- Contact Form
-- Fully Responsive
-- Cross Platform
-
-
-
 ## 🚀 About Me
 
 I'm Fulya Ertay.
 
-I am a junior front-end developer building full-stack applications & learning new technologies. I am proficient in HTML, CSS, JavaScript and have working knowledge of ReactJS. I am passionate about creating user-friendly websites and web applications that are easy to use. My goal is to be able to build applications that are fast, responsive, and fun to use.
+I am a Software Engineer building full-stack applications & learning new technologies. I am proficient in HTML, CSS, JavaScript and have working knowledge of ReactJS. I am passionate about creating user-friendly websites and web applications that are easy to use. My goal is to be able to build applications that are fast, responsive, and fun to use.
 
 ### 🔗 You Can Follow Me
 
