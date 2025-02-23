@@ -20,7 +20,7 @@ This is my personal portfolio page. It's a single-page website that shows my per
 - List My Projects
 - My Resume Link
 - My About
-- Contact Info
+- Contact Form
 - Fully Responsive
 - Cross Platform
 
