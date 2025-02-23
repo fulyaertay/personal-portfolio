@@ -6,15 +6,14 @@
 This is my personal portfolio page. It's a single-page website that shows my personal projects and coding knowledge. I've built this page using NextJS and TailwindCSS. It is a fully responsive website for mobile devices. You can see the source code of this page here on GitHub.
 
 ## 🛠 Use To Built
+```
+- Next JS
+- Tailwind CSS
+- TypeScript
+- Supabase Database
+```
 
-<p align="left"> 
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>
-<img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_tailwind_icon_130128.png" alt="tailwind" width="40" height="40"/> 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" width="40" height="36"/>
-<img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/>
-<img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*TpbxEQy4ckB-g31PwUQPlg.png" alt="git" width="40" height="40"/
 
-</p>
 
 ## 💻 Features
 
