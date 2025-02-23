@@ -23,6 +23,7 @@ import doc_validator from "../public/doc_validator.png";
 import bookApplication from "../public/book-homepage.png"
 import eylul from "../public/9eylul.png"
 import djavac from "../public/djavac.png"
+import { supabase } from '../supabaseClient'; // Supabase istemcisini içe aktarın
 
 export default function Home() {
   const [isVisible, setIsVisible] = useState<boolean>(false);
@@ -78,6 +79,62 @@ export default function Home() {
       behavior: "smooth",
     });
   };
+
+  const ContactForm = () => {
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+
+    const handleSubmit = async (e: React.FormEvent) => {
+      e.preventDefault();
+      
+      const { data, error } = await supabase
+        .from('contact_form')
+        .insert([{ name, email, message }]);
+
+      if (error) {
+        alert("There is an error " + error.message);
+      } else {
+        alert("Your message is sent!");
+        setName("");
+        setEmail("");
+        setMessage("");
+      }
+    };
+
+    return (
+      <form onSubmit={handleSubmit} className="flex flex-col gap-6 p-6 bg-gray-100 rounded-lg shadow-md">
+       
+        <input
+          type="text"
+          placeholder="Your Name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          required
+          className="border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+        <input
+          type="email"
+          placeholder="E-Mail"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+          className="border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+        <textarea
+          placeholder="Your Message"
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+          required
+          className="border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+        <button type="submit" className="bg-blue-500 text-white p-3 rounded hover:bg-blue-600 transition duration-200">
+          Submit
+        </button>
+      </form>
+    );
+  };
+
   return (
     <div>
       <Head>
@@ -682,25 +739,9 @@ export default function Home() {
         <section className="px-10 md:px-20  " id="contact">
           <div>
             <h3 className="text-2xl text-blue-500 font-medium md:text-left py-1  md:text-4xl mt-12 ">
-              Get in Touch
+              Contact
             </h3>
-            <p className="text-sm md:text-md py-5 leading-8 tracking-widest  text-gray-900  md:text-left  md:max-w-8xl mb-5 ">
-              Are you looking for a fast-performing and user-friendly website to
-              represent your product or business? or looking for any kind of
-              consultation? or want to ask questions? or have some advice for me
-              or just want to say <b>Hi 👋</b> in any case feel free to Let me
-              know. I will do my best to respond back. 😊 The quickest way to
-              reach out to me is via an email.
-            </p>
-            <div className="text-left">
-              <a
-                id="send-mail"
-                className="tracking-widest border-2 border-blue-500 hover:bg-gradient-to-r hover:border-none  text-gray-900 hover:text-white pt-4 pb-4 text-center  hover:bg-blue-500  inline-block w-[200px] md:h-14  mb-12"
-                href="mailto: fulya.ertay@gmail.com"
-              >
-                Send Mail
-              </a>
-            </div>
+            <ContactForm />
           </div>
         </section>
       </main>
