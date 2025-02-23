@@ -13,12 +13,6 @@ This is my personal portfolio page. It's a single-page website that shows my per
 - Supabase Database
 ```
 
-## 🚀 About Me
-
-I'm Fulya Ertay.
-
-I am a Software Engineer building full-stack applications & learning new technologies. I am proficient in HTML, CSS, JavaScript and have working knowledge of ReactJS. I am passionate about creating user-friendly websites and web applications that are easy to use. My goal is to be able to build applications that are fast, responsive, and fun to use.
-
 ### 🔗 You Can Follow Me
 
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/fulya-ertay-40a593156/)
