@@ -23,6 +23,7 @@ import doc_validator from "../public/doc_validator.png";
 import bookApplication from "../public/book-homepage.png"
 import eylul from "../public/9eylul.png"
 import djavac from "../public/djavac.png"
+import user_manual_agent from "../public/web11.png"
 import { supabase } from '../supabaseClient'; // Supabase istemcisini içe aktarın
 
 export default function Home() {
@@ -238,6 +239,60 @@ export default function Home() {
           </div>
           <div className="flex flex-col  ">
             <div className="grid grid-cols-1 md:grid-cols-2 mb-10 gap-4 ">
+            <div>
+                {" "}
+                <Image
+                  alt="User Manual AI Agent"
+                  src={user_manual_agent}
+                  width={550}
+                  height={250}
+                ></Image>
+              </div>
+              <div>
+                <p className="font-md  text-gray-900 text-2xl">User Manual AI Agent with Gemini API </p>
+                <p className="font-md mt-7 text-gray-900">
+                An AI Agent answering questions according to PDF. 
+                </p>
+                <div className="text-left flex items-center gap-8">
+                <a
+                    id="github"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/fulyaertay/user-manual-asistant"
+                    className="text-gray-900 text-5xl pt-4 pb-7 hover:text-slate-400"
+                  >
+                    <AiFillGithub></AiFillGithub>
+                  </a> <a
+                    className="tracking-widest    text-gray-900 pt-4 pb-7 text-left   inline-block  md:h-14  "
+                    href="https://user-manual-asistant.netlify.app/"
+                  >
+                    <span className="inline-block underline hover:text-gray-600">
+                      Visit Site{" "}
+                      <svg
+                        className="inline-block"
+                        width="30"
+                        height="10"
+                        viewBox="0 0 16 9"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill="black"
+                          d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5Z"
+                        />
+                        <path
+                          fill="black"
+                          d="M10 8.5a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71l3.15-3.15l-3.15-3.15c-.2-.2-.2-.51 0-.71c.2-.2.51-.2.71 0l3.5 3.5c.2.2.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z"
+                        />
+                      </svg>{" "}
+                    </span>
+                  </a>
+
+                
+                </div>
+              </div>
+           
+           
+           
             <div>
                 {" "}
                 <Image
