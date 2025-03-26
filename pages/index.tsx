@@ -171,17 +171,7 @@ export default function Home() {
                   Contact{" "}
                 </a>
               </li>
-              <li className="hidden lg:flex md:flex">
-                <a
-                  id="resume-link"
-                  className="bg-gradient-to-r text-lg  bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 ml-8"
-                  href="https://www.showwcase.com/fulyaertay"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Resume
-                </a>
-              </li>
+              
             </ul>
           </nav>
 </div>
@@ -702,17 +692,7 @@ export default function Home() {
                   bachelor degree in computer engineering, I love building and testing apps
                   that solve real-world problems.
                 </p>
-                <div className="text-left">
-                  <a
-                    id="see-resume"
-                    className="tracking-widest border-2 border-blue-500 hover:bg-gradient-to-r hover:border-none hover:bg-blue-500 text-gray-900 hover:text-white pt-4 pb-4 text-center    inline-block w-[200px] md:h-14  mb-12"
-                    href="https://www.showwcase.com/fulyaertay"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    See My Resume
-                  </a>
-                </div>
+               
               </div>
             </div>
           </div>
