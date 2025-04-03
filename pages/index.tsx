@@ -216,7 +216,7 @@ export default function Home() {
               </button>
             </div>
            
-            <h3 className="text-3xl py-2 md:text-6xl tracking-widest  text-blue-500 ">
+            <h3 className="text-3xl mt-6 py-2 md:text-6xl tracking-widest  text-blue-500 ">
               Fulya Ertay
             </h3>
 
