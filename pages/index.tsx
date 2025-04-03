@@ -145,7 +145,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Fulya Ertay's Portfolio</title> {/* Küçük bir düzeltme */}
+        <title>Fulya Ertays Portfolio</title> 
         <meta name="description" content="Fulya Ertay - Software Engineer Portfolio showcasing projects and skills." /> {/* Daha açıklayıcı description */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="google-site-verification" content="RM-c9-j8_Ko3MXtk3-P59ua07QJkC-F7aRnTxPPKBP4" />
