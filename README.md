@@ -11,6 +11,7 @@ This is my personal portfolio page. It's a single-page website that shows my per
 - Tailwind CSS
 - TypeScript
 - Supabase Database
+- Framer Motion
 ```
 
 ### 🔗 You Can Follow Me
