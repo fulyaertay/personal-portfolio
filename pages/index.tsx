@@ -411,7 +411,63 @@ export default function Home() {
                     </div>
                   </div>
                 </motion.div>
-
+                <motion.div
+                  key={1}
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.1 }}
+                  className="bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer"
+                  onClick={() => window.open("https://portfolio-creator-web-app.vercel.app", "_blank")}
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                >
+                  {/* İçerik */}
+                  <div className="p-4">
+                    <p className="font-bold text-lg mb-1 text-gray-900">Portfolio Builder Web App</p>
+                    <p className="text-gray-700 text-sm mb-2">
+                    A modern web application that allows users to create and customize their personal portfolio websites without writing any code.
+                    </p>
+                    <div className="flex items-center gap-3">
+                      <motion.a
+                        id="github-user-manual"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://github.com/fulyaertay/portfolio-creator"
+                        className="text-gray-900 text-3xl hover:text-slate-400"
+                        whileHover={{ scale: 1.2 }}
+                        whileTap={{ scale: 0.9 }}
+                        onClick={(e: React.MouseEvent<HTMLAnchorElement>) => e.stopPropagation()}
+                      >
+                        <AiFillGithub />
+                      </motion.a>
+                      <motion.a
+                        className="tracking-widest text-gray-900 text-left inline-block text-sm"
+                        href="https://portfolio-creator-web-app.vercel.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        onClick={(e: React.MouseEvent<HTMLAnchorElement>) => e.stopPropagation()}
+                      >
+                        <span className="inline-block underline hover:text-gray-600">
+                          Visit Site{" "}
+                          <svg
+                            className="inline-block"
+                            width="16"
+                            height="9"
+                            viewBox="0 0 16 9"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                          >
+                            <path d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5Z" />
+                            <path d="M10 8.5a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71l3.15-3.15l-3.15-3.15c-.2-.2-.2-.51 0-.71c.2-.2.51-.2.71 0l3.5 3.5c.2.2.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z" />
+                          </svg>{" "}
+                        </span>
+                      </motion.a>
+                    </div>
+                  </div>
+                </motion.div>
                 {/* Proje Kartı 2: Document Validator */}
                 <motion.div
                   key={2}
@@ -600,64 +656,7 @@ export default function Home() {
                   </div>
                 </motion.div>
 
-                {/* Proje Kartı 6: Mini Blog App */}
-                <motion.div
-                  key={6}
-                  initial={{ opacity: 0, y: 50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: 0.6 }}
-                  className="bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer"
-                  onClick={() => window.open("https://mini-blog-website.netlify.app/", "_blank")}
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                >
-                  {/* İçerik */}
-                  <div className="p-4">
-                    <p className="font-bold text-lg mb-1 text-gray-900">Mini Blog App</p>
-                    <p className="text-gray-700 text-sm mb-2">
-                      Developed the blog application that it can be used to add/list blogs and designed using Javascript, HTML, Materialize CSS and Firebase.
-                    </p>
-                    <div className="flex items-center gap-3">
-                      <motion.a
-                        id="github-miniblog"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="https://github.com/fulyaertay/mini-blog-app"
-                        className="text-gray-900 text-3xl hover:text-slate-400"
-                        whileHover={{ scale: 1.2 }}
-                        whileTap={{ scale: 0.9 }}
-                        onClick={(e: React.MouseEvent<HTMLAnchorElement>) => e.stopPropagation()}
-                      >
-                        <AiFillGithub />
-                      </motion.a>
-                      <motion.a
-                        className="tracking-widest text-gray-900 text-left inline-block text-sm"
-                        href="https://mini-blog-website.netlify.app/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                        onClick={(e: React.MouseEvent<HTMLAnchorElement>) => e.stopPropagation()}
-                      >
-                        <span className="inline-block underline hover:text-gray-600">
-                          Visit Site{" "}
-                          <svg
-                            className="inline-block"
-                            width="16"
-                            height="9"
-                            viewBox="0 0 16 9"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="currentColor"
-                          >
-                            <path d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5Z" />
-                            <path d="M10 8.5a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71l3.15-3.15l-3.15-3.15c-.2-.2-.2-.51 0-.71c.2-.2.51-.2.71 0l3.5 3.5c.2.2.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z" />
-                          </svg>{" "}
-                        </span>
-                      </motion.a>
-                    </div>
-                  </div>
-                </motion.div>
+             
 
                 {/* Proje Kartı 7: Quiz App */}
                 <motion.div
