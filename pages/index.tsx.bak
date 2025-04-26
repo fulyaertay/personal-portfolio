@@ -1,0 +1,32 @@
+import Head from "next/head";
+import {
+  AiFillLinkedin,
+  AiFillGithub,
+  AiOutlineDribbble,
+  AiOutlineMedium,
+  AiOutlineMenu,
+  AiOutlineClose,
+} from "react-icons/ai";
+import React, { useState, useEffect, useRef } from "react";
+import { FaArrowCircleUp } from "react-icons/fa";
+import header from "../public/header.svg";
+import Image from "next/legacy/image";
+import testrelic from "../public/testrelic.png";
+import desing from "../public/design.png";
+import code from "../public/code.png";
+import consulting from "../public/consulting.png";
+import test from "../public/test.png";
+import web1 from "../public/web1.png";
+import web2 from "../public/web2.png";
+import web5 from "../public/web7.png";
+import web7 from "../public/web9.png";
+import falcowms from "../public/falcowms.png";
+import doc_validator from "../public/doc_validator.png";
+import bookApplication from "../public/book-homepage.png"
+import eylul from "../public/9eylul.png"
+import djavac from "../public/djavac.png"
+import user_manual_agent from "../public/web11.png"
+import { supabase } from '../supabaseClient';
+import { motion, AnimatePresence, useScroll, useTransform, useSpring, useMotionValue, useVelocity } from "framer-motion";
+
+// ... Mevcut dosyanın geri kalanı ... 

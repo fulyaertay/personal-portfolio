@@ -6,6 +6,7 @@ import {
   AiOutlineMedium,
   AiOutlineMenu, // Hamburger ikonu için
   AiOutlineClose, // Kapatma ikonu için
+  AiOutlineArrowRight,
 } from "react-icons/ai";
 import React, { useState, useEffect, useRef } from "react";
 import { FaArrowCircleUp } from "react-icons/fa";
@@ -28,8 +29,32 @@ import djavac from "../public/djavac.png"
 import user_manual_agent from "../public/web11.png"
 import { supabase } from '../supabaseClient'; // Supabase istemcisini içe aktarın
 import { motion, AnimatePresence, useScroll, useTransform, useSpring, useMotionValue, useVelocity } from "framer-motion"; // Framer Motion'ı import ediyoruz
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+
+// Shadcn UI components
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
+import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+import * as z from "zod";
+import { Badge } from "@/components/ui/badge";
+
+// Form validation schema
+const formSchema = z.object({
+  name: z.string().min(2, { message: "Name must be at least 2 characters." }),
+  email: z.string().email({ message: "Please enter a valid email address." }),
+  message: z.string().min(10, { message: "Message must be at least 10 characters." }),
+});
 
 export default function Home() {
+  const router = useRouter();
   const [isVisible, setIsVisible] = useState<boolean>(false);
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   const [activeProject, setActiveProject] = useState<number | null>(null);
@@ -42,100 +67,180 @@ export default function Home() {
   // Yaylı animasyon için
   const springConfig = { stiffness: 100, damping: 30, mass: 1 };
   const springY = useSpring(y, springConfig);
-  
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 100) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
-    });
-  }, []);
-
-  const goTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
 
   // Sayfa içi linklere tıklandığında yumuşak kaydırma
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      window.scrollTo({
+        top: element.offsetTop - 100,
+        behavior: 'instant'
+      });
     }
   };
 
-  const ContactForm = () => {
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [message, setMessage] = useState("");
+  // Menü linklerine tıklandığında
+  const handleMenuClick = (sectionId: string) => {
+    setIsMenuOpen(false);
+    scrollToSection(sectionId);
+  };
 
-    const handleSubmit = async (e: React.FormEvent) => {
-      e.preventDefault();
-      
+  // URL hash değişikliğini dinle
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash;
+      if (hash) {
+        const id = hash.substring(1);
+        scrollToSection(id);
+      }
+    };
+
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
+
+  // Contact form using Shadcn UI Form
+  const ContactForm = () => {
+    const form = useForm<z.infer<typeof formSchema>>({
+      resolver: zodResolver(formSchema),
+      defaultValues: {
+        name: "",
+        email: "",
+        message: "",
+      },
+    });
+
+    const onSubmit = async (values: z.infer<typeof formSchema>) => {
       const { data, error } = await supabase
         .from('contact_form')
-        .insert([{ name, email, message }]);
+        .insert([values]);
 
       if (error) {
         alert("There is an error " + error.message);
       } else {
         alert("Your message is sent!");
-        setName("");
-        setEmail("");
-        setMessage("");
+        form.reset();
       }
     };
 
     return (
-      /* Formu saran div'e mx-auto tekrar eklendi */
-      <motion.div 
-        className="max-w-md mx-auto"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-      > 
-        <form onSubmit={handleSubmit} className="flex flex-col gap-6 p-6 bg-gray-100 rounded-lg shadow-md">
-        
-          <motion.input
-            type="text"
-            placeholder="Your Name"
-            value={name}
-            onChange={(e: React.ChangeEvent<HTMLInputElement>) => setName(e.target.value)}
-            required
-            className="border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
-            whileFocus={{ scale: 1.02 }}
+      <Form {...form}>
+        <form onSubmit={form.handleSubmit(onSubmit)} className="max-w-md mx-auto space-y-6">
+          <FormField
+            control={form.control}
+            name="name"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Name</FormLabel>
+                <FormControl>
+                  <Input placeholder="Your name" {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
           />
-          <motion.input
-            type="email"
-            placeholder="E-Mail"
-            value={email}
-            onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}
-            required
-            className="border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
-            whileFocus={{ scale: 1.02 }}
+          <FormField
+            control={form.control}
+            name="email"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Email</FormLabel>
+                <FormControl>
+                  <Input placeholder="Your email" type="email" {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
           />
-          <motion.textarea
-            placeholder="Your Message"
-            value={message}
-            onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setMessage(e.target.value)}
-            required
-            className="border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
-            whileFocus={{ scale: 1.02 }}
+          <FormField
+            control={form.control}
+            name="message"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Message</FormLabel>
+                <FormControl>
+                  <Textarea placeholder="Your message" {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
           />
-          <motion.button 
-            type="submit" 
-            className="bg-blue-500 text-white p-3 rounded hover:bg-blue-600 transition duration-200"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Submit
-          </motion.button>
+          <Button type="submit" className="w-full">
+            Submit <AiOutlineArrowRight className="ml-2" />
+          </Button>
         </form>
-      </motion.div>
+      </Form>
+    );
+  };
+
+  // Project Card Component
+  const ProjectCard = ({ title, description, githubUrl, liveUrl, image }: {
+    title: string;
+    description: string;
+    githubUrl: string;
+    liveUrl?: string;
+    image?: string;
+  }) => {
+    return (
+      <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+        <CardHeader>
+          <CardTitle>{title}</CardTitle>
+          <CardDescription>{description}</CardDescription>
+        </CardHeader>
+        {image && (
+          <CardContent>
+            <Image
+              src={image}
+              alt={title}
+              width={400}
+              height={200}
+              objectFit="cover"
+              className="rounded-md"
+            />
+          </CardContent>
+        )}
+        <CardFooter className="flex gap-4">
+          <Button variant="outline" asChild>
+            <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+              <AiFillGithub className="mr-2" /> GitHub
+            </a>
+          </Button>
+          {liveUrl && (
+            <Button asChild>
+              <a href={liveUrl} target="_blank" rel="noopener noreferrer">
+                Visit Site
+              </a>
+            </Button>
+          )}
+        </CardFooter>
+      </Card>
+    );
+  };
+
+  // Skill Card Component
+  const SkillCard = ({ title, skills, icon }: {
+    title: string;
+    skills: string[];
+    icon: any;
+  }) => {
+    return (
+      <Card className="hover:shadow-lg transition-shadow">
+        <CardHeader>
+          <div className="flex justify-center mb-4">
+            <Image src={icon} alt={title} width={100} height={100} />
+          </div>
+          <CardTitle className="text-center text-foreground">{title}</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div className="flex flex-wrap justify-center gap-2">
+            {skills.map((skill, index) => (
+              <Badge key={index} variant="secondary" className="text-sm">
+                {skill}
+              </Badge>
+            ))}
+          </div>
+        </CardContent>
+      </Card>
     );
   };
 
@@ -143,7 +248,7 @@ export default function Home() {
     <>
       <div className="min-h-screen">
         <Head>
-          <title>Fulya Ertays Portfolio</title> 
+          <title>Fulya Ertay Portfolio</title> 
           <meta name="description" content="Fulya Ertay - Software Engineer Portfolio showcasing projects and skills." />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta name="google-site-verification" content="RM-c9-j8_Ko3MXtk3-P59ua07QJkC-F7aRnTxPPKBP4" />
@@ -151,204 +256,101 @@ export default function Home() {
         </Head>
         
         <main className="bg-white max-w-full">
-          <motion.div 
-            className="bg-gray-900 md:px-20 sticky top-0 z-50"
-            initial={{ y: -100 }}
-            animate={{ y: 0 }}
-            transition={{ type: "spring", stiffness: 100 }}
-          > {/* Navbar'ı üste sabitlemek için sticky ve top-0, diğer içeriklerin üzerinde kalması için z-50 */}
-            <nav className="py-6 px-6 md:px-16 lg:px-0 flex items-center justify-between container mx-auto"> {/* px-20 yerine px-6 ve container mx-auto */}
-              <motion.h1 
-                className="text-xl font-burtons text-white"
-                whileHover={{ scale: 1.05 }}
-              >
+          <div className="bg-background border-b fixed top-0 left-0 right-0 z-50">
+            <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
+              <Link href="/" className="text-xl font-burtons text-foreground hover:scale-105 transition-transform">
                 developedbyfe
-              </motion.h1>
+              </Link>
 
-              {/* Hamburger Menu Button (Mobile) */}
-              <div className="md:hidden">
-                <motion.button 
-                  onClick={() => setIsMenuOpen(!isMenuOpen)} 
-                  className="text-white text-3xl"
-                  whileTap={{ scale: 0.9 }}
+              {/* Mobile Menu */}
+              <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
+                <SheetTrigger asChild className="md:hidden">
+                  <Button variant="ghost" size="icon">
+                    <AiOutlineMenu className="h-6 w-6" />
+                  </Button>
+                </SheetTrigger>
+                <SheetContent>
+                  <nav className="flex flex-col space-y-4">
+                    <button 
+                      onClick={() => handleMenuClick('about')}
+                      className="w-full text-left px-4 py-2 hover:bg-accent rounded-md"
+                    >
+                      About
+                    </button>
+                    <button 
+                      onClick={() => handleMenuClick('projects')}
+                      className="w-full text-left px-4 py-2 hover:bg-accent rounded-md"
+                    >
+                      Projects
+                    </button>
+                    <button 
+                      onClick={() => handleMenuClick('contact')}
+                      className="w-full text-left px-4 py-2 hover:bg-accent rounded-md"
+                    >
+                      Contact
+                    </button>
+                  </nav>
+                </SheetContent>
+              </Sheet>
+
+              {/* Desktop Menu */}
+              <div className="hidden md:flex md:items-center md:space-x-6">
+                <button 
+                  onClick={() => scrollToSection('about')}
+                  className="text-sm font-medium hover:text-primary transition-colors"
                 >
-                  {isMenuOpen ? <AiOutlineClose /> : <AiOutlineMenu />}
-                </motion.button>
+                  About
+                </button>
+                <button 
+                  onClick={() => scrollToSection('projects')}
+                  className="text-sm font-medium hover:text-primary transition-colors"
+                >
+                  Projects
+                </button>
+                <button 
+                  onClick={() => scrollToSection('contact')}
+                  className="text-sm font-medium hover:text-primary transition-colors"
+                >
+                  Contact
+                </button>
               </div>
-
-              {/* Navigation Links (Desktop & Mobile Menu) */}
-              <AnimatePresence>
-                {isMenuOpen ? (
-                  <motion.ul 
-                    className="absolute top-full left-0 w-full bg-gray-900 flex flex-col items-center gap-6 py-6 md:flex md:items-center md:gap-10 md:static md:bg-transparent"
-                    initial={{ opacity: 0, y: -20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -20 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <motion.li 
-                      className="text-lg text-white hover:text-gray-300"
-                      whileHover={{ scale: 1.1 }}
-                    >
-                      <a id="about-link" href="#about" onClick={() => {
-                        setIsMenuOpen(false);
-                        scrollToSection('about');
-                      }}> {/* Menü linkine tıklayınca kapat */}
-                        About
-                      </a>
-                    </motion.li>
-                    <motion.li 
-                      className="text-lg text-white hover:text-gray-300"
-                      whileHover={{ scale: 1.1 }}
-                    >
-                      <a href="#projects" id="projects-link" onClick={() => {
-                        setIsMenuOpen(false);
-                        scrollToSection('projects');
-                      }}> {/* Menü linkine tıklayınca kapat */}
-                        Projects
-                      </a>
-                    </motion.li>
-                    <motion.li 
-                      className="text-lg text-white hover:text-gray-300"
-                      whileHover={{ scale: 1.1 }}
-                    >
-                      <a id="contact-link" href="#contact" onClick={() => {
-                        setIsMenuOpen(false);
-                        scrollToSection('contact');
-                      }}> {/* Menü linkine tıklayınca kapat */}
-                        Contact
-                      </a>
-                    </motion.li>
-                  </motion.ul>
-                ) : (
-                  <motion.ul 
-                    className="hidden md:flex md:items-center md:gap-10"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <motion.li 
-                      className="text-lg text-white hover:text-gray-300"
-                      whileHover={{ scale: 1.1 }}
-                    >
-                      <a id="about-link" href="#about" onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
-                        e.preventDefault();
-                        scrollToSection('about');
-                      }}>
-                        About
-                      </a>
-                    </motion.li>
-                    <motion.li 
-                      className="text-lg text-white hover:text-gray-300"
-                      whileHover={{ scale: 1.1 }}
-                    >
-                      <a href="#projects" id="projects-link" onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
-                        e.preventDefault();
-                        scrollToSection('projects');
-                      }}>
-                        Projects
-                      </a>
-                    </motion.li>
-                    <motion.li 
-                      className="text-lg text-white hover:text-gray-300"
-                      whileHover={{ scale: 1.1 }}
-                    >
-                      <a id="contact-link" href="#contact" onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
-                        e.preventDefault();
-                        scrollToSection('contact');
-                      }}>
-                        Contact
-                      </a>
-                    </motion.li>
-                  </motion.ul>
-                )}
-              </AnimatePresence>
             </nav>
-          </motion.div>
+          </div>
           
-          {/* Parallax Hero Section */}
-          <section className="md:px-20 text-center relative overflow-hidden">
-            {/* Parallax arka plan */}
-            <motion.div 
-              className="absolute inset-0 z-0"
-              style={{ y: springY, opacity }}
+          {/* Hero Section */}
+          <section className="container mx-auto px-4 py-20 text-center mt-16">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="max-w-3xl mx-auto"
             >
-              <div className="w-full h-full bg-gradient-to-b from-blue-50 to-white"></div>
-            </motion.div>
-    
-            <div className="flex flex-col px-10 md:px-0 text-center md:text-left gap-2 mb-12 relative z-10">
-              <div
-                style={{
-                  position: "fixed",
-                  bottom: "40px",
-                  fontSize: "3rem",
-                  zIndex: 1,
-                  cursor: "pointer",
-                  color: "gray",
-                  right: "2%",
-                  background: "none",
-                  borderRadius: "50px",
-                  padding: "0px",
-                  border: "none",
-                  opacity: 0.7,
-                }}
-              >
-                <motion.button
-                  style={{ display: isVisible ? "block" : "none" }}
-                  onClick={goTop}
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.9 }}
-                >
-                  <FaArrowCircleUp />
-                </motion.button>
-              </div>
-             
-              <motion.h3 
-                className="text-3xl mt-6 py-2 md:text-6xl tracking-widest text-blue-500"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-              >
+              <h1 className="scroll-m-20 text-4xl font-normal tracking-tight lg:text-5xl text-foreground mb-6">
                 Fulya Ertay
-              </motion.h3>
-
-              <motion.p 
-                className="sm:text-md md:text-lg py-5 leading-8 tracking-widest text-gray-900"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
+              </h1>
+              <p className="text-xl text-muted-foreground mb-8">
+                I am a Software Engineer and I love to develop and test products for user-friendly web and mobile applications.
+              </p>
+              <Button
+                size="lg"
+                onClick={() => scrollToSection('contact')}
+                className="bg-primary hover:bg-primary/90 text-primary-foreground"
               >
-                I am a Software Engineer and I love to develop and test products for user-friendly web and mobile
-                applications.
-              </motion.p>
-              <div className="text-center md:text-left">
-                <motion.a
-                  className="tracking-widest border-2 border-blue-500 hover:bg-blue-500 hover:border-none text-gray-900 hover:text-white pt-4 pb-4 text-center inline-block w-[200px] md:h-14 mb-12"
-                  href="#contact"
-                  onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
-                    e.preventDefault();
-                    scrollToSection('contact');
-                  }}
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  Get in Touch
-                </motion.a>
-              </div>
-            </div>
+                Get in Touch <AiOutlineArrowRight className="ml-2" />
+              </Button>
+            </motion.div>
           </section>
           <hr className="border-gray-600"></hr>
           <section className="px-10 md:px-20" id="projects">
             <div>
-              <motion.h3 
-                className="text-2xl text-blue-500 text-center md:text-left font-medium py-1 mt-5 mb-10 md:text-4xl"
-                initial={{ opacity: 0, x: -50 }}
-                whileInView={{ opacity: 1, x: 0 }}
+              <motion.h2
+                className="scroll-m-20 text-3xl font-normal tracking-tight lg:text-4xl text-foreground mb-12 text-center mt-16"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
-                viewport={{ once: true }}
               >
                 My Projects
-              </motion.h3>
+              </motion.h2>
             </div>
             <div className="flex flex-col">
               {/* Proje Kartları Grid'i */}
@@ -656,8 +658,6 @@ export default function Home() {
                   </div>
                 </motion.div>
 
-             
-
                 {/* Proje Kartı 7: Quiz App */}
                 <motion.div
                   key={7}
@@ -850,202 +850,143 @@ export default function Home() {
             </div> {/* flex-col sonu */}
           </section>
           <hr className="border-gray-600"></hr>
-          <section className="px-10 md:px-20 mb-12" id="about">
-            <div>
-              <motion.h3 
-                className="text-2xl text-blue-500 font-medium py-1 md:text-4xl md:text-left lg:text-left mt-12"
-                initial={{ opacity: 0, x: -50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5 }}
-                viewport={{ once: true }}
-              >
-                About Me
-                <div className="border-red-500 border-10 border-b absolute"></div>
-              </motion.h3>
-              <div className="sm:flex lg:justify-between gap-10">
-                <motion.div
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5 }}
-                  viewport={{ once: true }}
-                >
-                  <p className="text-sm md:text-md py-5 leading-loose tracking-widest text-gray-80 md:text-left md:max-w-8xl text-gray-900">
-                    
-                  I have been actively involved in the software development industry for 10 years, gaining experience across various sectors. These are;
+          <section id="about" className="container mx-auto px-4 py-20 bg-white">
+            <motion.h2
+              className="scroll-m-20 text-3xl font-normal tracking-tight lg:text-4xl text-foreground mb-12 text-center mt-16"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              About Me
+            </motion.h2>
+            <div className="max-w-5xl mx-auto">
+              <p className="text-lg text-muted-foreground mb-12">
+                I have been actively involved in the software development industry for 10 years, gaining experience across various sectors including QA Testing, Project Management, Web Development, Data Science, and Generative AI.
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <Card className="hover:shadow-lg transition-shadow w-full">
+                  <CardHeader>
+                    <div className="flex justify-center mb-4">
+                      <Image src={desing} alt="Front-End" width={100} height={100} />
+                    </div>
+                    <CardTitle className="text-center text-foreground">Front-End</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="flex flex-wrap justify-center gap-2">
+                      <Badge variant="secondary">HTML/CSS</Badge>
+                      <Badge variant="secondary">Tailwind CSS</Badge>
+                      <Badge variant="secondary">JavaScript</Badge>
+                      <Badge variant="secondary">React JS</Badge>
+                      <Badge variant="secondary">React Native</Badge>
+                    </div>
+                  </CardContent>
+                </Card>
 
-  QA Testing,
-  Project Management,
-  Web Development,
-  Data Science and
-  Generative AI.
-  My ultimate goal is to use these skills to develop innovative solutions for complex problems. I am committed to continuous learning and self-improvement. 
-                  </p>
-                </motion.div>
+                <Card className="hover:shadow-lg transition-shadow w-full">
+                  <CardHeader>
+                    <div className="flex justify-center mb-4">
+                      <Image src={code} alt="Back-End" width={100} height={100} />
+                    </div>
+                    <CardTitle className="text-center text-foreground">Back-End</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="flex flex-wrap justify-center gap-2">
+                      <Badge variant="secondary">Python</Badge>
+                      <Badge variant="secondary">Django</Badge>
+                      <Badge variant="secondary">Node JS</Badge>
+                      <Badge variant="secondary">Express JS</Badge>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="hover:shadow-lg transition-shadow w-full">
+                  <CardHeader>
+                    <div className="flex justify-center mb-4">
+                      <Image src={consulting} alt="Databases" width={100} height={100} />
+                    </div>
+                    <CardTitle className="text-center text-foreground">Databases</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="flex flex-wrap justify-center gap-2">
+                      <Badge variant="secondary">MongoDB</Badge>
+                      <Badge variant="secondary">MySQL</Badge>
+                      <Badge variant="secondary">Firebase</Badge>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="hover:shadow-lg transition-shadow w-full">
+                  <CardHeader>
+                    <div className="flex justify-center mb-4">
+                      <Image src={test} alt="Test Frameworks" width={100} height={100} />
+                    </div>
+                    <CardTitle className="text-center text-foreground">Test Frameworks</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="flex flex-wrap justify-center gap-2">
+                      <Badge variant="secondary">Cypress JS</Badge>
+                      <Badge variant="secondary">Codecept JS</Badge>
+                      <Badge variant="secondary">Selenium IDE</Badge>
+                    </div>
+                  </CardContent>
+                </Card>
               </div>
-            </div>
-          </section>
-
-          <section className="md:px-20 mb-5">
-            <div className="lg:flex text-center justify-center">
-              <motion.div 
-                className="text-center shadow-lg rounded-xl my-10 flex-1"
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                viewport={{ once: true }}
-                whileHover={{ scale: 1.05 }}
-              >
-                <div>
-                  <Image
-                    alt="front-end-title"
-                    src={desing}
-                    width={100}
-                    height={100}
-                  ></Image>
-                  <h4 className="py-4 text-blue-500 text-lg font-medium md:text-2xl pt-8 pb-2">
-                    Front-End
-                  </h4>
-                  <p className="text-gray-900 py-5 md:text-md">HTML/CSS</p>
-                  <p className="text-gray-900 py-5 md:text-md">Tailwind CSS</p>
-                  <p className="text-gray-900 py-5 md:text-md">JavaScript</p>
-                  <p className="text-gray-900 py-5 md:text-md">React JS</p>
-                  <p className="text-gray-900 py-5 md:text-md">React Native</p>
-                </div>
-              </motion.div>
-              <motion.div 
-                className="text-center shadow-lg rounded-xl my-10 flex-1"
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-                viewport={{ once: true }}
-                whileHover={{ scale: 1.05 }}
-              >
-                <div>
-                  <Image
-                    alt="back-end-title"
-                    src={code}
-                    width={100}
-                    height={100}
-                  ></Image>
-                  <h4 className="text-lg py-4 text-blue-500 font-medium md:text-2xl  pt-8 pb-2">
-                    Back-End
-                  </h4>
-                  <p className="text-gray-900 py-5 md:text-md">Python</p>
-                  <p className="text-gray-900 py-5 md:text-md">Django</p>
-                  <p className="text-gray-900 py-5 md:text-md">Node JS</p>
-                  <p className="text-gray-900 py-5 md:text-md">Express JS</p>
-                </div>
-              </motion.div>
-              <motion.div 
-                className="text-center shadow-lg rounded-xl my-10 flex-1"
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.4 }}
-                viewport={{ once: true }}
-                whileHover={{ scale: 1.05 }}
-              >
-                <div>
-                  <Image
-                    alt="database-title"
-                    src={consulting}
-                    width={100}
-                    height={100}
-                  ></Image>
-                  <h4 className="py-4 text-blue-500 text-lg font-medium md:text-2xl  pt-8 pb-2">
-                    Databases
-                  </h4>
-                  <p className="text-gray-900 py-5 md:text-md">MongoDB</p>
-                  <p className="text-gray-900 py-5 md:text-md">MYSQL</p>
-                  <p className="text-gray-900 py-5 md:text-md">Firebase</p>
-                </div>
-              </motion.div>
-              <motion.div 
-                className="text-center shadow-lg rounded-xl my-10 flex-1"
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.6 }}
-                viewport={{ once: true }}
-                whileHover={{ scale: 1.05 }}
-              >
-                <div>
-                  <Image
-                    alt="database-title"
-                    src={test}
-                    width={100}
-                    height={100}
-                  ></Image>
-                  <h4 className="py-4 text-blue-500 text-lg font-medium md:text-2xl  pt-8 pb-2">
-                    Test Frameworks
-                  </h4>
-                  <p className="text-gray-900 py-5 md:text-md">Cypress JS</p>
-                  <p className="text-gray-900 py-5 md:text-md">Codecept JS</p>
-                  <p className="text-gray-900 py-5 md:text-md">Selenium IDE</p>
-                </div>
-              </motion.div>
             </div>
           </section>
           <hr className="border-gray-100"></hr>
 
           <section className="px-10 md:px-20 pb-12" id="contact">
             <div>
-              <motion.h3 
-                className="text-2xl text-blue-500 font-medium text-center py-1 md:text-4xl mt-12 mb-8"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
+              <motion.h2
+                className="scroll-m-20 text-3xl font-normal tracking-tight lg:text-4xl text-foreground mb-12 text-center mt-16"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
-                viewport={{ once: true }}
               >
                 Get in Touch
-              </motion.h3>
+              </motion.h2>
               <ContactForm />
             </div>
           </section>
         </main>
 
         <hr className="border-gray-600"></hr>
-        <motion.footer 
-          className="p-5 bg-gray-900 flex justify-center max-w-full dark:bg-gray-800 shadow-lg"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
-        >
-          <div className="text-4xl flex justify-center gap-16 py-3">
-           
-            <motion.a
-              id="linkedin"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.linkedin.com/in/fulyaertay/"
-              className="text-gray-200 hover:text-gray-400"
-              whileHover={{ scale: 1.2 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <AiFillLinkedin></AiFillLinkedin>
-            </motion.a>
-            <motion.a
-              id="github"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://github.com/fulyaertay"
-              className="text-gray-200 hover:text-gray-400"
-              whileHover={{ scale: 1.2 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <AiFillGithub></AiFillGithub>
-            </motion.a>
-            <motion.a
-              id="medium"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://medium.com/@fulyaertay"
-              className="text-gray-200 hover:text-gray-400"
-              whileHover={{ scale: 1.2 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <AiOutlineMedium></AiOutlineMedium>
-            </motion.a>
+        <footer className="bg-background border-t py-8">
+          <div className="container mx-auto px-4">
+            <div className="flex justify-center space-x-8">
+              <motion.a
+                href="https://www.linkedin.com/in/fulyaertay/"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.2 }}
+                className="text-3xl text-muted-foreground hover:text-foreground transition-colors"
+              >
+                <AiFillLinkedin />
+              </motion.a>
+              <motion.a
+                href="https://github.com/fulyaertay"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.2 }}
+                className="text-3xl text-muted-foreground hover:text-foreground transition-colors"
+              >
+                <AiFillGithub />
+              </motion.a>
+              <motion.a
+                href="https://medium.com/@fulyaertay"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.2 }}
+                className="text-3xl text-muted-foreground hover:text-foreground transition-colors"
+              >
+                <AiOutlineMedium />
+              </motion.a>
+            </div>
+            <div className="mt-8 text-center text-muted-foreground">
+              © 2025 Fulya Ertay. All rights reserved.
+            </div>
           </div>
-        </motion.footer>
+        </footer>
       </div>
       <style jsx>{`
         html {
