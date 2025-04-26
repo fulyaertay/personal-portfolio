@@ -74,7 +74,7 @@ export default function Home() {
     if (element) {
       window.scrollTo({
         top: element.offsetTop - 100,
-        behavior: 'instant'
+        
       });
     }
   };
