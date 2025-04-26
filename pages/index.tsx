@@ -349,7 +349,7 @@ export default function Home() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
               >
-                My Projects
+               Featured Projects
               </motion.h2>
             </div>
             <div className="flex flex-col">
@@ -857,12 +857,10 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              About Me
+             Tech Stack
             </motion.h2>
             <div className="max-w-5xl mx-auto">
-              <p className="text-lg text-muted-foreground mb-12">
-                I have been actively involved in the software development industry for 10 years, gaining experience across various sectors including QA Testing, Project Management, Web Development, Data Science, and Generative AI.
-              </p>
+              
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <Card className="hover:shadow-lg transition-shadow w-full">
                   <CardHeader>
