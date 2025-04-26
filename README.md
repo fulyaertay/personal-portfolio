@@ -12,6 +12,7 @@ This is my personal portfolio page. It's a single-page website that shows my per
 - TypeScript
 - Supabase Database
 - Framer Motion
+- Shadcn UI Components
 ```
 
 ### 🔗 You Can Follow Me
