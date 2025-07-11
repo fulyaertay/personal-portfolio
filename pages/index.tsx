@@ -564,101 +564,10 @@ export default function Home() {
                   </div>
                 </motion.div>
 
-                {/* Proje Kartı 4: Spotify Clone */}
-                <motion.div
-                  key={4}
-                  initial={{ opacity: 0, y: 50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: 0.4 }}
-                  className="bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer"
-                  onClick={() => window.open("https://scrimba-spotify-clone.netlify.app/", "_blank")}
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                >
-                  {/* İçerik */}
-                  <div className="p-4">
-                    <p className="font-bold text-lg mb-1 text-gray-900">Spotify Clone</p>
-                    <p className="text-gray-700 text-sm mb-2">
-                      The clone project is developed using Tailwind CSS.
-                    </p>
-                    <div className="flex items-center gap-3">
-                      <motion.a
-                        id="github-spotify"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="https://github.com/fulyaertay/scrimba-tailwind-projects/tree/master/3-solo-project-spotify-clone"
-                        className="text-gray-900 text-3xl hover:text-slate-400"
-                        whileHover={{ scale: 1.2 }}
-                        whileTap={{ scale: 0.9 }}
-                        onClick={(e: React.MouseEvent<HTMLAnchorElement>) => e.stopPropagation()}
-                      >
-                        <AiFillGithub />
-                      </motion.a>
-                      <motion.a
-                        className="tracking-widest text-gray-900 text-left inline-block text-sm"
-                        href="https://scrimba-spotify-clone.netlify.app/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                        onClick={(e: React.MouseEvent<HTMLAnchorElement>) => e.stopPropagation()}
-                      >
-                        <span className="inline-block underline hover:text-gray-600">
-                          Visit Site{" "}
-                          <svg
-                            className="inline-block"
-                            width="16"
-                            height="9"
-                            viewBox="0 0 16 9"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="currentColor"
-                          >
-                            <path d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5Z" />
-                            <path d="M10 8.5a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71l3.15-3.15l-3.15-3.15c-.2-.2-.2-.51 0-.71c.2-.2.51-.2.71 0l3.5 3.5c.2.2.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z" />
-                          </svg>{" "}
-                        </span>
-                      </motion.a>
-                    </div>
-                  </div>
-                </motion.div>
+                
+                
 
-                {/* Proje Kartı 5: Jonquils Book Shop */}
-                <motion.div
-                  key={5}
-                  initial={{ opacity: 0, y: 50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: 0.5 }}
-                  className="bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer"
-                  onClick={() => window.open("https://github.com/fulyaertay/react-mysql-book-application/tree/main", "_blank")}
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                >
-                  {/* İçerik */}
-                  <div className="p-4">
-                    <p className="font-bold text-lg mb-1 text-gray-900">Jonquils Book Shop</p>
-                    <p className="text-gray-700 text-sm mb-2">
-                      The application developed using React JS, Express JS, Cypress JS and MySql database.
-                    </p>
-                    <div className="flex items-center gap-3">
-                      <motion.a
-                        id="github-bookshop"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="https://github.com/fulyaertay/react-mysql-book-application/tree/main"
-                        className="text-gray-900 text-3xl hover:text-slate-400"
-                        whileHover={{ scale: 1.2 }}
-                        whileTap={{ scale: 0.9 }}
-                        onClick={(e: React.MouseEvent<HTMLAnchorElement>) => e.stopPropagation()}
-                      >
-                        <AiFillGithub />
-                      </motion.a>
-                    </div>
-                  </div>
-                </motion.div>
-
-                {/* Proje Kartı 7: Quiz App */}
+                {/* Proje Kartı 4: Quiz App */}
                 <motion.div
                   key={7}
                   initial={{ opacity: 0, y: 50 }}
@@ -717,66 +626,10 @@ export default function Home() {
                   </div>
                 </motion.div>
 
-                {/* Proje Kartı 8: VanLife App */}
-                <motion.div
-                  key={8}
-                  initial={{ opacity: 0, y: 50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: 0.8 }}
-                  className="bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer"
-                  onClick={() => window.open("https://fe-vans-app.netlify.app/", "_blank")}
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                >
-                  {/* İçerik */}
-                  <div className="p-4">
-                    <p className="font-bold text-lg mb-1 text-gray-900">VanLife App</p>
-                    <p className="text-gray-700 text-sm mb-2">
-                      Build rental van travel app using React Router 6 and Firebase.
-                    </p>
-                    <div className="flex items-center gap-3">
-                      <motion.a
-                        id="github-vanlife"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="https://github.com/fulyaertay/react-router-v6"
-                        className="text-gray-900 text-3xl hover:text-slate-400"
-                        whileHover={{ scale: 1.2 }}
-                        whileTap={{ scale: 0.9 }}
-                        onClick={(e: React.MouseEvent<HTMLAnchorElement>) => e.stopPropagation()}
-                      >
-                        <AiFillGithub />
-                      </motion.a>
-                      <motion.a
-                        className="tracking-widest text-gray-900 text-left inline-block text-sm"
-                        href="https://fe-vans-app.netlify.app/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                        onClick={(e: React.MouseEvent<HTMLAnchorElement>) => e.stopPropagation()}
-                      >
-                        <span className="inline-block underline hover:text-gray-600">
-                          Visit Site{" "}
-                          <svg
-                            className="inline-block"
-                            width="16"
-                            height="9"
-                            viewBox="0 0 16 9"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="currentColor"
-                          >
-                            <path d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5Z" />
-                            <path d="M10 8.5a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71l3.15-3.15l-3.15-3.15c-.2-.2-.2-.51 0-.71c.2-.2.51-.2.71 0l3.5 3.5c.2.2.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z" />
-                          </svg>{" "}
-                        </span>
-                      </motion.a>
-                    </div>
-                  </div>
-                </motion.div>
+                
+      
 
-                {/* Proje Kartı 9: DJAVAC */}
+                {/* Proje Kartı 5: DJAVAC */}
                 <motion.div
                   key={9}
                   initial={{ opacity: 0, y: 50 }}
@@ -811,7 +664,7 @@ export default function Home() {
                   </div>
                 </motion.div>
 
-                {/* Proje Kartı 10: Device Tracking App */}
+                {/* Proje Kartı 6: Device Tracking App */}
                 <motion.div
                   key={10}
                   initial={{ opacity: 0, y: 50 }}
