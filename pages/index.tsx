@@ -99,79 +99,12 @@ export default function Home() {
     return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
 
-  // Contact form using Shadcn UI Form
-  const ContactForm = () => {
-    const form = useForm<z.infer<typeof formSchema>>({
-      resolver: zodResolver(formSchema),
-      defaultValues: {
-        name: "",
-        email: "",
-        message: "",
-      },
-    });
 
-    const onSubmit = async (values: z.infer<typeof formSchema>) => {
-      const { data, error } = await supabase
-        .from('contact_form')
-        .insert([values]);
 
-      if (error) {
-        alert("There is an error " + error.message);
-      } else {
-        alert("Your message is sent!");
-        form.reset();
-      }
-    };
+    
+                
+          
 
-    return (
-      <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="max-w-md mx-auto space-y-6">
-          <FormField
-            control={form.control}
-            name="name"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>Name</FormLabel>
-                <FormControl>
-                  <Input placeholder="Your name" {...field} />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-          <FormField
-            control={form.control}
-            name="email"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>Email</FormLabel>
-                <FormControl>
-                  <Input placeholder="Your email" type="email" {...field} />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-          <FormField
-            control={form.control}
-            name="message"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>Message</FormLabel>
-                <FormControl>
-                  <Textarea placeholder="Your message" {...field} />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-          <Button type="submit" className="w-full">
-            Submit <AiOutlineArrowRight className="ml-2" />
-          </Button>
-        </form>
-      </Form>
-    );
-  };
 
   // Project Card Component
   const ProjectCard = ({ title, description, githubUrl, liveUrl, image }: {
@@ -283,12 +216,8 @@ export default function Home() {
                     >
                       Projects
                     </button>
-                    <button 
-                      onClick={() => handleMenuClick('contact')}
-                      className="w-full text-left px-4 py-2 hover:bg-accent rounded-md"
-                    >
-                      Contact
-                    </button>
+                    
+                    
                   </nav>
                 </SheetContent>
               </Sheet>
@@ -331,13 +260,7 @@ export default function Home() {
               <p className="text-xl text-muted-foreground mb-8">
                 I am a Software Engineer and I love to develop and test products for user-friendly web and mobile applications.
               </p>
-              <Button
-                size="lg"
-                onClick={() => scrollToSection('contact')}
-                className="bg-primary hover:bg-primary/90 text-primary-foreground"
-              >
-                Get in Touch <AiOutlineArrowRight className="ml-2" />
-              </Button>
+              
             </motion.div>
           </section>
           <hr className="border-gray-600"></hr>
@@ -786,19 +709,8 @@ export default function Home() {
           </section>
           <hr className="border-gray-100"></hr>
 
-          <section className="px-10 md:px-20 pb-12" id="contact">
-            <div>
-              <motion.h2
-                className="scroll-m-20 text-3xl font-normal tracking-tight lg:text-4xl text-foreground mb-12 text-center mt-16"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-              >
-                Get in Touch
-              </motion.h2>
-              <ContactForm />
-            </div>
-          </section>
+          
+                
         </main>
 
         <hr className="border-gray-600"></hr>
