@@ -1,4 +1,4 @@
-## -> [Live Link](https://fulyaertay.vercel.app/)
+
 
 
 
