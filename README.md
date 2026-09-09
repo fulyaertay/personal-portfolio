@@ -1,6 +1,5 @@
 ## -> [Live Link](https://fulyaertay.vercel.app/)
 
-![Logo](./public/layout.png)
 
 
 This is my personal portfolio page. It's a single-page website that shows my personal projects and coding knowledge. I've built this page using NextJS and TailwindCSS. It is a fully responsive website for mobile devices. You can see the source code of this page here on GitHub.
