@@ -9,7 +9,6 @@ This is my personal portfolio page. It's a single-page website that shows my per
 - Next JS
 - Tailwind CSS
 - TypeScript
-- Supabase Database
 - Framer Motion
 - Shadcn UI Components
 ```
